@@ -11,6 +11,10 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     
+    outputs:
+      gist_url: ${{ steps.sync_step.outputs.gist_url }}
+      gist_id: ${{ steps.sync_step.outputs.gist_id }}
+    
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -21,6 +25,7 @@ jobs:
         python-version: '3.x'
         
     - name: Sync to Gist
+      id: sync_step
       env:
         GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
         GIST_ID: ${{ secrets.GIST_ID }}
@@ -54,15 +59,71 @@ jobs:
         
         # Update or create gist
         if gist_id:
+            print(f"Updating existing gist: {gist_id}")
             r = requests.patch(f"https://api.github.com/gists/{gist_id}", headers=headers, json=payload)
         else:
+            print("Creating new gist...")
             payload["public"] = False
             r = requests.post("https://api.github.com/gists", headers=headers, json=payload)
         
         r.raise_for_status()
         result = r.json()
         
-        print(f"✅ Success! {result['html_url']}")
+        # Set outputs for GitHub Actions
+        with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+            f.write(f"gist_url={result['html_url']}\n")
+            f.write(f"gist_id={result['id']}\n")
+        
+        print("")
+        print("=" * 70)
+        print("✅ SUCCESS!")
+        print("=" * 70)
+        print(f"Gist URL: {result['html_url']}")
+        print(f"Gist ID:  {result['id']}")
+        print("=" * 70)
+        
         if not gist_id:
-            print(f"🔑 Add GIST_ID secret: {result['id']}")
+            print("")
+            print("⚠️  IMPORTANT - FIRST TIME SETUP:")
+            print("=" * 70)
+            print(f"Add this as a repository secret named 'GIST_ID':")
+            print("")
+            print(f"    {result['id']}")
+            print("")
+            print("Steps:")
+            print("1. Go to: https://github.com/Daoenti/Kingmaker/settings/secrets/actions")
+            print("2. Click 'New repository secret'")
+            print("3. Name: GIST_ID")
+            print(f"4. Value: {result['id']}")
+            print("=" * 70)
         PYTHON
+    
+    - name: Display Gist Info
+      if: always()
+      run: |
+        echo "════════════════════════════════════════════════════════════════════"
+        echo "                        📝 GIST INFORMATION"
+        echo "════════════════════════════════════════════════════════════════════"
+        echo ""
+        echo "Gist URL: ${{ steps.sync_step.outputs.gist_url }}"
+        echo "Gist ID:  ${{ steps.sync_step.outputs.gist_id }}"
+        echo ""
+        echo "════════════════════════════════════════════════════════════════════"
+        
+        if [ -z "${{ secrets.GIST_ID }}" ]; then
+          echo ""
+          echo "⚠️  ACTION REQUIRED: Add GIST_ID Secret"
+          echo "════════════════════════════════════════════════════════════════════"
+          echo ""
+          echo "Copy this Gist ID and add it as a repository secret:"
+          echo ""
+          echo "    ${{ steps.sync_step.outputs.gist_id }}"
+          echo ""
+          echo "Instructions:"
+          echo "  1. Go to: https://github.com/Daoenti/Kingmaker/settings/secrets/actions"
+          echo "  2. Click 'New repository secret'"
+          echo "  3. Name: GIST_ID"
+          echo "  4. Value: ${{ steps.sync_step.outputs.gist_id }}"
+          echo ""
+          echo "════════════════════════════════════════════════════════════════════"
+        fi
