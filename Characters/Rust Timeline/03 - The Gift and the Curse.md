@@ -356,4 +356,4 @@ That was the moment his real education in suffering began.
 
 ---
 
-**Next:** [[Characters/Rust Timeline/04_Velennes_Observation|04_Velennes_Observation.md]] - Ages 6-8: Sister Velenne's systematic testing
+**Next:** [[04 - Velennes Observation|04_Velennes_Observation.md]] - Ages 6-8: Sister Velenne's systematic testing

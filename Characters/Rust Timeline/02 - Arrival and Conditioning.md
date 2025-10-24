@@ -331,4 +331,4 @@ And breaks can become escapes.
 
 ---
 
-**Next:** [[Characters/Rust Timeline/03_The_Gift_and_the_Curse|03_The_Gift_and_the_Curse.md]] - Age 5: The literacy test that changed everything
+**Next:** [[03 - The Gift and the Curse|03_The_Gift_and_the_Curse.md]] - Age 5: The literacy test that changed everything

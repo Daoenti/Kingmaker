@@ -1,0 +1,68 @@
+name: Sync Vault to Gist
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.md'  # Only trigger on markdown changes
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+        
+    - name: Sync to Gist
+      env:
+        GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
+        GIST_ID: ${{ secrets.GIST_ID }}
+      run: |
+        pip install requests
+        python3 << 'PYTHON'
+        import os, json, requests
+        from pathlib import Path
+
+        token = os.environ['GITHUB_TOKEN']
+        gist_id = os.environ.get('GIST_ID', '')
+        
+        # Collect markdown files
+        files = {}
+        for f in Path('.').rglob('*.md'):
+            if not any(x in f.parts for x in ['.git', '.github', '.obsidian', '.trash', '.makemd', '.space', 'Tags']):
+                files[str(f).replace('\\', '/')] = f.read_text(encoding='utf-8')
+        
+        print(f"📁 Found {len(files)} markdown files")
+        
+        # API setup
+        headers = {
+            "Authorization": f"token {token}",
+            "Accept": "application/vnd.github+json",
+        }
+        
+        payload = {
+            "description": "Kingmaker Campaign - Pathfinder",
+            "files": {name: {"content": content} for name, content in files.items()}
+        }
+        
+        # Update or create gist
+        if gist_id:
+            r = requests.patch(f"https://api.github.com/gists/{gist_id}", headers=headers, json=payload)
+        else:
+            payload["public"] = False
+            r = requests.post("https://api.github.com/gists", headers=headers, json=payload)
+        
+        r.raise_for_status()
+        result = r.json()
+        
+        print(f"✅ Success! {result['html_url']}")
+        if not gist_id:
+            print(f"🔑 Add GIST_ID secret: {result['id']}")
+        PYTHON

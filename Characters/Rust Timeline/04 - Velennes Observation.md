@@ -446,4 +446,4 @@ Four more years of becoming someone harder to break than anyone imagined.
 
 ---
 
-**Next:** [[Characters/Rust Timeline/05_Learning_Languages|05_Learning_Languages.md]] - Age 7: Infernal, Goblin, and the weight of words
+**Next:** [[05 - Learning Languages|05_Learning_Languages.md]] - Age 7: Infernal, Goblin, and the weight of words
