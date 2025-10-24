@@ -45,6 +45,7 @@ jobs:
         print(f"Token length: {len(token) if token else 0}")
         print(f"Gist ID present: {'Yes' if gist_id else 'No'}")
         print(f"Gist ID value: {gist_id if gist_id else '(empty)'}")
+        print(f"Current directory: {os.getcwd()}")
         print("=" * 70)
         print()
         
@@ -56,11 +57,51 @@ jobs:
         try:
             # Collect markdown files
             files = {}
-            for f in Path('.').rglob('*.md'):
-                if not any(x in f.parts for x in ['.git', '.github', '.obsidian', '.trash', '.makemd', '.space', 'Tags']):
-                    files[str(f).replace('\\', '/')] = f.read_text(encoding='utf-8')
+            exclude_dirs = {'.git', '.github', '.obsidian', '.trash', '.makemd', '.space', 'Tags'}
             
-            print(f"📁 Found {len(files)} markdown files")
+            print("📂 Scanning for markdown files...")
+            print()
+            
+            for f in Path('.').rglob('*.md'):
+                # Check if any excluded directory is in the path
+                if any(excluded in f.parts for excluded in exclude_dirs):
+                    print(f"  ⊗ Skipping: {f}")
+                    continue
+                
+                try:
+                    content = f.read_text(encoding='utf-8')
+                    # Use forward slashes for cross-platform compatibility
+                    filename = str(f).replace('\\', '/').lstrip('./')
+                    files[filename] = content
+                    print(f"  ✓ Added: {filename} ({len(content)} chars)")
+                except Exception as e:
+                    print(f"  ✗ Error reading {f}: {e}")
+            
+            print()
+            print(f"📁 Total files collected: {len(files)}")
+            print()
+            
+            if not files:
+                print("❌ ERROR: No markdown files found!")
+                print()
+                print("This could mean:")
+                print("  1. All .md files are in excluded directories")
+                print("  2. The repository has no .md files")
+                print("  3. The checkout didn't work properly")
+                print()
+                print("Directory contents:")
+                for item in Path('.').iterdir():
+                    print(f"  - {item.name} ({'dir' if item.is_dir() else 'file'})")
+                sys.exit(1)
+            
+            # Show first few files that will be uploaded
+            print("Sample of files to upload:")
+            for i, (name, content) in enumerate(list(files.items())[:5]):
+                preview = content[:100].replace('\n', ' ')
+                print(f"  {i+1}. {name}")
+                print(f"     Preview: {preview}...")
+            if len(files) > 5:
+                print(f"  ... and {len(files) - 5} more files")
             print()
             
             # API setup
@@ -73,6 +114,13 @@ jobs:
                 "description": "Kingmaker Campaign - Pathfinder",
                 "files": {name: {"content": content} for name, content in files.items()}
             }
+            
+            # Debug: show payload structure (without full content)
+            print("API Payload structure:")
+            print(f"  Description: {payload['description']}")
+            print(f"  Files count: {len(payload['files'])}")
+            print(f"  File names: {list(payload['files'].keys())[:10]}")
+            print()
             
             # Update or create gist
             if gist_id:
