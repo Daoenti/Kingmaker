@@ -32,70 +32,108 @@ jobs:
       run: |
         pip install requests
         python3 << 'PYTHON'
-        import os, json, requests
+        import os, json, requests, sys, traceback
         from pathlib import Path
 
-        token = os.environ['GITHUB_TOKEN']
+        token = os.environ.get('GITHUB_TOKEN', '')
         gist_id = os.environ.get('GIST_ID', '')
         
-        # Collect markdown files
-        files = {}
-        for f in Path('.').rglob('*.md'):
-            if not any(x in f.parts for x in ['.git', '.github', '.obsidian', '.trash', '.makemd', '.space', 'Tags']):
-                files[str(f).replace('\\', '/')] = f.read_text(encoding='utf-8')
-        
-        print(f"📁 Found {len(files)} markdown files")
-        
-        # API setup
-        headers = {
-            "Authorization": f"token {token}",
-            "Accept": "application/vnd.github+json",
-        }
-        
-        payload = {
-            "description": "Kingmaker Campaign - Pathfinder",
-            "files": {name: {"content": content} for name, content in files.items()}
-        }
-        
-        # Update or create gist
-        if gist_id:
-            print(f"Updating existing gist: {gist_id}")
-            r = requests.patch(f"https://api.github.com/gists/{gist_id}", headers=headers, json=payload)
-        else:
-            print("Creating new gist...")
-            payload["public"] = False
-            r = requests.post("https://api.github.com/gists", headers=headers, json=payload)
-        
-        r.raise_for_status()
-        result = r.json()
-        
-        # Set outputs for GitHub Actions
-        with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
-            f.write(f"gist_url={result['html_url']}\n")
-            f.write(f"gist_id={result['id']}\n")
-        
-        print("")
         print("=" * 70)
-        print("✅ SUCCESS!")
+        print("🔍 DEBUGGING INFORMATION")
         print("=" * 70)
-        print(f"Gist URL: {result['html_url']}")
-        print(f"Gist ID:  {result['id']}")
+        print(f"Token present: {'Yes' if token else 'No'}")
+        print(f"Token length: {len(token) if token else 0}")
+        print(f"Gist ID present: {'Yes' if gist_id else 'No'}")
+        print(f"Gist ID value: {gist_id if gist_id else '(empty)'}")
         print("=" * 70)
+        print()
         
-        if not gist_id:
-            print("")
-            print("⚠️  IMPORTANT - FIRST TIME SETUP:")
+        if not token:
+            print("❌ ERROR: GIST_TOKEN secret is not set!")
+            print("Please add your GitHub token as a secret named 'GIST_TOKEN'")
+            sys.exit(1)
+        
+        try:
+            # Collect markdown files
+            files = {}
+            for f in Path('.').rglob('*.md'):
+                if not any(x in f.parts for x in ['.git', '.github', '.obsidian', '.trash', '.makemd', '.space', 'Tags']):
+                    files[str(f).replace('\\', '/')] = f.read_text(encoding='utf-8')
+            
+            print(f"📁 Found {len(files)} markdown files")
+            print()
+            
+            # API setup
+            headers = {
+                "Authorization": f"token {token}",
+                "Accept": "application/vnd.github+json",
+            }
+            
+            payload = {
+                "description": "Kingmaker Campaign - Pathfinder",
+                "files": {name: {"content": content} for name, content in files.items()}
+            }
+            
+            # Update or create gist
+            if gist_id:
+                print(f"Updating existing gist: {gist_id}")
+                url = f"https://api.github.com/gists/{gist_id}"
+                r = requests.patch(url, headers=headers, json=payload)
+            else:
+                print("Creating new gist...")
+                payload["public"] = False
+                url = "https://api.github.com/gists"
+                r = requests.post(url, headers=headers, json=payload)
+            
+            print(f"API Response Status: {r.status_code}")
+            
+            if r.status_code not in [200, 201]:
+                print(f"❌ API Error: {r.status_code}")
+                print(f"Response: {r.text}")
+                sys.exit(1)
+            
+            result = r.json()
+            
+            # Set outputs for GitHub Actions
+            with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                f.write(f"gist_url={result['html_url']}\n")
+                f.write(f"gist_id={result['id']}\n")
+            
+            print()
             print("=" * 70)
-            print(f"Add this as a repository secret named 'GIST_ID':")
-            print("")
-            print(f"    {result['id']}")
-            print("")
-            print("Steps:")
-            print("1. Go to: https://github.com/Daoenti/Kingmaker/settings/secrets/actions")
-            print("2. Click 'New repository secret'")
-            print("3. Name: GIST_ID")
-            print(f"4. Value: {result['id']}")
+            print("✅ SUCCESS!")
             print("=" * 70)
+            print(f"Gist URL: {result['html_url']}")
+            print(f"Gist ID:  {result['id']}")
+            print(f"Files:    {len(result['files'])}")
+            print("=" * 70)
+            
+            if not gist_id:
+                print()
+                print("⚠️  IMPORTANT - FIRST TIME SETUP:")
+                print("=" * 70)
+                print(f"Add this as a repository secret named 'GIST_ID':")
+                print()
+                print(f"    {result['id']}")
+                print()
+                print("Steps:")
+                print("1. Go to: https://github.com/Daoenti/Kingmaker/settings/secrets/actions")
+                print("2. Click 'New repository secret'")
+                print("3. Name: GIST_ID")
+                print(f"4. Value: {result['id']}")
+                print("=" * 70)
+                
+        except Exception as e:
+            print()
+            print("=" * 70)
+            print("❌ ERROR OCCURRED")
+            print("=" * 70)
+            print(f"Error: {str(e)}")
+            print()
+            print("Full traceback:")
+            traceback.print_exc()
+            print("=" * 70)
+            sys.exit(1)
         PYTHON
     
     - name: Display Gist Info
