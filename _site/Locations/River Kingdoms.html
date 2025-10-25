@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Kingdoms - Kingmaker Campaign</title>
+    <link rel="stylesheet" href="/Kingmaker/style.css">
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const icon = event.currentTarget.querySelector('.toggle-icon');
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                icon.textContent = '▼';
+            } else {
+                section.style.display = 'none';
+                icon.textContent = '▶';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+<div class="logo"><a href="/Kingmaker/"><img src="/Kingmaker/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('.venv')"><span class="toggle-icon">▼</span> .venv</h2>
+<ul id=".venv" class="nav-list">
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('.venv-lib')"><span class="toggle-icon">▼</span> Lib</h3>
+<ul id=".venv-lib" class="nav-list">
+<li><a href="/Kingmaker/.venv/Lib/site-packages/markdown-3.9.dist-info/licenses/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('characters')"><span class="toggle-icon">▼</span> Characters</h2>
+<ul id="characters" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust.html">Rust</a></li>
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('characters-rust-timeline')"><span class="toggle-icon">▼</span> Rust Timeline</h3>
+<ul id="characters-rust-timeline" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust Timeline/00 - README.html">00   README</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/01 - Unknown Origins.html">01   Unknown Origins</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/02 - Arrival and Conditioning.html">02   Arrival and Conditioning</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/03 - The Gift and the Curse.html">03   The Gift and the Curse</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/04 - Velennes Observation.html">04   Velennes Observation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/05 - Learning Languages.html">05   Learning Languages</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/06 - Survival Strategies.html">06   Survival Strategies</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/07 - Mika Arrives.html">07   Mika Arrives</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/08 - Escalation.html">08   Escalation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/09 - The Final Year.html">09   The Final Year</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/10 - The Awakening.html">10   The Awakening</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/11 - First Months Free.html">11   First Months Free</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/12 - Sevenarches.html">12   Sevenarches</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/13 - Approaching Adulthood.html">13   Approaching Adulthood</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/14 - Campaign Start.html">14   Campaign Start</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('deities')"><span class="toggle-icon">▼</span> Deities</h2>
+<ul id="deities" class="nav-list">
+<li><a href="/Kingmaker/Deities/Asmodeus.html">Asmodeus</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('events')"><span class="toggle-icon">▼</span> Events</h2>
+<ul id="events" class="nav-list">
+<li><a href="/Kingmaker/Events/Goblinblood Wars.html">Goblinblood Wars</a></li>
+<li><a href="/Kingmaker/Events/Monastery Life Detailed.html">Monastery Life Detailed</a></li>
+<li><a href="/Kingmaker/Events/Rust's Awakening.html">Rust's Awakening</a></li>
+<li><a href="/Kingmaker/Events/Sevenarches Encounter.html">Sevenarches Encounter</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('game-mechanics')"><span class="toggle-icon">▼</span> Game Mechanics</h2>
+<ul id="game-mechanics" class="nav-list">
+<li><a href="/Kingmaker/Game Mechanics/Animal Whisperer Background.html">Animal Whisperer Background</a></li>
+<li><a href="/Kingmaker/Game Mechanics/Unbreakable Ancestry.html">Unbreakable Ancestry</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('locations')"><span class="toggle-icon">▼</span> Locations</h2>
+<ul id="locations" class="nav-list">
+<li><a href="/Kingmaker/Locations/Cheliax.html">Cheliax</a></li>
+<li><a href="/Kingmaker/Locations/Druma.html">Druma</a></li>
+<li><a href="/Kingmaker/Locations/Isger.html">Isger</a></li>
+<li><a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a></li>
+<li><a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery of the Golden Erinyes</a></li>
+<li><a href="/Kingmaker/Locations/River Kingdoms.html">River Kingdoms</a></li>
+<li><a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('npcs')"><span class="toggle-icon">▼</span> NPCs</h2>
+<ul id="npcs" class="nav-list">
+<li><a href="/Kingmaker/NPCs/Kresh.html">Kresh</a></li>
+<li><a href="/Kingmaker/NPCs/Marta Greenhill.html">Marta Greenhill</a></li>
+<li><a href="/Kingmaker/NPCs/Mika.html">Mika</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Malhana.html">Sister Malhana</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('organizations')"><span class="toggle-icon">▼</span> Organizations</h2>
+<ul id="organizations" class="nav-list">
+<li><a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters of the Golden Erinyes</a></li>
+</ul>
+</div>
+</nav>
+
+        <main>
+            <h1 id="river-kingdoms">River Kingdoms</h1>
+<h2 id="overview">Overview</h2>
+<p><strong>Type:</strong> Region of independent kingdoms
+<strong>Location:</strong> Central Avistan, east of <a href="/Kingmaker/Locations/Druma.html">Druma</a>
+<strong>Government:</strong> None unified; dozens of small kingdoms, republics, and city-states
+<strong>Alignment:</strong> Mixed, predominantly Chaotic
+<strong>Notable Features:</strong> Constant border changes, freedom, lawlessness, opportunity
+<strong>Primary Geography:</strong> River valleys and plains</p>
+<h2 id="description">Description</h2>
+<p>The River Kingdoms isn't a nation—it's a region of dozens (the number changes monthly) of independent polities along the Sellen River and its tributaries. Borders shift constantly, rulers rise and fall, and the only constant is change itself.</p>
+<p>It's a land of opportunity and danger, where anyone can carve out a kingdom if they're strong, clever, or lucky enough. It's also where kingdoms collapse overnight, where banditry is a career path, and where the phrase "six river freedoms" matters more than any law.</p>
+<h2 id="the-six-river-freedoms">The Six River Freedoms</h2>
+<p>The River Kingdoms share these principles:
+1. <strong>Say What You Will</strong> - Freedom of speech
+2. <strong>Oath What You Must</strong> - Make only promises you choose
+3. <strong>Earn What You Can</strong> - Keep what you take/make
+4. <strong>Trade What You Want</strong> - No restrictions on commerce
+5. <strong>Worship as You Will</strong> - Religious freedom
+6. <strong>Kill Who You Must</strong> - Self-defense and dueling accepted</p>
+<p>These aren't laws—they're shared values. Most kingdoms respect them. Most.</p>
+<h2 id="geography">Geography</h2>
+<h3 id="the-sellen-river-system">The Sellen River System</h3>
+<p>The region centers on rivers:
+- Sellen River and major tributaries
+- Fertile valleys
+- Strategic trade routes
+- Natural borders (constantly redrawn)
+- River travel faster than roads</p>
+<h3 id="major-regions">Major Regions</h3>
+<p><strong>Northern Kingdoms:</strong>
+- Border <a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a>
+- Deal with elven isolationism
+- <a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a> on the border
+- More stable (relatively)</p>
+<p><strong>Central Kingdoms:</strong>
+- Most active area
+- Constant warfare and diplomacy
+- Trade hub
+- Where most kingdoms rise and fall</p>
+<p><strong>Southern Kingdoms:</strong>
+- Toward <a href="/Kingmaker/Locations/Druma.html">Druma</a> and beyond
+- Slightly more organized
+- Trade with richer neighbors</p>
+<p><strong>Eastern Reaches:</strong>
+- Frontier even by River Kingdoms standards
+- Bandit territory
+- Unexplored lands beyond
+- Where desperate go to start over</p>
+<h2 id="notable-kingdoms-and-city-states">Notable Kingdoms and City-States</h2>
+<p>The number and names change constantly, but some are more stable:</p>
+<p><strong>Daggermark:</strong>
+- City of assassins and poison-makers
+- Most famous River Kingdom
+- Guild-run plutocracy
+- Surprisingly stable
+- Where contracts on lives are public</p>
+<p><strong>Pitax:</strong>
+- Kingdom of arts and intrigue
+- Ruled by self-proclaimed genius
+- Beautiful but dangerous
+- Cultural center (supposedly)
+- Prone to dramatic collapse and rebirth</p>
+<p><strong>Mivon:</strong>
+- Aldori swordlord refuge
+- Dueling culture
+- More organized than most
+- Military traditions
+- Actually pays taxes (unusual)</p>
+<p><strong>Tymon:</strong>
+- City of gladiatorial combat
+- Arena rules everything
+- Freedom through strength
+- Entertainment and death
+- Brutal but honest</p>
+<p><strong>Lambreth:</strong>
+- Bandit kingdom (officially)
+- Tribute or fight
+- Changes hands frequently
+- Currently ruled by whoever's strongest
+- Tomorrow, who knows?</p>
+<h2 id="government-and-law">Government and Law</h2>
+<h3 id="no-central-authority">No Central Authority</h3>
+<p>The River Kingdoms have:
+- No unified government
+- No common law (beyond Six Freedoms)
+- Each kingdom independent
+- Alliances shift constantly
+- War and diplomacy in equal measure</p>
+<h3 id="how-kingdoms-work">How Kingdoms Work</h3>
+<p>Individual kingdoms vary wildly:
+- Monarchies (self-declared)
+- Republics (occasionally democratic)
+- Plutocracies (rule by wealth)
+- Theocracies (rule by priests)
+- Anarchies (rule by whoever can)
+- Adventurer-kingdoms (rule by heroes)</p>
+<h3 id="rise-and-fall">Rise and Fall</h3>
+<p>Kingdoms constantly change:
+- Average lifespan: 7-10 years
+- Some last longer
+- Most collapse or are conquered
+- New ones form regularly
+- Maps outdated within months</p>
+<h2 id="culture-and-society">Culture and Society</h2>
+<h3 id="freedom-above-all">Freedom Above All</h3>
+<p>River Kingdoms culture prizes:
+- Personal liberty
+- Self-determination
+- Opportunity
+- Merit over birth
+- Action over tradition</p>
+<h3 id="frontier-spirit">Frontier Spirit</h3>
+<p>The region attracts:
+- Adventurers seeking fortune
+- Exiles fleeing persecution
+- Criminals avoiding justice
+- Idealists building utopias
+- Opportunists exploiting chaos</p>
+<h3 id="practical-morality">Practical Morality</h3>
+<p>River Kingdoms ethics are:
+- What works, works
+- Trust earned, not given
+- Contracts matter (if enforced)
+- Reputation is currency
+- Consequences teach lessons</p>
+<h2 id="relationship-to-sevenarches">Relationship to <a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a></h2>
+<h3 id="the-ancient-forest">The Ancient Forest</h3>
+<p><a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a> sits on northern border:
+- Technically in multiple kingdoms
+- None actually control it
+- Everyone avoids it
+- Rumors and legends constant
+- Where <a href="/Kingmaker/Characters/Rust.html">Rust</a> had his encounter</p>
+<h3 id="border-disputes">Border Disputes</h3>
+<p>Kingdoms near Sevenarches:
+- Claim territory
+- Don't enforce claims
+- Let others explore and die
+- Profit from salvaging failures
+- Warn travelers (sometimes)</p>
+<h3 id="exploration-attempts">Exploration Attempts</h3>
+<p>River Kingdoms approach differs from <a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a>:
+- Kyonin avoids Sevenarches respectfully
+- River Kingdoms avoid it practically
+- But some try anyway
+- Treasure seekers and fools
+- Few return unchanged</p>
+<h2 id="economy-and-trade">Economy and Trade</h2>
+<h3 id="river-trade">River Trade</h3>
+<p>Primary economic activity:
+- Shipping along Sellen River
+- Trade between kingdoms
+- Goods from Druma, Brevoy, beyond
+- Piracy common
+- Protection rackets lucrative</p>
+<h3 id="natural-resources">Natural Resources</h3>
+<p>The region produces:
+- Agricultural goods
+- Timber
+- Furs and game
+- Riverboat construction
+- Whatever kingdoms need</p>
+<h3 id="taxation">Taxation</h3>
+<p>Tax policy varies:
+- Some kingdoms tax heavily
+- Others barely at all
+- Some tax only foreigners
+- Smuggling is major industry
+- Revenue collection uncertain</p>
+<h2 id="military-and-conflict">Military and Conflict</h2>
+<h3 id="constant-warfare">Constant Warfare</h3>
+<p>River Kingdoms see:
+- Border wars monthly
+- Bandit raids daily
+- Mercenary companies thrive
+- Every kingdom maintains forces
+- Peace is temporary</p>
+<h3 id="mercenaries">Mercenaries</h3>
+<p>Professional soldiers flourish:
+- Sell swords to highest bidder
+- Change sides between contracts
+- Some more honorable than others
+- Major economic factor
+- Often become rulers</p>
+<h3 id="self-defense">Self-Defense</h3>
+<p>Most citizens:
+- Armed as matter of course
+- Militia duty common
+- Dueling settles disputes
+- Stand your ground expected
+- Weakness is dangerous</p>
+<h2 id="population-and-demographics">Population and Demographics</h2>
+<h3 id="mixed-population">Mixed Population</h3>
+<p>River Kingdoms include:
+- Humans (majority)
+- Halflings (significant minority)
+- Gnomes (especially in certain kingdoms)
+- Dwarves (traders and crafters)
+- Half-elves (exiles from <a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a>)
+- Other races (anyone's welcome if capable)</p>
+<h3 id="non-human-experience">Non-Human Experience</h3>
+<p>Unlike other nations:
+- Species matters less than capability
+- <a href="/Kingmaker/Characters/Rust.html">Rust</a> would face less prejudice
+- But also less stability
+- Freedom includes freedom to fail
+- And freedom for others to exploit you</p>
+<h2 id="relevance-to-rust">Relevance to <a href="/Kingmaker/Characters/Rust.html">Rust</a></h2>
+<h3 id="potential-destination">Potential Destination</h3>
+<p>Rust might consider River Kingdoms:
+- More accepting of non-humans
+- Freedom to build new life
+- Escape from <a href="/Kingmaker/Locations/Cheliax.html">Cheliax</a>'s reach
+- Adventure and opportunity
+- But also danger and chaos</p>
+<h3 id="near-sevenarches">Near <a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a></h3>
+<p>The forest connection matters:
+- Sevenarches borders River Kingdoms
+- Rust's encounter happened near here
+- Forest still calls to him
+- Returning might require crossing region
+- Or avoiding it entirely</p>
+<h3 id="similar-spirit">Similar Spirit</h3>
+<p>River Kingdoms philosophy resonates:
+- Freedom from oppressive systems
+- Make your own way
+- Judge by actions not birth
+- Keep what you earn
+- Answer to no one</p>
+<p>But also challenges him:
+- Chaos can be as dangerous as tyranny
+- Freedom includes freedom to hurt
+- No safety net if you fall
+- Strength matters more than mercy
+- Past doesn't disappear here, just matters less</p>
+<h2 id="in-play">In Play</h2>
+<h3 id="adventure-central">Adventure Central</h3>
+<p>River Kingdoms offer:
+- Kingdom-building campaigns
+- Mercenary work
+- Bandit hunting (or banditry)
+- Political intrigue
+- Exploration and discovery
+- Anything players imagine</p>
+<h3 id="kingmaker-connection">Kingmaker Connection</h3>
+<p>This is literally the setting for:
+- Pathfinder Kingmaker Adventure Path
+- Party builds own kingdom
+- Faces established kingdoms
+- Navigates River Kingdoms politics
+- Deals with <a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a> proximity</p>
+<h3 id="rusts-role">Rust's Role</h3>
+<p>In River Kingdoms campaign:
+- Rust could be early settler
+- Seeking fresh start
+- Using skills to help build
+- Grappling with Sevenarches proximity
+- Processing freedom after imprisonment</p>
+<h2 id="dangers-and-opportunities">Dangers and Opportunities</h2>
+<h3 id="opportunities">Opportunities</h3>
+<p>River Kingdoms offer:
+- Land for claiming
+- Wealth for taking
+- Status for earning
+- Freedom for living
+- Future for building</p>
+<h3 id="dangers">Dangers</h3>
+<p>But also present:
+- Banditry everywhere
+- Wars constantly
+- No law enforcement
+- Predators (human and otherwise)
+- Starvation if fail
+- Death if weak</p>
+<h3 id="the-gamble">The Gamble</h3>
+<p>River Kingdoms represent:
+- High risk, high reward
+- Freedom's cost
+- Opportunity's price
+- Self-determination's burden
+- Answer for some, death for others</p>
+<h2 id="comparison-to-other-lands">Comparison to Other Lands</h2>
+<p><strong>Versus <a href="/Kingmaker/Locations/Cheliax.html">Cheliax</a>:</strong>
+- Chaos not order
+- Freedom not tyranny
+- Opportunity not oppression
+- Dangerous not evil
+- Better for Rust's psychology</p>
+<p><strong>Versus <a href="/Kingmaker/Locations/Druma.html">Druma</a>:</strong>
+- Freedom not gold
+- Chaos not efficiency
+- Opportunity not cost
+- Merit through action not wealth
+- More Rust's speed</p>
+<p><strong>Versus <a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a>:</strong>
+- Open not closed
+- Change not preservation
+- Mixed not isolated
+- Present not past
+- Rust would fit better</p>
+<p><strong>Versus <a href="/Kingmaker/Locations/Isger.html">Isger</a>:</strong>
+- Opportunity not desperation
+- Growth not recovery
+- Independent not vassal
+- Future not past
+- Where Isger wishes it could be</p>
+<h2 id="magic-and-mystery">Magic and Mystery</h2>
+<h3 id="wild-magic">Wild Magic</h3>
+<p>River Kingdoms have:
+- Less organized magical tradition
+- Self-taught mages common
+- Magical creatures in wilds
+- Ancient ruins unexplored
+- <a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a> proximity effects</p>
+<h3 id="supernatural-threats">Supernatural Threats</h3>
+<p>Beyond normal dangers:
+- Fey from bordering <a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a>
+- Undead in old battlefields
+- Cursed ruins
+- River monsters
+- Whatever Sevenarches releases</p>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a> - Ancient forest on northern border</li>
+<li><a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a> - Northern neighbor, source of exiles</li>
+<li><a href="/Kingmaker/Locations/Druma.html">Druma</a> - Western neighbor, trade partner</li>
+<li><a href="/Kingmaker/Characters/Rust.html">Rust</a> - Might find freedom here, near where trauma happened</li>
+<li>Campaign - Potential setting for kingdom-building</li>
+</ul>
+<hr />
+<p><em>The River Kingdoms are chaos given geography—dozens of would-be rulers fighting over territory that redraws itself monthly. No laws except what you enforce, no peace except what you make, no future except what you build. For someone like <a href="/Kingmaker/Characters/Rust.html">Rust</a>, who spent ten years under absolute control, the freedom might be intoxicating. Or terrifying. Or both. The River Kingdoms don't care what you were—only what you can do. They're also right next to <a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a>, where Rust learned there are truths worse than tyranny. So the question isn't whether the River Kingdoms would accept him. It's whether he can accept what living near that forest means. Freedom to build a future. Proximity to a past he can't escape. Maybe that's fitting. Maybe that's exactly where his story needs to go.</em></p>
+        </main>
+    </div>
+</body>
+</html>

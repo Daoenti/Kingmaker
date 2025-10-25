@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust's Awakening - Kingmaker Campaign</title>
+    <link rel="stylesheet" href="/Kingmaker/style.css">
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const icon = event.currentTarget.querySelector('.toggle-icon');
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                icon.textContent = '▼';
+            } else {
+                section.style.display = 'none';
+                icon.textContent = '▶';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+<div class="logo"><a href="/Kingmaker/"><img src="/Kingmaker/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('.venv')"><span class="toggle-icon">▼</span> .venv</h2>
+<ul id=".venv" class="nav-list">
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('.venv-lib')"><span class="toggle-icon">▼</span> Lib</h3>
+<ul id=".venv-lib" class="nav-list">
+<li><a href="/Kingmaker/.venv/Lib/site-packages/markdown-3.9.dist-info/licenses/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('characters')"><span class="toggle-icon">▼</span> Characters</h2>
+<ul id="characters" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust.html">Rust</a></li>
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('characters-rust-timeline')"><span class="toggle-icon">▼</span> Rust Timeline</h3>
+<ul id="characters-rust-timeline" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust Timeline/00 - README.html">00   README</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/01 - Unknown Origins.html">01   Unknown Origins</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/02 - Arrival and Conditioning.html">02   Arrival and Conditioning</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/03 - The Gift and the Curse.html">03   The Gift and the Curse</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/04 - Velennes Observation.html">04   Velennes Observation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/05 - Learning Languages.html">05   Learning Languages</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/06 - Survival Strategies.html">06   Survival Strategies</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/07 - Mika Arrives.html">07   Mika Arrives</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/08 - Escalation.html">08   Escalation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/09 - The Final Year.html">09   The Final Year</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/10 - The Awakening.html">10   The Awakening</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/11 - First Months Free.html">11   First Months Free</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/12 - Sevenarches.html">12   Sevenarches</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/13 - Approaching Adulthood.html">13   Approaching Adulthood</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/14 - Campaign Start.html">14   Campaign Start</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('deities')"><span class="toggle-icon">▼</span> Deities</h2>
+<ul id="deities" class="nav-list">
+<li><a href="/Kingmaker/Deities/Asmodeus.html">Asmodeus</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('events')"><span class="toggle-icon">▼</span> Events</h2>
+<ul id="events" class="nav-list">
+<li><a href="/Kingmaker/Events/Goblinblood Wars.html">Goblinblood Wars</a></li>
+<li><a href="/Kingmaker/Events/Monastery Life Detailed.html">Monastery Life Detailed</a></li>
+<li><a href="/Kingmaker/Events/Rust's Awakening.html">Rust's Awakening</a></li>
+<li><a href="/Kingmaker/Events/Sevenarches Encounter.html">Sevenarches Encounter</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('game-mechanics')"><span class="toggle-icon">▼</span> Game Mechanics</h2>
+<ul id="game-mechanics" class="nav-list">
+<li><a href="/Kingmaker/Game Mechanics/Animal Whisperer Background.html">Animal Whisperer Background</a></li>
+<li><a href="/Kingmaker/Game Mechanics/Unbreakable Ancestry.html">Unbreakable Ancestry</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('locations')"><span class="toggle-icon">▼</span> Locations</h2>
+<ul id="locations" class="nav-list">
+<li><a href="/Kingmaker/Locations/Cheliax.html">Cheliax</a></li>
+<li><a href="/Kingmaker/Locations/Druma.html">Druma</a></li>
+<li><a href="/Kingmaker/Locations/Isger.html">Isger</a></li>
+<li><a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a></li>
+<li><a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery of the Golden Erinyes</a></li>
+<li><a href="/Kingmaker/Locations/River Kingdoms.html">River Kingdoms</a></li>
+<li><a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('npcs')"><span class="toggle-icon">▼</span> NPCs</h2>
+<ul id="npcs" class="nav-list">
+<li><a href="/Kingmaker/NPCs/Kresh.html">Kresh</a></li>
+<li><a href="/Kingmaker/NPCs/Marta Greenhill.html">Marta Greenhill</a></li>
+<li><a href="/Kingmaker/NPCs/Mika.html">Mika</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Malhana.html">Sister Malhana</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('organizations')"><span class="toggle-icon">▼</span> Organizations</h2>
+<ul id="organizations" class="nav-list">
+<li><a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters of the Golden Erinyes</a></li>
+</ul>
+</div>
+</nav>
+
+        <main>
+            <h1 id="rusts-awakening">Rust's Awakening</h1>
+<h2 id="overview">Overview</h2>
+<p><strong>Date:</strong> One year before present day (Rust was 12 years old)<br />
+<strong>Location:</strong> Discipline Chamber, <a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery of the Golden Erinyes</a><br />
+<strong>Primary Participants:</strong> <a href="/Kingmaker/Characters/Rust.html">Rust</a> (age 12), <a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a><br />
+<strong>Significance:</strong> First manifestation of Rust's oracle powers and Unbreakable heritage, catalyst for his escape</p>
+<h2 id="the-events-leading-up">The Events Leading Up</h2>
+<h3 id="the-transgression">The Transgression</h3>
+<p><a href="/Kingmaker/Characters/Rust.html">Rust</a>, 12 years old at the time, was caught attempting to slip an extra portion of food to <a href="/Kingmaker/NPCs/Mika.html">Mika</a>, a younger human girl who'd been denied meals as punishment for crying during prayers. This act of compassion violated the monastery's strict hierarchy and rules about accepting punishment.</p>
+<p>For a 12-year-old goblin to show such defiance was seen as particularly egregious by the <a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters</a>.</p>
+<h3 id="the-beating">The Beating</h3>
+<p><a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a> took this transgression with particular seriousness. She dragged Rust to the discipline chamber and administered one of her most severe beatings yet. The session left him with:
+- Multiple broken bones
+- Cracked ribs<br />
+- Severe internal bleeding
+- Head trauma
+- Injuries that should have been fatal for a child</p>
+<h3 id="the-night-in-the-chamber">The Night in the Chamber</h3>
+<p>As was standard practice, Velenne left Rust locked in the discipline chamber overnight for "contemplation of sins." Whether she intended for him to die or simply didn't care is unclear. For a 12-year-old child with those injuries, death seemed inevitable.</p>
+<h2 id="the-manifestation">The Manifestation</h2>
+<h3 id="the-attention">The Attention</h3>
+<p>As Rust lay dying on the cold stone floor, something vast and incomprehensible <strong>noticed</strong> him. Not from within—the sensation came from elsewhere, from outside normal reality. Something turned its attention toward this broken goblin child and decided he was worth preserving.</p>
+<p>This was the moment both his Life Oracle mystery and his Unbreakable heritage fully manifested for the first time.</p>
+<h3 id="the-healing">The Healing</h3>
+<p>The power manifested violently and terrifyingly over the course of hours:
+- Bones ground back into place with audible cracks
+- Skin sealed over wounds in unnatural patterns
+- Internal damage repaired itself slowly, painfully
+- The process took most of the night
+- Pain increased rather than diminished during healing
+- The healing felt <strong>alien</strong>, not like divine magic but something older</p>
+<p>For a 12-year-old child, this was absolutely terrifying. He didn't understand what was happening or why.</p>
+<h3 id="the-understanding">The Understanding</h3>
+<p>Through the experience, young Rust gained certain knowledge:
+- This power wasn't his—something else was sustaining him
+- The Sisters would never let him go if they discovered this
+- He could survive things that should kill him
+- But surviving didn't mean the pain stopped
+- This was his only chance to escape</p>
+<h2 id="the-decision">The Decision</h2>
+<p>By dawn, Rust was whole. Traumatized, terrified, but physically intact. A 12-year-old child had to make an impossible decision: stay and face what the Sisters would do when they found him alive, or run with no plan, no resources, and no idea how to survive alone.</p>
+<p>He understood with absolute clarity that this was his only chance. If he stayed:
+- The Sisters would study him
+- Sister Velenne would test the limits of his healing
+- They'd use this gift to break him more thoroughly
+- He'd never have another opportunity</p>
+<p>So when the morning bell rang and the door was unlocked for daily inspection, 12-year-old Rust ran.</p>
+<h2 id="immediate-aftermath">Immediate Aftermath</h2>
+<h3 id="the-escape">The Escape</h3>
+<ul>
+<li>Morning chaos helped cover his flight</li>
+<li>Guards weren't expecting a "half-dead" child to be capable of running</li>
+<li>His newly manifested endurance kept him moving past normal exhaustion</li>
+<li>Pure desperation and terror overrode injury and fear</li>
+<li>He was small enough to hide in places adults couldn't easily search</li>
+<li>Made it outside the monastery walls and kept running</li>
+</ul>
+<h3 id="the-first-days">The First Days</h3>
+<p>As a 12-year-old goblin alone:
+- Had no money, no food, no supplies
+- Hid during the day, moved at night
+- Terrified of pursuit
+- Didn't know where to go or what to do
+- Survived on scraps and whatever he could find
+- His curse kept him alive when exposure should have killed him</p>
+<h3 id="the-pursuit">The Pursuit</h3>
+<p>Unknown if the <a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters</a> actively pursued him or simply recorded his death and moved on. Rust spent months terrified of being caught, never sure if they were looking or if he'd been forgotten.</p>
+<h2 id="long-term-consequences">Long-term Consequences</h2>
+<h3 id="for-rust-now-age-13">For Rust (Now Age 13)</h3>
+<p>One year later, the awakening has shaped everything:
+- Gained oracle powers he doesn't understand
+- Developed deep distrust of authority and religion
+- Started his year of wandering and hiding
+- Carries guilt over leaving <a href="/Kingmaker/NPCs/Mika.html">Mika</a> behind
+- Lives with constant low-level fear of recapture
+- Just reached goblin adulthood (age 13) still searching for answers</p>
+<h3 id="for-his-power">For His Power</h3>
+<p>Over the past year, the curse has become more defined:
+- Manifests more reliably but still unpredictably
+- Sometimes shows him visions he doesn't understand
+- Occasionally whispers in dreams
+- Continues to feel alien and not-quite-his
+- He's learned basic control but not mastery
+- Still discovering its limits and capabilities</p>
+<h3 id="for-his-identity">For His Identity</h3>
+<p>The awakening marked the moment 12-year-old Rust stopped being a victim and became a survivor. Not because he was strong enough to resist the Sisters' breaking—but because something else decided he was worth preserving, and he chose to run with that chance rather than submit to their study.</p>
+<p>At 13, he's still processing what happened that night.</p>
+<h2 id="unanswered-questions-one-year-later">Unanswered Questions (One Year Later)</h2>
+<ul>
+<li>What exactly noticed him that night?</li>
+<li>Why him specifically among all the monastery's victims?</li>
+<li>Was it random or is there a purpose to his preservation?</li>
+<li>Does Sister Velenne know what happened, or does she think he died?</li>
+<li>What would have happened if he'd stayed?</li>
+<li>Will the Sisters come looking for him?</li>
+<li>How did a 12-year-old survive alone for a year?</li>
+</ul>
+<h2 id="significance-to-character">Significance to Character</h2>
+<h3 id="defining-moment">Defining Moment</h3>
+<p>This event defines <a href="/Kingmaker/Characters/Rust.html">Rust</a>'s relationship with his oracle powers:
+- He didn't ask for them
+- They saved his life but also complicated it
+- They feel like another form of control
+- He uses them but resents their unknowable source
+- They're both his salvation and another prison
+- At 13, he's just starting to understand them</p>
+<p>The awakening wasn't a moment of triumph or empowerment—it was a terrifying experience that happened to include survival.</p>
+<h3 id="childhoods-end">Childhood's End</h3>
+<p>At 12, Rust was forced into a choice no child should face:
+- Stay and be studied/tortured
+- Run and probably die alone
+- He chose the uncertain death over certain torture
+- Survived against all odds
+- Grew up fast in the year that followed</p>
+<h3 id="ongoing-trauma">Ongoing Trauma</h3>
+<p>Now at 13, Rust still:
+- Has nightmares about that night
+- Fears what the Sisters would do if they found him
+- Doesn't understand what saved him
+- Feels his curse more than controls it
+- Wonders if he made the right choice
+- Carries guilt for those he left behind</p>
+<h2 id="timeline-context">Timeline Context</h2>
+<p><strong>One Year Ago (Age 12):</strong>
+- The beating and awakening
+- Desperate escape
+- First terrifying days alone</p>
+<p><strong>Past Year (Age 12-13):</strong>
+- Learning to survive
+- Discovering animal affinity
+- Developing basic control of powers
+- <a href="/Kingmaker/Events/Sevenarches Encounter.html">Sevenarches encounter</a>
+- Constant movement and hiding</p>
+<p><strong>Present (Age 13):</strong>
+- Just reached goblin adulthood
+- Still running, still searching
+- Beginning to actively seek answers
+- Campaign starts</p>
+<hr />
+<p><em>The moment something vast noticed one broken 12-year-old goblin and decided, for reasons unknowable, that he should survive. Whether that was mercy or cruelty, he's still trying to figure out a year later.</em></p>
+        </main>
+    </div>
+</body>
+</html>

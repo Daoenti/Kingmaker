@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust - Kingmaker Campaign</title>
+    <link rel="stylesheet" href="/Kingmaker/style.css">
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const icon = event.currentTarget.querySelector('.toggle-icon');
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                icon.textContent = '▼';
+            } else {
+                section.style.display = 'none';
+                icon.textContent = '▶';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+<div class="logo"><a href="/Kingmaker/"><img src="/Kingmaker/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('.venv')"><span class="toggle-icon">▼</span> .venv</h2>
+<ul id=".venv" class="nav-list">
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('.venv-lib')"><span class="toggle-icon">▼</span> Lib</h3>
+<ul id=".venv-lib" class="nav-list">
+<li><a href="/Kingmaker/.venv/Lib/site-packages/markdown-3.9.dist-info/licenses/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('characters')"><span class="toggle-icon">▼</span> Characters</h2>
+<ul id="characters" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust.html">Rust</a></li>
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('characters-rust-timeline')"><span class="toggle-icon">▼</span> Rust Timeline</h3>
+<ul id="characters-rust-timeline" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust Timeline/00 - README.html">00   README</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/01 - Unknown Origins.html">01   Unknown Origins</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/02 - Arrival and Conditioning.html">02   Arrival and Conditioning</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/03 - The Gift and the Curse.html">03   The Gift and the Curse</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/04 - Velennes Observation.html">04   Velennes Observation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/05 - Learning Languages.html">05   Learning Languages</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/06 - Survival Strategies.html">06   Survival Strategies</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/07 - Mika Arrives.html">07   Mika Arrives</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/08 - Escalation.html">08   Escalation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/09 - The Final Year.html">09   The Final Year</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/10 - The Awakening.html">10   The Awakening</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/11 - First Months Free.html">11   First Months Free</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/12 - Sevenarches.html">12   Sevenarches</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/13 - Approaching Adulthood.html">13   Approaching Adulthood</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/14 - Campaign Start.html">14   Campaign Start</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('deities')"><span class="toggle-icon">▼</span> Deities</h2>
+<ul id="deities" class="nav-list">
+<li><a href="/Kingmaker/Deities/Asmodeus.html">Asmodeus</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('events')"><span class="toggle-icon">▼</span> Events</h2>
+<ul id="events" class="nav-list">
+<li><a href="/Kingmaker/Events/Goblinblood Wars.html">Goblinblood Wars</a></li>
+<li><a href="/Kingmaker/Events/Monastery Life Detailed.html">Monastery Life Detailed</a></li>
+<li><a href="/Kingmaker/Events/Rust's Awakening.html">Rust's Awakening</a></li>
+<li><a href="/Kingmaker/Events/Sevenarches Encounter.html">Sevenarches Encounter</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('game-mechanics')"><span class="toggle-icon">▼</span> Game Mechanics</h2>
+<ul id="game-mechanics" class="nav-list">
+<li><a href="/Kingmaker/Game Mechanics/Animal Whisperer Background.html">Animal Whisperer Background</a></li>
+<li><a href="/Kingmaker/Game Mechanics/Unbreakable Ancestry.html">Unbreakable Ancestry</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('locations')"><span class="toggle-icon">▼</span> Locations</h2>
+<ul id="locations" class="nav-list">
+<li><a href="/Kingmaker/Locations/Cheliax.html">Cheliax</a></li>
+<li><a href="/Kingmaker/Locations/Druma.html">Druma</a></li>
+<li><a href="/Kingmaker/Locations/Isger.html">Isger</a></li>
+<li><a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a></li>
+<li><a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery of the Golden Erinyes</a></li>
+<li><a href="/Kingmaker/Locations/River Kingdoms.html">River Kingdoms</a></li>
+<li><a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('npcs')"><span class="toggle-icon">▼</span> NPCs</h2>
+<ul id="npcs" class="nav-list">
+<li><a href="/Kingmaker/NPCs/Kresh.html">Kresh</a></li>
+<li><a href="/Kingmaker/NPCs/Marta Greenhill.html">Marta Greenhill</a></li>
+<li><a href="/Kingmaker/NPCs/Mika.html">Mika</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Malhana.html">Sister Malhana</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('organizations')"><span class="toggle-icon">▼</span> Organizations</h2>
+<ul id="organizations" class="nav-list">
+<li><a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters of the Golden Erinyes</a></li>
+</ul>
+</div>
+</nav>
+
+        <main>
+            <h1 id="rust-freelox">Rust Freelox</h1>
+<h2 id="overview">Overview</h2>
+<p><strong>Full Name:</strong> Rust Freelox<br />
+<strong>Race:</strong> Goblin (Small)<br />
+<strong>Class:</strong> Life Oracle (Level 1)<br />
+<strong>Ancestry:</strong> <a href="/Kingmaker/Game Mechanics/Unbreakable Ancestry.html">Unbreakable Goblin</a><br />
+<strong>Heritage:</strong> Unbreakable Goblin<br />
+<strong>Background:</strong> <a href="/Kingmaker/Game Mechanics/Animal Whisperer Background.html">Animal Whisperer</a><br />
+<strong>Age:</strong> 13 years old (goblin age of maturity - just reached adulthood)<br />
+<strong>Gender:</strong> Male<br />
+<strong>Alignment:</strong> Neutral<br />
+<strong>Deity:</strong> Lamashtu (nominal - complicated relationship)<br />
+<strong>Origin:</strong> <a href="/Kingmaker/Locations/Isger.html">Isger</a>, found in the aftermath of the <a href="/Kingmaker/Events/Goblinblood Wars.html">Goblinblood Wars</a></p>
+<h2 id="ability-scores-level-1">Ability Scores (Level 1)</h2>
+<ul>
+<li><strong>Strength:</strong> 10 (+0)</li>
+<li><strong>Dexterity:</strong> 14 (+2)</li>
+<li><strong>Constitution:</strong> 14 (+2)</li>
+<li><strong>Intelligence:</strong> 10 (+0)</li>
+<li><strong>Wisdom:</strong> 12 (+1)</li>
+<li><strong>Charisma:</strong> 18 (+4) - Key Ability</li>
+</ul>
+<h2 id="physical-description">Physical Description</h2>
+<p>Rust stands at typical goblin height (just over 3 feet) with rust-colored skin that earned him his name. His rust-red eyes carry an intensity unusual for someone so young—the gaze of someone who has survived things that should have killed him. His body bears no scars despite the beatings and injuries he's endured; they heal without trace, leaving only the psychological marks behind.</p>
+<p>He moves with practiced wariness, always aware of exits and potential threats. His clothing is practical and worn, typically explorer's clothing with basic corrective lenses and a simple mask. Despite his young age, he carries himself with the caution of someone much older.</p>
+<h2 id="combat-statistics-level-1">Combat Statistics (Level 1)</h2>
+<p><strong>Hit Points:</strong> 18 (8 class + 6 ancestry + 4 bonus)<br />
+<strong>Armor Class:</strong> 15 (10 + 3 proficiency + 2 Dex)<br />
+<strong>Speed:</strong> 25 feet  </p>
+<p><strong>Saves:</strong>
+- Fortitude: +4 (Trained, +2 Prof + 2 Con)
+- Reflex: +4 (Trained, +2 Prof + 2 Dex)
+- Will: +6 (Expert, +4 Prof + 1 Wis)</p>
+<p><strong>Perception:</strong> +3 (Trained, +2 Prof + 1 Wis)<br />
+<strong>Class DC:</strong> 16 (10 + 2 Prof + 4 Cha)</p>
+<h2 id="proficiencies-skills">Proficiencies &amp; Skills</h2>
+<h3 id="armor-weapons">Armor &amp; Weapons</h3>
+<ul>
+<li><strong>Armor:</strong> Trained in light armor, unarmored defense</li>
+<li><strong>Weapons:</strong> Trained in simple weapons, unarmed attacks, goblin weapons (including dogslicer)</li>
+</ul>
+<h3 id="skills-level-1">Skills (Level 1)</h3>
+<ul>
+<li><strong>Trained:</strong></li>
+<li>Acrobatics (+4)</li>
+<li>Deception (+6)</li>
+<li>Diplomacy (+6)</li>
+<li>Medicine (+3)</li>
+<li>Nature (+3)</li>
+<li>Religion (+3)</li>
+<li>Stealth (+4)</li>
+<li>Survival (+3)</li>
+<li><strong>Lores:</strong></li>
+<li>Goblin Lore (Trained, +2)</li>
+<li>One Terrain Lore (Trained, +2)</li>
+</ul>
+<h3 id="languages">Languages</h3>
+<ul>
+<li>Common</li>
+<li>Goblin</li>
+<li>(Infernal likely learned at the monastery, though not on character sheet)</li>
+</ul>
+<h2 id="feats-special-abilities">Feats &amp; Special Abilities</h2>
+<h3 id="heritage-ancestry">Heritage &amp; Ancestry</h3>
+<ul>
+<li><strong>Unbreakable Goblin Heritage:</strong> Enhanced resilience and recovery</li>
+<li><strong>Darkvision:</strong> Can see in darkness</li>
+<li><strong>Goblin Lore (Ancestry Feat):</strong> Trained in Goblin Lore</li>
+<li><strong>Goblin Weapon Familiarity (Ancestry Paragon):</strong> Proficiency with goblin weapons</li>
+</ul>
+<h3 id="background-feats">Background Feats</h3>
+<ul>
+<li><strong>Train Animal:</strong> Can teach animals</li>
+<li><strong>Additional Lore:</strong> Gained One Terrain Lore</li>
+</ul>
+<h3 id="class-features">Class Features</h3>
+<ul>
+<li><strong>Life Mystery:</strong> Oracle mystery focused on healing and life force</li>
+<li><strong>Curse of Outpouring Life:</strong> Oracle's curse manifestation</li>
+<li><strong>Revelation Spells:</strong> Access to special mystery spells</li>
+<li><strong>Oracular Curse:</strong> The burden and power of the mystery</li>
+<li><strong>Focus Points:</strong> 1</li>
+</ul>
+<h3 id="other">Other</h3>
+<ul>
+<li><strong>Nudge the Scales:</strong> Special ability</li>
+</ul>
+<h2 id="spellcasting-divine-spontaneous">Spellcasting (Divine, Spontaneous)</h2>
+<p><strong>Spellcasting Ability:</strong> Charisma<br />
+<strong>Spell Attack:</strong> +6 (2 Prof + 4 Cha)<br />
+<strong>Spell DC:</strong> 16 (10 + 2 Prof + 4 Cha)<br />
+<strong>Tradition:</strong> Divine<br />
+<strong>Focus Points:</strong> 1</p>
+<h3 id="cantrips-at-will">Cantrips (At Will)</h3>
+<ul>
+<li>Detect Magic</li>
+<li>Guidance  </li>
+<li>Needle Darts</li>
+<li>Rousing Splash</li>
+<li>Shield</li>
+<li>Vitality Lash</li>
+</ul>
+<h3 id="1st-level-spells-3-per-day">1st Level Spells (3 per day)</h3>
+<ul>
+<li><strong>Heal</strong> (Signature spell from Life Mystery)</li>
+<li>Bless</li>
+<li>Soothe</li>
+</ul>
+<h3 id="focus-spells">Focus Spells</h3>
+<ul>
+<li><strong>Life Link:</strong> Can link life force with an ally</li>
+</ul>
+<h2 id="equipment-gear">Equipment &amp; Gear</h2>
+<h3 id="worncarried">Worn/Carried</h3>
+<ul>
+<li>Explorer's Clothing (worn)</li>
+<li>Basic Corrective Lenses (worn)</li>
+<li>Mask (Ordinary) (worn)</li>
+<li>Dogslicer (wielded - simple weapon, 1d6 slashing)</li>
+<li>Healer's Toolkit (carried)</li>
+<li>Religious Symbol, Wooden (Lamashtu) (carried)</li>
+<li>Signal Whistle (carried)</li>
+<li>Earplugs (carried)</li>
+</ul>
+<h3 id="in-backpack">In Backpack</h3>
+<ul>
+<li>Bedroll</li>
+<li>Chalk (10 pieces)</li>
+<li>Flint and Steel</li>
+<li>Rope</li>
+<li>Rations (3 days)</li>
+<li>Torch (5)</li>
+<li>Waterskin</li>
+<li>Soap</li>
+<li>Climbing Kit</li>
+<li>Fishing Tackle</li>
+<li>Tent (Pup)</li>
+<li>Puzzle Box (Simple)</li>
+<li>Alcohol (1 bottle)</li>
+</ul>
+<h3 id="wealth">Wealth</h3>
+<ul>
+<li>4 gp, 6 sp, 6 cp</li>
+</ul>
+<h2 id="personality">Personality</h2>
+<p>Rust is deeply distrustful of authority and organized religion, despite his nominal connection to Lamashtu. He speaks little about his past and deflects personal questions with practiced ease. Despite his traumatic upbringing, he possesses a stubborn compassion for the vulnerable and downtrodden—perhaps because he knows intimately what it means to be powerless.</p>
+<p>He's pragmatic beyond his years, displaying cynicism that seems wrong on someone only 13 years old. Yet he occasionally reveals flashes of unexpected kindness, especially toward animals and younger children. He has a particular soft spot for creatures that others deem worthless or disposable.</p>
+<p>Rust rejects the notion that suffering has inherent meaning or purpose. Instead, he attempts to create his own meaning through action, even if he's not entirely sure what he's building toward. At 13, having just reached goblin adulthood, he's at the very beginning of this journey.</p>
+<h2 id="background-animal-whisperer">Background: Animal Whisperer</h2>
+<p>During his year of wandering after escaping the monastery, Rust discovered an unexpected affinity for animals. Perhaps it was his own experience as something "lesser" that let him connect with creatures others ignored or mistreated. He found that animals didn't care about his goblin heritage or his mysterious curse; they responded to kindness and patience.</p>
+<p>He's worked briefly as a stable hand in a few towns, helped with herding work, and spent time observing wilderness animals. Animals seem to sense something in him—perhaps the same otherworldly quality that makes his curse work. They trust him more readily than people do, and he returns that trust.</p>
+<p>This connection to animals has proven practical: they alert him to danger, provide companionship without judgment, and occasionally lead him to people in need of healing.</p>
+<h2 id="the-cursegift-of-life">The Curse/Gift of Life</h2>
+<h3 id="the-mystery">The Mystery</h3>
+<p>Rust is a Life Oracle, though he doesn't understand why or how. His power manifested violently during <a href="/Kingmaker/Events/Rust's Awakening.html">his final beating at the monastery</a> about a year ago, triggered by trauma and proximity to death. The power doesn't feel like his own—it feels like attention from something vast and incomprehensible.</p>
+<p>The healing is regenerative but alien. Bones grind back into place with audible cracks. Skin seals over wounds in patterns that sometimes seem deliberate. The process isn't painless—it hurts differently than injury, a deep ache that resonates in places that shouldn't be able to ache.</p>
+<p>At 13, having just reached goblin adulthood, Rust is only beginning to explore what his powers mean and where they come from.</p>
+<h3 id="the-curse">The Curse</h3>
+<p>As a Life Oracle with the Curse of Outpouring Life, Rust bears the curse of his mystery. His body constantly tries to heal and "correct" itself, leading to uncomfortable manifestations:</p>
+<ul>
+<li>Uncontrolled Healing: His wounds close at inopportune times</li>
+<li>Empathic Suffering: He feels echoes of others' pain when trying to heal them</li>
+<li>Vitality Overflow: His life force sometimes manifests visibly</li>
+<li>Unwanted Persistence: He struggles to stay unconscious even when it would be merciful</li>
+</ul>
+<h3 id="divine-connection-complex">Divine Connection (Complex)</h3>
+<p>Rust's character sheet lists Lamashtu as his deity, which creates an interesting tension. Lamashtu is the goddess of monsters, madness, and nightmares—often associated with goblin worship. However, Rust's relationship with divinity is complicated:</p>
+<ul>
+<li>He was raised in an Asmodean monastery that taught him to distrust divine authority</li>
+<li>His oracle powers don't feel like traditional divine blessing</li>
+<li>The connection to Lamashtu may be ancestral/cultural rather than devotional</li>
+<li>He likely doesn't actively worship Lamashtu, but acknowledges her existence</li>
+<li>His powers feel primordial, predating the gods</li>
+</ul>
+<p>This creates rich roleplaying potential around his relationship with the divine.</p>
+<h2 id="history">History</h2>
+<p><strong>For detailed narrative timeline, see:</strong> Rust's Complete Timeline</p>
+<h3 id="early-life-the-monastery-ages-2-12">Early Life: The Monastery (Ages ~2-12)</h3>
+<p>Found as a toddler in the burned wreckage of a goblin encampment during post-<a href="/Kingmaker/Events/Goblinblood Wars.html">Goblinblood Wars</a> cleanup operations, Rust was taken to <a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">the Monastery of the Golden Erinyes</a>, an austere Asmodean institution in western <a href="/Kingmaker/Locations/Isger.html">Isger</a>. </p>
+<p>The <a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters</a> ran a brutal program of "civilization" that was systematic abuse disguised as theology. <a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a> took particular interest in his "education," which involved frequent, methodical beatings.</p>
+<p><strong>See detailed timeline entries for this period in Rust's Complete Timeline</strong></p>
+<h3 id="the-awakening-age-12-one-year-ago">The Awakening (Age 12, One Year Ago)</h3>
+<p>After a particularly brutal beating for helping <a href="/Kingmaker/NPCs/Mika.html">another orphan</a>, Rust was left locked in the discipline chamber, broken and dying. That night, something <strong>noticed</strong> him. His power manifested for the first time, healing injuries that should have been fatal. He fled at dawn.</p>
+<p><strong>See:</strong> <a href="/Kingmaker/Characters/Rust Timeline/10 - The Awakening.html">The Awakening (Full Story)</a> and <a href="/Kingmaker/Events/Rust's Awakening.html">Awakening Event Page</a></p>
+<h3 id="the-wandering-year-age-12-13">The Wandering Year (Age 12-13)</h3>
+<p>For the past year, Rust has moved north through <a href="/Kingmaker/Locations/Isger.html">Isger</a> and into <a href="/Kingmaker/Locations/Druma.html">Druma</a>. He's survived by taking odd jobs, offering healing services, and learning to work with animals. A few months ago, he attempted to cut through <a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a> to save time, where he encountered something that showed him truths about his curse he wasn't ready for.</p>
+<p><strong>See:</strong> <a href="/Kingmaker/Events/Sevenarches Encounter.html">Sevenarches Event Page</a> for full details</p>
+<h3 id="present-day-age-13-just-reached-adulthood">Present Day (Age 13, Just Reached Adulthood)</h3>
+<p>Rust has just reached goblin adulthood (age 13). This milestone means he's legally an adult by goblin standards and is beginning to actively search for answers about his powers. He's at the very beginning of his journey—a young goblin with incredible power he doesn't understand, trying to find his way in a world that doesn't trust goblins.</p>
+<h2 id="goals-motivations">Goals &amp; Motivations</h2>
+<h3 id="immediate">Immediate</h3>
+<ul>
+<li>Survive day to day</li>
+<li>Find safe places to sleep</li>
+<li>Earn enough for food without drawing attention</li>
+<li>Avoid anyone who might recognize him</li>
+<li>Learn basic control of his powers</li>
+</ul>
+<h3 id="long-term">Long-term</h3>
+<ul>
+<li>Understand the source of his power</li>
+<li>Create meaning through action rather than accepting imposed purpose</li>
+<li>Perhaps eventually find somewhere he doesn't have to run from</li>
+<li>Maybe help others escape situations like his</li>
+</ul>
+<h3 id="rejected-goals">Rejected Goals</h3>
+<ul>
+<li>Worship or submission to his power's source</li>
+<li>Revenge against the Sisters (he's terrified of them)</li>
+<li>Understanding through <a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a> (the cost is too high)</li>
+<li>Going back to help <a href="/Kingmaker/NPCs/Mika.html">Mika</a> and others (too dangerous, he tells himself)</li>
+</ul>
+<h2 id="relationships">Relationships</h2>
+<h3 id="the-sisters-of-the-golden-erinyes">The Sisters of the Golden Erinyes</h3>
+<p>The source of his trauma. He lives in constant fear that they'll find him. See <a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">organization page</a>.</p>
+<h3 id="animals">Animals</h3>
+<p>His most reliable companions. He forms quick bonds with animals and they with him. They don't judge him for being young, goblin, or cursed.</p>
+<h3 id="the-vulnerable">The Vulnerable</h3>
+<p>Rust feels an instinctive protectiveness toward those who remind him of his younger self—the abused, the discarded, the ones deemed worthless.</p>
+<h3 id="lamashtu-complicated">Lamashtu (Complicated)</h3>
+<p>Listed as his deity, but their relationship is complex. He may acknowledge her culturally as the goblin goddess, but doesn't actively worship or submit to any divine power.</p>
+<h3 id="sevenarches">Sevenarches</h3>
+<p>Not a relationship so much as an ongoing haunting. The forest <strong>remembers</strong> him from his encounter a few months ago, and he dreams of it still.</p>
+<h2 id="character-development-notes">Character Development Notes</h2>
+<h3 id="themes">Themes</h3>
+<ul>
+<li>Coming of age while running from the past</li>
+<li>Finding identity beyond trauma</li>
+<li>The cost of power and knowledge</li>
+<li>Creating meaning from suffering without accepting that suffering has meaning</li>
+<li>Trust and vulnerability after betrayal</li>
+<li>Youth vs. forced maturity</li>
+</ul>
+<h3 id="potential-growth">Potential Growth</h3>
+<ul>
+<li>Learning to trust others (major character arc)</li>
+<li>Accepting help instead of always being self-sufficient</li>
+<li>Understanding his power without losing himself</li>
+<li>Finding a cause or people worth stopping for</li>
+<li>Processing trauma while still so young</li>
+<li>Growing from scared child to confident hero</li>
+</ul>
+<h3 id="critical-age-note">Critical Age Note</h3>
+<p><strong>Rust is 13 years old—just reached goblin adulthood.</strong> This is crucial for:
+- He's legally an adult but still very young
+- How mature/immature his decisions should be
+- His physical capabilities and limitations
+- How NPCs should react to him
+- The tragedy of what he's already survived
+- His capacity to process trauma
+- Party dynamics as potentially the youngest member</p>
+<hr />
+<p><em>"I'm thirteen. The Sisters said that made me worthless even by goblin standards. But I escaped them, I survived alone, and I'm still here. Maybe that's worth something."</em></p>
+        </main>
+    </div>
+</body>
+</html>

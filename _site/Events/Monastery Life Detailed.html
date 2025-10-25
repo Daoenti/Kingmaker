@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monastery Life Detailed - Kingmaker Campaign</title>
+    <link rel="stylesheet" href="/Kingmaker/style.css">
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const icon = event.currentTarget.querySelector('.toggle-icon');
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                icon.textContent = '▼';
+            } else {
+                section.style.display = 'none';
+                icon.textContent = '▶';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+<div class="logo"><a href="/Kingmaker/"><img src="/Kingmaker/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('.venv')"><span class="toggle-icon">▼</span> .venv</h2>
+<ul id=".venv" class="nav-list">
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('.venv-lib')"><span class="toggle-icon">▼</span> Lib</h3>
+<ul id=".venv-lib" class="nav-list">
+<li><a href="/Kingmaker/.venv/Lib/site-packages/markdown-3.9.dist-info/licenses/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('characters')"><span class="toggle-icon">▼</span> Characters</h2>
+<ul id="characters" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust.html">Rust</a></li>
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('characters-rust-timeline')"><span class="toggle-icon">▼</span> Rust Timeline</h3>
+<ul id="characters-rust-timeline" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust Timeline/00 - README.html">00   README</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/01 - Unknown Origins.html">01   Unknown Origins</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/02 - Arrival and Conditioning.html">02   Arrival and Conditioning</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/03 - The Gift and the Curse.html">03   The Gift and the Curse</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/04 - Velennes Observation.html">04   Velennes Observation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/05 - Learning Languages.html">05   Learning Languages</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/06 - Survival Strategies.html">06   Survival Strategies</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/07 - Mika Arrives.html">07   Mika Arrives</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/08 - Escalation.html">08   Escalation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/09 - The Final Year.html">09   The Final Year</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/10 - The Awakening.html">10   The Awakening</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/11 - First Months Free.html">11   First Months Free</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/12 - Sevenarches.html">12   Sevenarches</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/13 - Approaching Adulthood.html">13   Approaching Adulthood</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/14 - Campaign Start.html">14   Campaign Start</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('deities')"><span class="toggle-icon">▼</span> Deities</h2>
+<ul id="deities" class="nav-list">
+<li><a href="/Kingmaker/Deities/Asmodeus.html">Asmodeus</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('events')"><span class="toggle-icon">▼</span> Events</h2>
+<ul id="events" class="nav-list">
+<li><a href="/Kingmaker/Events/Goblinblood Wars.html">Goblinblood Wars</a></li>
+<li><a href="/Kingmaker/Events/Monastery Life Detailed.html">Monastery Life Detailed</a></li>
+<li><a href="/Kingmaker/Events/Rust's Awakening.html">Rust's Awakening</a></li>
+<li><a href="/Kingmaker/Events/Sevenarches Encounter.html">Sevenarches Encounter</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('game-mechanics')"><span class="toggle-icon">▼</span> Game Mechanics</h2>
+<ul id="game-mechanics" class="nav-list">
+<li><a href="/Kingmaker/Game Mechanics/Animal Whisperer Background.html">Animal Whisperer Background</a></li>
+<li><a href="/Kingmaker/Game Mechanics/Unbreakable Ancestry.html">Unbreakable Ancestry</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('locations')"><span class="toggle-icon">▼</span> Locations</h2>
+<ul id="locations" class="nav-list">
+<li><a href="/Kingmaker/Locations/Cheliax.html">Cheliax</a></li>
+<li><a href="/Kingmaker/Locations/Druma.html">Druma</a></li>
+<li><a href="/Kingmaker/Locations/Isger.html">Isger</a></li>
+<li><a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a></li>
+<li><a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery of the Golden Erinyes</a></li>
+<li><a href="/Kingmaker/Locations/River Kingdoms.html">River Kingdoms</a></li>
+<li><a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('npcs')"><span class="toggle-icon">▼</span> NPCs</h2>
+<ul id="npcs" class="nav-list">
+<li><a href="/Kingmaker/NPCs/Kresh.html">Kresh</a></li>
+<li><a href="/Kingmaker/NPCs/Marta Greenhill.html">Marta Greenhill</a></li>
+<li><a href="/Kingmaker/NPCs/Mika.html">Mika</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Malhana.html">Sister Malhana</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('organizations')"><span class="toggle-icon">▼</span> Organizations</h2>
+<ul id="organizations" class="nav-list">
+<li><a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters of the Golden Erinyes</a></li>
+</ul>
+</div>
+</nav>
+
+        <main>
+            <h1 id="life-at-the-monastery-detailed-account">Life at the Monastery: Detailed Account</h1>
+<h2 id="content-warning">Content Warning</h2>
+<p>This document contains detailed descriptions of systematic child abuse, physical violence, psychological manipulation, and institutional cruelty. It is intended for DM reference and character understanding. Use discretion when incorporating these elements into gameplay.</p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p><a href="/Kingmaker/Characters/Rust.html">Rust</a> spent approximately 10 years at the <a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery of the Golden Erinyes</a>, from age 2 to 12. This document provides detailed accounts of daily life, specific incidents, progression of abuse, and the psychological impact that shaped his character.</p>
+<hr />
+<h2 id="the-physical-space">The Physical Space</h2>
+<h3 id="the-dormitory">The Dormitory</h3>
+<p><strong>Description:</strong>
+- Large stone room, east wing, third floor
+- Twenty narrow beds, thin mattresses
+- Single window (barred, high up)
+- Chamber pots (punishment to empty)
+- No heat except summer months
+- Locked from outside each night</p>
+<p><strong>Rust's Bed:</strong>
+- Position: Near door (coldest spot, draft)
+- Marked by carved "R" on frame (he did it secretly)
+- Thin blanket, usually damp
+- Straw mattress, rarely changed
+- Worst position deliberately assigned</p>
+<p><strong>Night Experience:</strong>
+- Locked in at 8 PM, unlocked at 5 AM
+- Supervised by rotating Sister
+- Absolute silence enforced
+- Cold, especially winter
+- Nightmares common (crying punished)
+- Rust learned to cry silently into mattress</p>
+<h3 id="the-discipline-chamber">The Discipline Chamber</h3>
+<p><strong>Location:</strong>
+- Basement level, isolated
+- Thick stone walls (soundproof)
+- Single heavy door with lock
+- No windows, minimal light
+- Cold and damp year-round</p>
+<p><strong>Contents:</strong>
+- Stone floor with central drain
+- Iron rings on walls (restraints, rarely needed)
+- Table with "correction tools"
+- Single candle in holder
+- Bucket (rarely emptied)
+- Smell of old blood, fear, mildew</p>
+<p><strong>Rust's Experience:</strong>
+- First visit age 3
+- Hundreds of visits total
+- Sometimes hours, sometimes overnight
+- Learned every crack in the floor
+- Counted stones to stay conscious
+- Eventually almost familiar (horrifying realization)</p>
+<h3 id="the-chapel">The Chapel</h3>
+<p><strong>Description:</strong>
+- Central building, ornate
+- Asmodean iconography everywhere
+- Hard wooden pews
+- Cold even in summer
+- Echoing acoustics</p>
+<p><strong>Rust's Experience:</strong>
+- Hours of mandatory prayers daily
+- Knelt on stone floor (no cushions for orphans)
+- Recited prayers in Infernal
+- Beaten for mispronunciations
+- Grew to hate the smell of incense
+- Associated prayer with pain</p>
+<h3 id="the-garden">The Garden</h3>
+<p><strong>Description:</strong>
+- Walled courtyard, south side
+- Vegetables and herbs grown
+- Fruit trees along walls
+- Only area with sunlight and growth
+- Ironically beautiful</p>
+<p><strong>Rust's Experience:</strong>
+- Work assignment, often
+- One of less horrible places
+- Could see sky, feel sun
+- Where he met <a href="/Kingmaker/NPCs/Mika.html">Mika</a> sometimes
+- Brief moments of peace
+- Made leaving harder (had to abandon beauty too)</p>
+<hr />
+<h2 id="daily-routine-detailed">Daily Routine (Detailed)</h2>
+<h3 id="dawn-500-am">Dawn (5:00 AM)</h3>
+<p><strong>The Bell:</strong>
+- Loud, jarring, designed to shock awake
+- Sister would unlock dormitory
+- Children had 5 minutes to dress, make beds
+- Rust always awake before bell (couldn't sleep deeply)
+- Inspections: unmade beds meant beatings
+- Scramble to chamber pots, get in line</p>
+<p><strong>Morning Wash:</strong>
+- Cold water only, year-round
+- Shared basin, went last (after humans)
+- Water often filthy by his turn
+- Learned to wash quickly, efficiently
+- No soap for orphans (Sisters had soap)</p>
+<h3 id="morning-prayers-515-715-am">Morning Prayers (5:15-7:15 AM)</h3>
+<p><strong>Chapel Service:</strong>
+- Mandatory attendance
+- Kneel on stone for two hours
+- Recite prayers (memory required)
+- Stand for hymns (Rust couldn't reach hymnals)
+- <a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a> often led service
+- Her eyes on him always</p>
+<p><strong>Rust's Strategy:</strong>
+- Recited prayers flawlessly (safer)
+- Let mind drift while mouth moved
+- Thought about books, animals, escape
+- Perfected appearance of devotion
+- Survived through dissociation</p>
+<h3 id="breakfast-715-730-am">Breakfast (7:15-7:30 AM)</h3>
+<p><strong>The Refectory:</strong>
+- Long tables, benches
+- Absolute silence during meals
+- Portions determined by behavior
+- Rust always got minimal portion
+- Watched others eat better food</p>
+<p><strong>Typical Meal:</strong>
+- Thin gruel (oats, water, minimal salt)
+- Crust of stale bread
+- Water (from same buckets as washing)
+- Sisters ate separately (better food)
+- Finished in 10-15 minutes</p>
+<p><strong>Rust's Experience:</strong>
+- Always hungry, perpetually
+- Learned to eat slowly (last longer)
+- Sometimes shared with <a href="/Kingmaker/NPCs/Mika.html">Mika</a> (risky)
+- Never enough to feel full
+- Hunger was constant companion</p>
+<h3 id="morning-work-730-am-noon">Morning Work (7:30 AM - Noon)</h3>
+<p><strong>Laundry Detail</strong> (Most Common for Rust)
+- Haul water from well
+- Heat water over fires
+- Scrub linens, robes on washboards
+- Hands raw, cracked, bleeding
+- Harsh lye soap burned cuts
+- Hours of repetitive labor</p>
+<p><strong>Kitchen Duty</strong> (Occasional)
+- Scrub pots and floors
+- Chop vegetables
+- Not allowed to cook (too young/goblin)
+- Smell of food torture when hungry
+- Scraps sometimes available (if quick)</p>
+<p><strong>Garden Work</strong> (Best Assignment)
+- Weeding, planting, watering
+- Fresh air and sunlight
+- Could see plants grow (hopeful)
+- Where <a href="/Kingmaker/NPCs/Mika.html">Mika</a> worked sometimes
+- Brief conversations possible (dangerous but worth it)</p>
+<p><strong>Rust's Approach:</strong>
+- Worked hard always (reduce beatings)
+- Never complained (pointless)
+- Took pride in work done well (small rebellion)
+- Garden work was reward for good behavior
+- He tried to be good often (for garden access)</p>
+<h3 id="midday-break-noon-1230-pm">Midday Break (Noon-12:30 PM)</h3>
+<p><strong>Brief Meal:</strong>
+- Watery soup (vegetables, no meat)
+- Small piece of bread
+- Still hungry after
+- Silent as always</p>
+<p><strong>Rust's Time:</strong>
+- Too short to rest meaningfully
+- Used to check on <a href="/Kingmaker/NPCs/Mika.html">Mika</a>
+- Sometimes sneaked to library (forbidden)
+- If caught: discipline chamber
+- Worth the risk for books</p>
+<h3 id="education-1230-300-pm">Education (12:30-3:00 PM)</h3>
+<p><strong>Classroom Setup:</strong>
+- Wooden benches, no backs
+- Slate boards for writing
+- Few books (heavily censored)
+- Sister Malhana often taught
+- Corporal punishment for wrong answers</p>
+<p><strong>Subjects Taught:</strong>
+- Reading (Common, Infernal)
+- Writing (penmanship emphasized)
+- Arithmetic (basic)
+- History (Chelaxian propaganda)
+- Geography (civilized world only)
+- Theology (Asmodean doctrine)</p>
+<p><strong>Rust's Performance:</strong>
+- Exceptionally bright student
+- Learned quickly, remembered everything
+- Hiding intelligence seemed safer
+- But couldn't help excelling
+- This drew attention (dangerous)</p>
+<p><strong>Specific Memories:</strong></p>
+<p><em>Age 5 - First Time Reading:</em>
+- Sister Malhana testing literacy
+- Rust read passage flawlessly
+- She noted in her records
+- Mixed blessing: educated but noticed</p>
+<p><em>Age 7 - Infernal Lessons:</em>
+- Language of devils and law
+- Struggled with guttural sounds initially
+- <a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a> beat him for each mistake
+- Eventually mastered it perfectly
+- Still hates speaking it</p>
+<p><em>Age 9 - History Lesson:</em>
+- Learned about Goblinblood Wars
+- Realized he was "the enemy" survivor
+- Understood: he existed by exception
+- Should have been killed with his people
+- This knowledge shaped his worldview</p>
+<p><em>Age 11 - Theological Debate:</em>
+- Sister teaching about divine hierarchy
+- Rust asked thoughtful question
+- Sister couldn't answer adequately
+- Beat him for "undermining authority"
+- Learned: intelligence is weapon, use carefully</p>
+<h3 id="afternoon-work-300-600-pm">Afternoon Work (3:00-6:00 PM)</h3>
+<p>Similar to morning but often harder labor:</p>
+<p><strong>Heavy Lifting:</strong>
+- Moving supplies
+- Chopping wood
+- Hauling water repeatedly
+- Body small but surprisingly strong
+- Didn't realize this was unusual</p>
+<p><strong>Cleaning:</strong>
+- Scrubbing floors on hands and knees
+- Emptying chamber pots
+- Washing windows
+- Making beds (including Sisters')
+- Touching their things felt violating</p>
+<p><strong>Rust's Observations:</strong>
+- Used work time to observe, learn
+- Mapped monastery mentally
+- Noted guard patterns
+- Studied locks, walls, exits
+- Planning escape (even when it seemed impossible)</p>
+<h3 id="evening-prayers-600-730-pm">Evening Prayers (6:00-7:30 PM)</h3>
+<p>Similar to morning but shorter:
+- Still painful (knees sore from morning)
+- Body exhausted from work
+- Struggling to stay awake
+- Beaten if caught drowsing
+- More Infernal recitations</p>
+<h3 id="dinner-730-800-pm">Dinner (7:30-8:00 PM)</h3>
+<p><strong>Typical Meal:</strong>
+- Soup (similar to midday)
+- Bread (if behavior warranted)
+- Water
+- Sometimes denied entirely (punishment)</p>
+<p><strong>Social Dynamics:</strong>
+- Other children avoided Rust
+- <a href="/Kingmaker/NPCs/Mika.html">Mika</a> tried to sit near him (sometimes allowed)
+- Brief eye contact (communication)
+- No talking permitted
+- Tension always present</p>
+<h3 id="evening-contemplation-800-900-pm">Evening Contemplation (8:00-9:00 PM)</h3>
+<p><strong>Assigned Activities:</strong>
+- Copying scripture
+- Memorizing prayers
+- Meditation on sins
+- Writing confessions
+- All silent, supervised</p>
+<p><strong>Rust's Reality:</strong>
+- Pretended to comply
+- Mind elsewhere (survival)
+- Thinking about books read
+- Planning impossible escapes
+- Holding onto hope somehow</p>
+<h3 id="lockdown-900-pm">Lockdown (9:00 PM)</h3>
+<p><strong>Return to Dormitory:</strong>
+- Locked in for night
+- Sister patrol outside
+- Lights extinguished
+- Silence enforced absolutely
+- 8 hours until dawn bell</p>
+<p><strong>Night Reality:</strong>
+- Children whispered sometimes (risky)
+- Crying was common (punished)
+- Rust learned to cry silently
+- Nightmares frequent
+- <a href="/Kingmaker/NPCs/Mika.html">Mika</a> sometimes had terrors
+- He'd hum softly (against rules but comforting)</p>
+<hr />
+<h2 id="correction-and-punishment">Correction and Punishment</h2>
+<h3 id="types-of-punishment">Types of Punishment</h3>
+<p><strong>Minor Infractions:</strong>
+- Speaking out of turn: Knuckles rapped with rod
+- Slow to obey: Extra work assignments
+- Messy appearance: No meal
+- Asking questions: Isolation in discipline chamber (hours)
+- Eye contact with Sisters: Verbal abuse, sometimes physical</p>
+<p><strong>Major Infractions:</strong>
+- Helping other children: Severe beating
+- Stealing food: Days without meals + beating
+- Defiance: Extended discipline chamber stay
+- Escape attempts: Varied (Rust never tried before success)
+- "Corruption" of others: <a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a>'s special attention</p>
+<h3 id="sister-velennes-methods">Sister Velenne's Methods</h3>
+<p><strong>Physical Discipline:</strong>
+- Rods of varying thickness (catalogued by severity)
+- Leather straps (left lasting welts)
+- Stress positions (hours of forced postures)
+- Deprivation (food, water, sleep, warmth)
+- Isolation (extended periods in chamber)</p>
+<p><strong>Psychological Torture:</strong>
+- Convinced children they deserved punishment
+- Made them thank her for "correction"
+- Forced confessions of invented sins
+- Threatened harm to other children
+- Promised it was "for their own good"</p>
+<p><strong>Rust-Specific Treatment:</strong></p>
+<p><em>Ages 6-8: Observation Phase</em>
+- Noticed his fast healing
+- Documented recovery times
+- Increased severity gradually
+- Testing limits systematically
+- He didn't understand why he was special target</p>
+<p><em>Ages 8-10: Escalation Phase</em>
+- Weekly discipline sessions
+- Varied methods to test resilience
+- Kept detailed notes
+- Consulted theological texts
+- Determined he had "demonic influence"</p>
+<p><em>Ages 10-12: Study Phase</em>
+- Convinced his healing was supernatural
+- Wanted to "drive out corruption"
+- Beatings intensified
+- Psychological pressure increased
+- Planned to bring in Hellknight observers
+- This urgency led to final beating</p>
+<h3 id="specific-punishment-incidents">Specific Punishment Incidents</h3>
+<p><strong>Age 4: The Sharing</strong>
+- Gave half his bread to crying child
+- Sister Velenne saw
+- First major beating
+- Three hours in discipline chamber
+- Learned: compassion is punishable
+- Didn't stop being compassionate (just more careful)</p>
+<p><strong>Age 6: The Library</strong>
+- Sneaked book from forbidden section
+- Found hidden in his mattress
+- Denied meals for three days
+- Book destroyed in front of him
+- Beaten for theft and curiosity
+- Worth it (had already read it)</p>
+<p><strong>Age 7: The Winter Night</strong>
+- Took extra blanket for sick child
+- Locked in discipline chamber overnight
+- Midwinter, no heat, stone floor
+- Thin clothing only
+- Should have died from exposure
+- Found alive (barely) in morning
+- Punishment extended for "stubbornness"</p>
+<p><strong>Age 8: The Starvation</strong>
+- Caught with forbidden fruit (apple from garden)
+- Denied all food for one week
+- Only water given
+- Still forced to work full days
+- Collapsed day 6
+- Woke day 8, alive but skeletal
+- Sister Velenne furious he survived</p>
+<p><strong>Age 9: The Breaking Attempt</strong>
+- Velenne decided comprehensive correction needed
+- Three days of continuous discipline
+- Systematic breaking of bones
+- Severe internal injuries
+- Left in chamber entire time
+- Healed over days (she couldn't explain)
+- Emerged changed (more withdrawn, careful)</p>
+<p><strong>Age 10: Mika's Witness</strong>
+- <a href="/Kingmaker/NPCs/Mika.html">Mika</a> saw one of his beatings
+- Cried out for them to stop
+- Both punished severely
+- Rust beaten worse for "corrupting" her
+- Made him promise never to help her again
+- He couldn't keep that promise</p>
+<p><strong>Age 11: The Public Example</strong>
+- Velenne made beating public
+- All orphans forced to watch
+- Demonstration of correction's power
+- Children saw his resilience instead
+- Some whispered he was blessed not cursed
+- Velenne furious (backfired)</p>
+<p><strong>Age 12: The Final Transgression</strong>
+- Helped <a href="/Kingmaker/NPCs/Mika.html">Mika</a> when she was starving
+- Slipped her bread when denied meals
+- Velenne had been watching, waiting
+- Perfect excuse for final "test"
+- Led to <a href="/Kingmaker/Events/Rust's Awakening.html">awakening and escape</a></p>
+<hr />
+<h2 id="relationships-with-other-orphans">Relationships with Other Orphans</h2>
+<h3 id="social-hierarchy">Social Hierarchy</h3>
+<p><strong>Human Children:</strong>
+- Higher status by default
+- Even youngest outranked Rust
+- Most avoided him (safer)
+- Some mocked him (encouraged by Sisters)
+- Few showed kindness (dangerous for them)</p>
+<p><strong>Other Goblinoid Children:</strong>
+- Rare (most were executed)
+- One hobgoblin (age 8-10, during Rust's time)
+- Treated slightly better than Rust (taller, stronger)
+- Still abused but not to same extent
+- Avoided Rust (didn't want association)</p>
+<h3 id="specific-relationships">Specific Relationships</h3>
+<p><strong>Mika</strong> (Ages 10-12)
+<em>Initial Meeting:</em>
+- She arrived age 8 (Rust was 10)
+- Small human girl, brown hair, frightened
+- Rust saw himself in her fear
+- Warned her about rules secretly
+- She thanked him (first kindness he'd received)</p>
+<p><em>Growing Friendship:</em>
+- Secret conversations in garden
+- He shared survival knowledge
+- She shared stories of outside world
+- Both knew friendship was dangerous
+- Neither could resist caring</p>
+<p><em>Shared Moments:</em>
+- Working in garden together
+- Passing notes during meals (risky)
+- Her defending him once (punished together)
+- Him saving food for her repeatedly
+- Brief moments of childhood in hell</p>
+<p><em>Final Memory:</em>
+- Her screaming as he was dragged away
+- Last beating because he helped her
+- Her face: last thing he saw before discipline chamber
+- Unknown fate: haunts him still</p>
+<p><strong>The Hobgoblin (Temporary)</strong>
+- Called "Grak" by Sisters
+- Present ages 8-10 (during Rust's time)
+- Stronger, more aggressive than Rust
+- Survived by intimidating human children
+- Avoided Rust entirely
+- Transferred to Hellknight training (age 12)
+- Rust wondered if that was better or worse</p>
+<p><strong>Other Children:</strong>
+<em>Those Who Mocked:</em>
+- Usually trying to curry favor with Sisters
+- Called him names (creature, demon, cursed)
+- Sometimes pushed or tripped him
+- Rust didn't blame them (survival strategy)</p>
+<p><em>Those Who Ignored:</em>
+- Majority of children
+- Pretended he didn't exist
+- Safer than interaction
+- He understood and didn't take personally</p>
+<p><em>Those Who Helped Quietly:</em>
+- Very few
+- Extra food left where he'd find it
+- Warning whispers about Sister moods
+- Risk themselves minimally
+- He never forgot their small kindnesses</p>
+<hr />
+<h2 id="education-and-indoctrination">Education and Indoctrination</h2>
+<h3 id="religious-instruction">Religious Instruction</h3>
+<p><strong>Core Doctrines Taught:</strong>
+- Suffering purifies the soul
+- Pain teaches obedience
+- Law and hierarchy are absolute
+- Asmodeus is apex of divine order
+- Submission to authority is holy
+- Individual will must be broken
+- Mercy is weakness
+- Compassion is corruption</p>
+<p><strong>Rust's Response:</strong>
+- Recited perfectly (safer)
+- Rejected internally (completely)
+- Understood: this was their weapon
+- Religion used to justify cruelty
+- Still affects him (distrusts organized faith)</p>
+<h3 id="practical-education">Practical Education</h3>
+<p><strong>Reading:</strong>
+- Taught Common first
+- Later Goblin (know thy enemy)
+- Finally Infernal (language of Hell)
+- Rust excelled (loved books)
+- Reading was escape
+- Words were power they couldn't take</p>
+<p><strong>Writing:</strong>
+- Penmanship emphasized
+- Perfect letters or punishment
+- Copying scripture for hours
+- Rust's handwriting: neat, precise
+- Still writes same way (trauma marker)</p>
+<p><strong>Arithmetic:</strong>
+- Basic calculations
+- Accounting, record-keeping
+- Rust good with numbers
+- Logical thinking came naturally
+- Math had right answers (unlike life)</p>
+<p><strong>History:</strong>
+- Heavily biased toward Cheliax
+- Goblinblood Wars taught as necessary genocide
+- Rust learned he was "the enemy"
+- Understood: existed by exception
+- Shaped understanding of his place in world</p>
+<p><strong>Geography:</strong>
+- Maps of Inner Sea region
+- Focus on "civilized" nations
+- Rust memorized everything
+- Planned escape routes mentally
+- Knowledge would save him eventually</p>
+<h3 id="unintended-lessons">Unintended Lessons</h3>
+<p><strong>Things the Sisters Didn't Mean to Teach:</strong></p>
+<p><em>Pattern Recognition:</em>
+- Which Sisters more cruel when
+- Predicting violence from small signs
+- Reading micro-expressions
+- Anticipating danger
+- Saved him many beatings</p>
+<p><em>Stealth and Evasion:</em>
+- Moving silently
+- Becoming unnoticeable
+- Finding hiding places
+- When to lie, when to submit
+- Essential survival skills</p>
+<p><em>Endurance:</em>
+- Surviving impossible pain
+- Functioning while hurt
+- Continuing despite exhaustion
+- Never showing weakness
+- These skills defined him</p>
+<p><em>Strategic Thinking:</em>
+- Long-term planning
+- Risk assessment
+- When to resist, when to yield
+- Choosing battles carefully
+- Would serve him as adventurer</p>
+<p><em>Compassion Despite Cruelty:</em>
+- Sisters taught: be hard
+- Rust learned: be kind
+- Their cruelty made him gentle
+- Their hate made him care
+- Their breaking made him strong</p>
+<hr />
+<h2 id="psychological-impact">Psychological Impact</h2>
+<h3 id="trauma-responses-age-12-13">Trauma Responses (Age 12-13)</h3>
+<p><strong>Hypervigilance:</strong>
+- Always alert for danger
+- Difficulty relaxing
+- Scans rooms instinctively
+- Notes exits automatically
+- Sleeps lightly, wakes easily</p>
+<p><strong>Triggered Responses:</strong>
+- Raised voices cause flinching
+- Loud bells make him tense
+- Incense smell nauseating
+- Locked doors cause panic
+- Infernal language unsettling</p>
+<p><strong>Trust Issues:</strong>
+- Difficulty trusting adults
+- Especially authority figures
+- Expects betrayal, abuse
+- Takes long time to believe kindness
+- Party will need patience</p>
+<p><strong>Dissociation:</strong>
+- Learned to "go away" during pain
+- Still does under stress
+- Mind elsewhere while body suffers
+- Protective but concerning</p>
+<p><strong>Guilt:</strong>
+- Survivor's guilt (why him?)
+- Guilt over <a href="/Kingmaker/NPCs/Mika.html">Mika</a> (left her)
+- Guilt over not fighting back
+- Guilt over being "special" (healing)</p>
+<h3 id="coping-mechanisms-healthy">Coping Mechanisms (Healthy)</h3>
+<p><strong>Animals:</strong>
+- Primary source of comfort
+- Non-judgmental companionship
+- Safe relationship practice
+- Helped him remember gentleness</p>
+<p><strong>Work:</strong>
+- Finds comfort in labor
+- Repetitive tasks meditative
+- Pride in job well done
+- Gives sense of control</p>
+<p><strong>Learning:</strong>
+- Seeks knowledge constantly
+- Books were escape then, still are
+- Understanding gives power
+- Control through information</p>
+<p><strong>Helping Others:</strong>
+- Despite trauma, still compassionate
+- Finds purpose in caring
+- Healing magic expression of this
+- Defining himself by kindness</p>
+<h3 id="coping-mechanisms-concerning">Coping Mechanisms (Concerning)</h3>
+<p><strong>Emotional Suppression:</strong>
+- Difficulty expressing feelings
+- Appears cold or distant
+- Actually protecting self
+- Needs to learn healthy expression</p>
+<p><strong>Self-Isolation:</strong>
+- Keeps people at distance
+- Easier than risking hurt
+- Lonely but feels safer
+- Must learn connection possible</p>
+<p><strong>Minimizing Needs:</strong>
+- Rarely asks for help
+- Downplays injuries, hunger
+- Acts self-sufficient always
+- Needs to learn vulnerability</p>
+<p><strong>Hyperindependence:</strong>
+- Refuses help instinctively
+- Can't rely on others
+- Does everything alone
+- Must learn interdependence</p>
+<hr />
+<h2 id="how-monastery-experience-affects-gameplay">How Monastery Experience Affects Gameplay</h2>
+<h3 id="combat-behavior">Combat Behavior</h3>
+<ul>
+<li>Prefers avoiding fights</li>
+<li>If fighting: prioritizes defense</li>
+<li>Uses healing on allies readily</li>
+<li>Reluctant to cause pain (even to enemies)</li>
+<li>Freezes if restrained or cornered</li>
+</ul>
+<h3 id="social-interactions">Social Interactions</h3>
+<ul>
+<li>Formal speech patterns (monastery training)</li>
+<li>Difficulty with casual conversation</li>
+<li>Intense eye contact (learned to show respect)</li>
+<li>Or avoids eye contact (fear of authority)</li>
+<li>Apologizes frequently (unnecessary)</li>
+</ul>
+<h3 id="authority-figures">Authority Figures</h3>
+<ul>
+<li>Distrusts instinctively</li>
+<li>Expects arbitrary cruelty</li>
+<li>Hyper-obedient or rebellious (no middle)</li>
+<li>Testing boundaries constantly</li>
+<li>Needs consistent, kind authority to heal</li>
+</ul>
+<h3 id="living-conditions">Living Conditions</h3>
+<ul>
+<li>Grateful for small comforts</li>
+<li>Doesn't complain about hardship</li>
+<li>Shares food automatically</li>
+<li>Keeps minimal possessions</li>
+<li>Clean and organized (ingrained)</li>
+</ul>
+<h3 id="religion">Religion</h3>
+<ul>
+<li>Knowledgeable but hostile</li>
+<li>Won't pray in traditional ways</li>
+<li>Uncomfortable in temples</li>
+<li>Questions all religious authority</li>
+<li>Might find own spiritual path eventually</li>
+</ul>
+<h3 id="relationships-with-party">Relationships with Party</h3>
+<ul>
+<li>Takes long time to trust</li>
+<li>Tests them unconsciously</li>
+<li>Loyal once trust earned</li>
+<li>Protective of younger/weaker members</li>
+<li>Difficulty accepting care/help</li>
+</ul>
+<h3 id="triggers-to-avoid-or-handle-carefully">Triggers to Avoid (or Handle Carefully)</h3>
+<ul>
+<li>Being locked in rooms</li>
+<li>Religious zealots</li>
+<li>Systematic abuse of vulnerable</li>
+<li>Being restrained or helpless</li>
+<li>Infernal language in religious context</li>
+<li>Anyone resembling Sister Velenne</li>
+</ul>
+<h3 id="positive-growth-opportunities">Positive Growth Opportunities</h3>
+<ul>
+<li>First genuine friendship</li>
+<li>Adults who are kind consistently</li>
+<li>Success without punishment</li>
+<li>Being valued for self</li>
+<li>Learning he deserves good things</li>
+</ul>
+<hr />
+<h2 id="conclusion">Conclusion</h2>
+<p>The monastery shaped <a href="/Kingmaker/Characters/Rust.html">Rust</a> profoundly, but it didn't break him. At 13, he's scarred but not destroyed, traumatized but not helpless, damaged but capable of healing. His ten years there gave him pain, yes, but also:</p>
+<ul>
+<li>Resilience beyond his years</li>
+<li>Compassion despite cruelty</li>
+<li>Intelligence honed by necessity</li>
+<li>Strength found in endurance</li>
+<li>Hope maintained against odds</li>
+</ul>
+<p>The campaign is his journey from survivor to hero, from broken child to whole person, from running from past to building future. The monastery is where he was forged, but not where his story ends.</p>
+<p>It's where his story truly begins.</p>
+<hr />
+<h2 id="they-tried-to-break-me-for-ten-years-they-failed-im-still-here-still-kind-still-trying-still-hoping-thats-my-victory-over-them-rust-age-13"><em>"They tried to break me for ten years. They failed. I'm still here. Still kind. Still trying. Still hoping. That's my victory over them."</em> - Rust, age 13</h2>
+<p>type: detailed_history
+subject: Monastery Life
+character: Rust
+location: Monastery of the Golden Erinyes
+timespan: Ages 2-12 (10 years)
+tags:
+  - monastery
+  - trauma
+  - detailed-history
+  - abuse
+  - childhood
+  - backstory</p>
+<hr />
+        </main>
+    </div>
+</body>
+</html>

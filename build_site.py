@@ -107,35 +107,42 @@ for f in valid_files:
             nav_structure['Root'] = {'files': [], 'subfolders': {}}
         nav_structure['Root']['files'].append(f)
 
-# Generate navigation HTML
+# Generate navigation HTML with collapsible sections
 def generate_nav():
     nav_html = '<nav>\n'
     nav_html += f'<div class="logo"><a href="{BASE_URL}/"><img src="{BASE_URL}/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>\n'
-    
+
     for folder in sorted(nav_structure.keys()):
-        nav_html += f'<h2>{folder}</h2>\n'
-        nav_html += '<ul>\n'
-        
+        # Make the folder header clickable to collapse/expand
+        folder_id = folder.replace(' ', '-').lower()
+        nav_html += f'<div class="nav-section">\n'
+        nav_html += f'<h2 class="collapsible" onclick="toggleSection(\'{folder_id}\')">'
+        nav_html += f'<span class="toggle-icon">▼</span> {folder}</h2>\n'
+        nav_html += f'<ul id="{folder_id}" class="nav-list">\n'
+
         # Add main files in this folder
         for file in sorted(nav_structure[folder]['files']):
             url = BASE_URL + '/' + str(file).replace('\\', '/').replace('.md', '.html')
             title = file.stem.replace('-', ' ').replace('_', ' ')
             nav_html += f'<li><a href="{url}">{title}</a></li>\n'
-        
+
         # Add subfolders
         for subfolder in sorted(nav_structure[folder]['subfolders'].keys()):
+            subfolder_id = f"{folder_id}-{subfolder.replace(' ', '-').lower()}"
             nav_html += f'<li class="subsection">\n'
-            nav_html += f'<h3>{subfolder}</h3>\n'
-            nav_html += '<ul>\n'
+            nav_html += f'<h3 class="collapsible" onclick="toggleSection(\'{subfolder_id}\')">'
+            nav_html += f'<span class="toggle-icon">▼</span> {subfolder}</h3>\n'
+            nav_html += f'<ul id="{subfolder_id}" class="nav-list">\n'
             for file in sorted(nav_structure[folder]['subfolders'][subfolder]):
                 url = BASE_URL + '/' + str(file).replace('\\', '/').replace('.md', '.html')
                 title = file.stem.replace('-', ' ').replace('_', ' ')
                 nav_html += f'<li><a href="{url}">{title}</a></li>\n'
             nav_html += '</ul>\n'
             nav_html += '</li>\n'
-        
+
         nav_html += '</ul>\n'
-    
+        nav_html += '</div>\n'
+
     nav_html += '</nav>\n'
     return nav_html
 
@@ -243,6 +250,19 @@ for md_file in valid_files:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{page_title} - Kingmaker Campaign</title>
     <link rel="stylesheet" href="{BASE_URL}/style.css">
+    <script>
+        function toggleSection(sectionId) {{
+            const section = document.getElementById(sectionId);
+            const icon = event.currentTarget.querySelector('.toggle-icon');
+            if (section.style.display === 'none') {{
+                section.style.display = 'block';
+                icon.textContent = '▼';
+            }} else {{
+                section.style.display = 'none';
+                icon.textContent = '▶';
+            }}
+        }}
+    </script>
 </head>
 <body>
     <div class="container">
@@ -264,6 +284,19 @@ index_html = f"""<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kingmaker Campaign</title>
     <link rel="stylesheet" href="{BASE_URL}/style.css">
+    <script>
+        function toggleSection(sectionId) {{
+            const section = document.getElementById(sectionId);
+            const icon = event.currentTarget.querySelector('.toggle-icon');
+            if (section.style.display === 'none') {{
+                section.style.display = 'block';
+                icon.textContent = '▼';
+            }} else {{
+                section.style.display = 'none';
+                icon.textContent = '▶';
+            }}
+        }}
+    </script>
 </head>
 <body>
     <div class="container">
@@ -281,5 +314,5 @@ index_html = f"""<!DOCTYPE html>
 
 (output_dir / 'index.html').write_text(index_html, encoding='utf-8')
 
-print(f"\n✅ Site built successfully!")
+print(f"\nSite built successfully!")
 print(f"   Generated {len(valid_files)} pages")

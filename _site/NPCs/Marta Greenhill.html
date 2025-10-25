@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marta Greenhill - Kingmaker Campaign</title>
+    <link rel="stylesheet" href="/Kingmaker/style.css">
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const icon = event.currentTarget.querySelector('.toggle-icon');
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                icon.textContent = '▼';
+            } else {
+                section.style.display = 'none';
+                icon.textContent = '▶';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+<div class="logo"><a href="/Kingmaker/"><img src="/Kingmaker/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('.venv')"><span class="toggle-icon">▼</span> .venv</h2>
+<ul id=".venv" class="nav-list">
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('.venv-lib')"><span class="toggle-icon">▼</span> Lib</h3>
+<ul id=".venv-lib" class="nav-list">
+<li><a href="/Kingmaker/.venv/Lib/site-packages/markdown-3.9.dist-info/licenses/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('characters')"><span class="toggle-icon">▼</span> Characters</h2>
+<ul id="characters" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust.html">Rust</a></li>
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('characters-rust-timeline')"><span class="toggle-icon">▼</span> Rust Timeline</h3>
+<ul id="characters-rust-timeline" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust Timeline/00 - README.html">00   README</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/01 - Unknown Origins.html">01   Unknown Origins</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/02 - Arrival and Conditioning.html">02   Arrival and Conditioning</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/03 - The Gift and the Curse.html">03   The Gift and the Curse</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/04 - Velennes Observation.html">04   Velennes Observation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/05 - Learning Languages.html">05   Learning Languages</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/06 - Survival Strategies.html">06   Survival Strategies</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/07 - Mika Arrives.html">07   Mika Arrives</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/08 - Escalation.html">08   Escalation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/09 - The Final Year.html">09   The Final Year</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/10 - The Awakening.html">10   The Awakening</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/11 - First Months Free.html">11   First Months Free</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/12 - Sevenarches.html">12   Sevenarches</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/13 - Approaching Adulthood.html">13   Approaching Adulthood</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/14 - Campaign Start.html">14   Campaign Start</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('deities')"><span class="toggle-icon">▼</span> Deities</h2>
+<ul id="deities" class="nav-list">
+<li><a href="/Kingmaker/Deities/Asmodeus.html">Asmodeus</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('events')"><span class="toggle-icon">▼</span> Events</h2>
+<ul id="events" class="nav-list">
+<li><a href="/Kingmaker/Events/Goblinblood Wars.html">Goblinblood Wars</a></li>
+<li><a href="/Kingmaker/Events/Monastery Life Detailed.html">Monastery Life Detailed</a></li>
+<li><a href="/Kingmaker/Events/Rust's Awakening.html">Rust's Awakening</a></li>
+<li><a href="/Kingmaker/Events/Sevenarches Encounter.html">Sevenarches Encounter</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('game-mechanics')"><span class="toggle-icon">▼</span> Game Mechanics</h2>
+<ul id="game-mechanics" class="nav-list">
+<li><a href="/Kingmaker/Game Mechanics/Animal Whisperer Background.html">Animal Whisperer Background</a></li>
+<li><a href="/Kingmaker/Game Mechanics/Unbreakable Ancestry.html">Unbreakable Ancestry</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('locations')"><span class="toggle-icon">▼</span> Locations</h2>
+<ul id="locations" class="nav-list">
+<li><a href="/Kingmaker/Locations/Cheliax.html">Cheliax</a></li>
+<li><a href="/Kingmaker/Locations/Druma.html">Druma</a></li>
+<li><a href="/Kingmaker/Locations/Isger.html">Isger</a></li>
+<li><a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a></li>
+<li><a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery of the Golden Erinyes</a></li>
+<li><a href="/Kingmaker/Locations/River Kingdoms.html">River Kingdoms</a></li>
+<li><a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('npcs')"><span class="toggle-icon">▼</span> NPCs</h2>
+<ul id="npcs" class="nav-list">
+<li><a href="/Kingmaker/NPCs/Kresh.html">Kresh</a></li>
+<li><a href="/Kingmaker/NPCs/Marta Greenhill.html">Marta Greenhill</a></li>
+<li><a href="/Kingmaker/NPCs/Mika.html">Mika</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Malhana.html">Sister Malhana</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('organizations')"><span class="toggle-icon">▼</span> Organizations</h2>
+<ul id="organizations" class="nav-list">
+<li><a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters of the Golden Erinyes</a></li>
+</ul>
+</div>
+</nav>
+
+        <main>
+            <h1 id="marta-greenhill">Marta Greenhill</h1>
+<h2 id="overview">Overview</h2>
+<p><strong>Role:</strong> Shopkeeper and tavern keeper<br />
+<strong>Species:</strong> Human<br />
+<strong>Age:</strong> Middle-aged (around 40 when Rust met her)<br />
+<strong>Status:</strong> Unknown (presumably still running her shop)<br />
+<strong>Location:</strong> Small settlement in southern Kyonin, near the Sevenarches border<br />
+<strong>Relationship to <a href="/Kingmaker/Characters/Rust.html">Rust</a>:</strong> First person to show him casual kindness after his escape</p>
+<h2 id="description">Description</h2>
+<p>A middle-aged human woman with flour perpetually dusted in her hair and on her apron. She runs a general store that also serves as tavern and trading post in a settlement of maybe twenty buildings. Practical, no-nonsense, with the worn hands of someone who's worked hard all her life.</p>
+<p>She has the shopkeeper's habit of seeing people clearly—assessing their needs and means in a glance—but without judgment attached to the observation.</p>
+<h2 id="personality">Personality</h2>
+<p>Matter-of-fact and practical. Marta doesn't make grand gestures or speeches about charity. She sees a hungry kid and feeds him, the same way she'd fix a leaking roof or sweep the floor—because it needs doing and she can do it.</p>
+<p>Not particularly warm or effusive, but fundamentally decent. She asks questions out of practical concern ("Traveling with family?") rather than nosiness, and doesn't push when the answers are incomplete.</p>
+<h2 id="relationship-to-rust">Relationship to Rust</h2>
+<p>Marta was the first person <a href="/Kingmaker/Characters/Rust.html">Rust</a> encountered after leaving Sevenarches. He'd been alone for eight months—six in the forest, two more on its edges—working up the courage to enter a settlement.</p>
+<p><strong>The Encounter:</strong>
+- Rust bought stale bread with one of his three copper pieces
+- Marta asked casually if he was traveling with family
+- When he said no, she actually looked at him: small, too thin, clothes worn by multiple people before him, alone
+- Instead of the judgment or cruelty he expected, she gave him the bread for free
+- When he stared at her in confusion, she shooed him out: <em>"Go on now, before you draw flies standing there gawking."</em></p>
+<h2 id="impact-on-rust">Impact on Rust</h2>
+<p>This brief interaction challenged everything the <a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters</a> had taught him about how the world works. They'd taught him that:
+- Charity was always conditional
+- Kindness was a mask over cruelty
+- People like him deserved nothing and should be grateful for scraps</p>
+<p>Marta's gesture was none of those things. It was casual, almost dismissive—feeding a hungry kid because that's just what you do. No ceremony, no strings, no expectation of gratitude or transformation.</p>
+<p>Rust sat outside the settlement for an hour trying to process which version of the world was real: the monastery's, or this.</p>
+<h2 id="current-status">Current Status</h2>
+<p>Unknown. Presumably still running her shop in that small Kyonin settlement. She likely doesn't remember the encounter—just one of thousands of transactions over the years. But for Rust, it was foundational: the first piece of evidence that the Sisters were wrong about how people work.</p>
+<h2 id="motivations">Motivations</h2>
+<ul>
+<li>Running her business</li>
+<li>Taking care of her community</li>
+<li>Doing what needs doing without making it complicated</li>
+</ul>
+<h2 id="quote">Quote</h2>
+<p><em>"Well, that bread's on the house then. You look like you need it more than I need the copper."</em></p>
+<p><em>"Go on now, before you draw flies standing there gawking."</em></p>
+<hr />
+<p><em>"You look like you need it more than I need the copper."</em></p>
+        </main>
+    </div>
+</body>
+</html>

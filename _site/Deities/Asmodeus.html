@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmodeus - Kingmaker Campaign</title>
+    <link rel="stylesheet" href="/Kingmaker/style.css">
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const icon = event.currentTarget.querySelector('.toggle-icon');
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                icon.textContent = '▼';
+            } else {
+                section.style.display = 'none';
+                icon.textContent = '▶';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+<div class="logo"><a href="/Kingmaker/"><img src="/Kingmaker/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('.venv')"><span class="toggle-icon">▼</span> .venv</h2>
+<ul id=".venv" class="nav-list">
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('.venv-lib')"><span class="toggle-icon">▼</span> Lib</h3>
+<ul id=".venv-lib" class="nav-list">
+<li><a href="/Kingmaker/.venv/Lib/site-packages/markdown-3.9.dist-info/licenses/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('characters')"><span class="toggle-icon">▼</span> Characters</h2>
+<ul id="characters" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust.html">Rust</a></li>
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('characters-rust-timeline')"><span class="toggle-icon">▼</span> Rust Timeline</h3>
+<ul id="characters-rust-timeline" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust Timeline/00 - README.html">00   README</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/01 - Unknown Origins.html">01   Unknown Origins</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/02 - Arrival and Conditioning.html">02   Arrival and Conditioning</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/03 - The Gift and the Curse.html">03   The Gift and the Curse</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/04 - Velennes Observation.html">04   Velennes Observation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/05 - Learning Languages.html">05   Learning Languages</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/06 - Survival Strategies.html">06   Survival Strategies</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/07 - Mika Arrives.html">07   Mika Arrives</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/08 - Escalation.html">08   Escalation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/09 - The Final Year.html">09   The Final Year</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/10 - The Awakening.html">10   The Awakening</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/11 - First Months Free.html">11   First Months Free</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/12 - Sevenarches.html">12   Sevenarches</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/13 - Approaching Adulthood.html">13   Approaching Adulthood</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/14 - Campaign Start.html">14   Campaign Start</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('deities')"><span class="toggle-icon">▼</span> Deities</h2>
+<ul id="deities" class="nav-list">
+<li><a href="/Kingmaker/Deities/Asmodeus.html">Asmodeus</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('events')"><span class="toggle-icon">▼</span> Events</h2>
+<ul id="events" class="nav-list">
+<li><a href="/Kingmaker/Events/Goblinblood Wars.html">Goblinblood Wars</a></li>
+<li><a href="/Kingmaker/Events/Monastery Life Detailed.html">Monastery Life Detailed</a></li>
+<li><a href="/Kingmaker/Events/Rust's Awakening.html">Rust's Awakening</a></li>
+<li><a href="/Kingmaker/Events/Sevenarches Encounter.html">Sevenarches Encounter</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('game-mechanics')"><span class="toggle-icon">▼</span> Game Mechanics</h2>
+<ul id="game-mechanics" class="nav-list">
+<li><a href="/Kingmaker/Game Mechanics/Animal Whisperer Background.html">Animal Whisperer Background</a></li>
+<li><a href="/Kingmaker/Game Mechanics/Unbreakable Ancestry.html">Unbreakable Ancestry</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('locations')"><span class="toggle-icon">▼</span> Locations</h2>
+<ul id="locations" class="nav-list">
+<li><a href="/Kingmaker/Locations/Cheliax.html">Cheliax</a></li>
+<li><a href="/Kingmaker/Locations/Druma.html">Druma</a></li>
+<li><a href="/Kingmaker/Locations/Isger.html">Isger</a></li>
+<li><a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a></li>
+<li><a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery of the Golden Erinyes</a></li>
+<li><a href="/Kingmaker/Locations/River Kingdoms.html">River Kingdoms</a></li>
+<li><a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('npcs')"><span class="toggle-icon">▼</span> NPCs</h2>
+<ul id="npcs" class="nav-list">
+<li><a href="/Kingmaker/NPCs/Kresh.html">Kresh</a></li>
+<li><a href="/Kingmaker/NPCs/Marta Greenhill.html">Marta Greenhill</a></li>
+<li><a href="/Kingmaker/NPCs/Mika.html">Mika</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Malhana.html">Sister Malhana</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('organizations')"><span class="toggle-icon">▼</span> Organizations</h2>
+<ul id="organizations" class="nav-list">
+<li><a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters of the Golden Erinyes</a></li>
+</ul>
+</div>
+</nav>
+
+        <main>
+            <h1 id="asmodeus">Asmodeus</h1>
+<h2 id="overview">Overview</h2>
+<p><strong>Alignment:</strong> Lawful Evil
+<strong>Titles:</strong> Prince of Darkness, King of Hell, Lord of Contracts
+<strong>Portfolio:</strong> Tyranny, Slavery, Pride, Contracts, Punishment
+<strong>Domains:</strong> Fire, Law, Magic, Trickery
+<strong>Favored Weapon:</strong> Heavy mace
+<strong>Symbol:</strong> Red pentagram
+<strong>Worshippers:</strong> Devils, tyrants, slavers, Hellknights, corrupt nobility, contract-makers</p>
+<h2 id="description">Description</h2>
+<p>Asmodeus is the god of tyranny and domination, the archfiend who rules Hell with absolute authority. He represents the principle that law and order, stripped of mercy and compassion, become instruments of oppression. His doctrine teaches that hierarchy is divine, that the strong naturally rule the weak, and that suffering is both instructive and inevitable.</p>
+<h2 id="divine-philosophy">Divine Philosophy</h2>
+<h3 id="core-tenets">Core Tenets</h3>
+<p>Asmodean doctrine centers on several fundamental beliefs:</p>
+<p><strong>Divine Hierarchy:</strong>
+- All beings exist in a natural order, with some born to rule and others to serve
+- Questioning this hierarchy is the gravest sin
+- Asmodeus sits at the apex of all law and order
+- Obedience to authority is the highest virtue</p>
+<p><strong>Order Through Control:</strong>
+- Freedom leads to chaos; control ensures stability
+- Law must be absolute, even (especially) when cruel
+- Contracts are sacred and binding, regardless of circumstances
+- Every action must serve the greater structure</p>
+<p><strong>Salvation Through Submission:</strong>
+- Breaking the will leads to enlightenment
+- Suffering purifies and teaches
+- Pride must be crushed in the lesser, cultivated in rulers
+- Mercy is weakness; discipline is love</p>
+<p><strong>Power as Virtue:</strong>
+- Those who rule do so by right of strength
+- The weak deserve their subjugation
+- Slavery is natural order made manifest
+- Cruelty in service of law is holy</p>
+<h3 id="infernal-language">Infernal Language</h3>
+<p>Asmodeus gave mortals the Infernal tongue—a language said to make rebellion "grammatically impossible" through its structure of absolute hierarchy. Every word encodes superiority and inferiority, making equality linguistically inexpressible.</p>
+<h2 id="worship-and-practices">Worship and Practices</h2>
+<h3 id="clergy-and-organizations">Clergy and Organizations</h3>
+<p>Asmodean worship manifests in various forms:</p>
+<p><strong>Hellknights:</strong>
+- Military orders enforcing law through intimidation
+- Value order above all other concerns
+- Often serve as judges, enforcers, peacekeepers
+- Technically separate from church but philosophically aligned</p>
+<p><strong>Monasteries and Orphanages:</strong>
+- <a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters of the Golden Erinyes</a> and similar orders
+- "Civilize" children through systematic abuse
+- Break spirits to save souls
+- Create loyal servants through trauma and indoctrination</p>
+<p><strong>Nobles and Magistrates:</strong>
+- Use Asmodean doctrine to justify tyranny
+- Maintain power through legal oppression
+- Benefit from divine sanction for cruelty
+- Rule through fear masked as law</p>
+<p><strong>Contract Devils:</strong>
+- Tempt mortals with binding agreements
+- Every contract furthers Hell's interests
+- Fine print ensures damnation
+- Power in exchange for eventual servitude</p>
+<h3 id="temples-and-ceremonies">Temples and Ceremonies</h3>
+<p>Asmodean temples are austere, imposing structures emphasizing order and intimidation:
+- Severe architecture with sharp angles
+- Black and red color schemes
+- Pentagram symbolism throughout
+- Spaces designed to make worshippers feel small
+- No comfort, only compliance</p>
+<p>Ceremonies focus on submission, punishment, and reinforcing hierarchy through ritual.</p>
+<h2 id="relationship-to-campaign">Relationship to Campaign</h2>
+<h3 id="impact-on-rust">Impact on <a href="/Kingmaker/Characters/Rust.html">Rust</a></h3>
+<p>Rust's entire childhood was shaped by Asmodean doctrine:
+- Ten years at the <a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery</a> run by Asmodean Sisters
+- Forced to recite prayers praising tyranny and suffering
+- Taught that his pain was divine instruction
+- Learned Infernal as the "language of perfect hierarchy"
+- Experienced systematic abuse justified as holy</p>
+<p>The monastery taught him:
+- His existence was conditional on obedience
+- Suffering had meaning (which he learned to question)
+- Authority claimed divine sanction (which he learned to reject)
+- Order mattered more than mercy (which he learned was wrong)</p>
+<h3 id="rusts-relationship-with-asmodean-doctrine">Rust's Relationship with Asmodean Doctrine</h3>
+<p>At 13, Rust:
+- Rejects every principle he was taught
+- Sees through the justifications for cruelty
+- Recognizes authority as claimed, not granted
+- Chooses kindness specifically because he was taught tyranny
+- Views Asmodean philosophy as dressed-up sadism</p>
+<p>He doesn't hate Asmodeus theologically—he doesn't think about the god much at all. But he hates what was done in Asmodeus's name, and he hates every person who used divine law to justify hurting children.</p>
+<h2 id="influence-in-the-world">Influence in the World</h2>
+<h3 id="cheliax">Cheliax</h3>
+<p>Asmodeus is the state religion of Cheliax, where:
+- His worship is legally mandated
+- Dissent is treason against both state and god
+- Hellknights enforce order
+- Contract law supersedes morality
+- The nobility rules by divine right</p>
+<h3 id="beyond-cheliax">Beyond Cheliax</h3>
+<p>Even outside Cheliax, Asmodean influence spreads through:
+- Hellknight orders operating in multiple nations
+- Monasteries and religious institutions
+- Contract magic and devil-binding
+- Legal philosophy emphasizing order over justice
+- Nobles who adopt Asmodean principles</p>
+<h3 id="opposition">Opposition</h3>
+<p>Many groups resist Asmodean influence:
+- Andoran's democratic ideals directly contradict tyranny
+- Freedom-focused deities and their followers
+- Former victims of Asmodean institutions
+- Rebels against oppressive law
+- Those who've seen contracts' true costs</p>
+<h2 id="theological-questions-rust-grapples-with">Theological Questions Rust Grapples With</h2>
+<h3 id="can-good-come-from-evil-systems">Can Good Come From Evil Systems?</h3>
+<p>The monastery gave Rust:
+- Literacy (to better serve)
+- Multiple languages (to better obey)
+- Knowledge (to better understand his subjugation)
+- Survival skills (accidentally, through abuse)</p>
+<p>He used all of this to escape. Does that redeem the system? He thinks not—suffering that accidentally creates strength doesn't justify the suffering.</p>
+<h3 id="what-separates-law-from-tyranny">What Separates Law From Tyranny?</h3>
+<p>Rust learned that order without mercy becomes oppression. But he also learned that some structure keeps people safe. Where's the line? He's still figuring it out.</p>
+<h3 id="is-power-inherently-corrupting">Is Power Inherently Corrupting?</h3>
+<p>The Sisters had absolute power and used it absolutely. Asmodean doctrine says this is natural and correct. Rust believes it's a choice—power doesn't make you cruel, but it reveals whether you already were.</p>
+<h2 id="the-temptation-rust-resists">The Temptation Rust Resists</h2>
+<p>Asmodean philosophy offers something seductive to abuse survivors:
+- Your suffering had meaning (divine instruction)
+- Your abusers were serving higher purpose (not just cruel)
+- Order and structure prevent chaos (safety through control)
+- Accepting hierarchy ends confusion (submit and be certain)</p>
+<p>Rust rejects all of this because he knows the truth: his suffering was pointless, his abusers were wrong, their order was oppression, and submission wouldn't have saved him—escape did.</p>
+<h2 id="symbols-and-iconography">Symbols and Iconography</h2>
+<p><strong>The Red Pentagram:</strong>
+- Five points representing hierarchy's levels
+- Red for blood, binding, and contracts
+- Used in contracts, temples, brands</p>
+<p><strong>The Mace:</strong>
+- Heavy, blunt, crushing
+- Represents law's force
+- Authority backed by violence</p>
+<p><strong>Black and Gold/Red:</strong>
+- Black for law's absolute nature
+- Gold for divine authority (Cheliax)
+- Red for contracts, blood, Hell</p>
+<p><strong>Chains and Contracts:</strong>
+- Binding, control, obligation
+- Freedom's opposite
+- Power over others</p>
+<h2 id="in-play">In Play</h2>
+<h3 id="as-antagonistic-force">As Antagonistic Force</h3>
+<p>Asmodean elements in the campaign represent:
+- Institutional evil masquerading as righteousness
+- Legal oppression and systematic abuse
+- Characters who genuinely believe cruelty is kindness
+- The long shadow of trauma</p>
+<h3 id="character-interactions">Character Interactions</h3>
+<p>Party members might encounter:
+- Hellknights enforcing unjust laws
+- Contract-bound NPCs in impossible situations
+- Victims of Asmodean institutions
+- True believers who cannot be reasoned with
+- Rust's triggers around religious authority</p>
+<h3 id="moral-complexity">Moral Complexity</h3>
+<p>Not everyone who follows Asmodeus is evil:
+- Some Hellknights genuinely keep order and protect people
+- Some believers value law's stability over chaos
+- Some contracts are fair and honored
+- Some structure prevents greater harm</p>
+<p>But the system itself—tyranny as divine mandate—is fundamentally wrong, and Rust knows it.</p>
+<h2 id="quotes">Quotes</h2>
+<p><em>"Through law, order. Through order, peace. Through peace, prosperity. Through prosperity, power. Through power, perfection."</em> - Asmodean maxim</p>
+<p><em>"The contract is sacred because it makes chaos impossible. Your word binds you, and binding is salvation."</em> - Hellknight teaching</p>
+<p><em>"They told me I should be grateful. That my suffering was Asmodeus's gift, teaching me to be better. But better at what? Enduring? I'm good at that now. Is that what gods want? People who endure? Because if so, their god failed—I didn't learn to endure. I learned to escape."</em> - <a href="/Kingmaker/Characters/Rust.html">Rust</a>, age 13</p>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters of the Golden Erinyes</a> - Asmodean order that ran Rust's monastery</li>
+<li><a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery of the Golden Erinyes</a> - Where Rust was imprisoned</li>
+<li><a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a> - True believer in Asmodean doctrine</li>
+<li><a href="/Kingmaker/NPCs/Sister Malhana.html">Sister Malhana</a> - Administrator of Asmodean "mercy"</li>
+<li><a href="/Kingmaker/Locations/Isger.html">Isger</a> - Region with significant Chelaxian/Asmodean influence</li>
+</ul>
+<hr />
+<p><em>Asmodeus teaches that hierarchy is divine, that suffering sanctifies, that obedience is virtue. Rust learned every word of that doctrine. And then he learned to recognize it for what it was: powerful people justifying hurting powerless ones, dressed up in scripture and ceremony. The god might be real. The doctrine might be ancient. But it's still just cruelty with a crown.</em></p>
+        </main>
+    </div>
+</body>
+</html>

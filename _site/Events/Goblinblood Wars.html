@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goblinblood Wars - Kingmaker Campaign</title>
+    <link rel="stylesheet" href="/Kingmaker/style.css">
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const icon = event.currentTarget.querySelector('.toggle-icon');
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                icon.textContent = '▼';
+            } else {
+                section.style.display = 'none';
+                icon.textContent = '▶';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+<div class="logo"><a href="/Kingmaker/"><img src="/Kingmaker/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('.venv')"><span class="toggle-icon">▼</span> .venv</h2>
+<ul id=".venv" class="nav-list">
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('.venv-lib')"><span class="toggle-icon">▼</span> Lib</h3>
+<ul id=".venv-lib" class="nav-list">
+<li><a href="/Kingmaker/.venv/Lib/site-packages/markdown-3.9.dist-info/licenses/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('characters')"><span class="toggle-icon">▼</span> Characters</h2>
+<ul id="characters" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust.html">Rust</a></li>
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('characters-rust-timeline')"><span class="toggle-icon">▼</span> Rust Timeline</h3>
+<ul id="characters-rust-timeline" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust Timeline/00 - README.html">00   README</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/01 - Unknown Origins.html">01   Unknown Origins</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/02 - Arrival and Conditioning.html">02   Arrival and Conditioning</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/03 - The Gift and the Curse.html">03   The Gift and the Curse</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/04 - Velennes Observation.html">04   Velennes Observation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/05 - Learning Languages.html">05   Learning Languages</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/06 - Survival Strategies.html">06   Survival Strategies</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/07 - Mika Arrives.html">07   Mika Arrives</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/08 - Escalation.html">08   Escalation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/09 - The Final Year.html">09   The Final Year</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/10 - The Awakening.html">10   The Awakening</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/11 - First Months Free.html">11   First Months Free</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/12 - Sevenarches.html">12   Sevenarches</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/13 - Approaching Adulthood.html">13   Approaching Adulthood</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/14 - Campaign Start.html">14   Campaign Start</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('deities')"><span class="toggle-icon">▼</span> Deities</h2>
+<ul id="deities" class="nav-list">
+<li><a href="/Kingmaker/Deities/Asmodeus.html">Asmodeus</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('events')"><span class="toggle-icon">▼</span> Events</h2>
+<ul id="events" class="nav-list">
+<li><a href="/Kingmaker/Events/Goblinblood Wars.html">Goblinblood Wars</a></li>
+<li><a href="/Kingmaker/Events/Monastery Life Detailed.html">Monastery Life Detailed</a></li>
+<li><a href="/Kingmaker/Events/Rust's Awakening.html">Rust's Awakening</a></li>
+<li><a href="/Kingmaker/Events/Sevenarches Encounter.html">Sevenarches Encounter</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('game-mechanics')"><span class="toggle-icon">▼</span> Game Mechanics</h2>
+<ul id="game-mechanics" class="nav-list">
+<li><a href="/Kingmaker/Game Mechanics/Animal Whisperer Background.html">Animal Whisperer Background</a></li>
+<li><a href="/Kingmaker/Game Mechanics/Unbreakable Ancestry.html">Unbreakable Ancestry</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('locations')"><span class="toggle-icon">▼</span> Locations</h2>
+<ul id="locations" class="nav-list">
+<li><a href="/Kingmaker/Locations/Cheliax.html">Cheliax</a></li>
+<li><a href="/Kingmaker/Locations/Druma.html">Druma</a></li>
+<li><a href="/Kingmaker/Locations/Isger.html">Isger</a></li>
+<li><a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a></li>
+<li><a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery of the Golden Erinyes</a></li>
+<li><a href="/Kingmaker/Locations/River Kingdoms.html">River Kingdoms</a></li>
+<li><a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('npcs')"><span class="toggle-icon">▼</span> NPCs</h2>
+<ul id="npcs" class="nav-list">
+<li><a href="/Kingmaker/NPCs/Kresh.html">Kresh</a></li>
+<li><a href="/Kingmaker/NPCs/Marta Greenhill.html">Marta Greenhill</a></li>
+<li><a href="/Kingmaker/NPCs/Mika.html">Mika</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Malhana.html">Sister Malhana</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('organizations')"><span class="toggle-icon">▼</span> Organizations</h2>
+<ul id="organizations" class="nav-list">
+<li><a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters of the Golden Erinyes</a></li>
+</ul>
+</div>
+</nav>
+
+        <main>
+            <h1 id="the-goblinblood-wars">The Goblinblood Wars</h1>
+<h2 id="overview">Overview</h2>
+<p><strong>Dates:</strong> 4697-4701 AR (approximately)
+<strong>Location:</strong> <a href="/Kingmaker/Locations/Isger.html">Isger</a>
+<strong>Belligerents:</strong> Chelaxian/Isgeri military forces and goblinoid tribes
+<strong>Nature:</strong> Series of conflicts characterized by systematic purge operations
+<strong>Outcome:</strong> Near-complete elimination of organized goblin populations in Isger
+<strong>Casualties:</strong> Tens of thousands (mostly goblinoid civilians)</p>
+<h2 id="background">Background</h2>
+<h3 id="pre-war-isger">Pre-War Isger</h3>
+<p>Before the wars, <a href="/Kingmaker/Locations/Isger.html">Isger</a> was a diverse region with:
+- Mixed human and goblinoid populations
+- Centuries of uneasy coexistence
+- Periodic raids and counter-raids
+- No unified tribal or state structure among goblins
+- Chelaxian vassal state government centered in human settlements</p>
+<h3 id="rising-tensions">Rising Tensions</h3>
+<p>Multiple factors contributed to escalating conflict:
+- Chelaxian expansion requiring more "secure" territory
+- Goblin tribes pushed together by encroaching settlements
+- Economic hardship leading to increased raiding
+- Political pressure from Cheliax for Isger to "solve the goblin problem"
+- Growing Asmodean influence promoting order through elimination</p>
+<h2 id="the-conflict">The Conflict</h2>
+<h3 id="official-narrative">Official Narrative</h3>
+<p>According to Chelaxian and Isgeri records, the Goblinblood Wars were:
+- Defensive operations against goblin aggression
+- Necessary security measures
+- Pacification of savage populations
+- Restoration of law and order
+- Protection of civilized settlements</p>
+<h3 id="actual-nature">Actual Nature</h3>
+<p>In practice, the wars consisted of:
+- Systematic destruction of goblin settlements
+- Military operations targeting civilian populations
+- Complete elimination of communities, including non-combatants
+- Burning of villages and cultural sites
+- Deliberate targeting of children (preventing future "raiders")
+- What modern scholars recognize as genocide</p>
+<h3 id="military-operations">Military Operations</h3>
+<p>"Purge operations" followed standard protocols:</p>
+<p><strong>Phase One: Identification</strong>
+- Scout forces located goblin settlements
+- Military intelligence mapped tribal territories
+- Informants (often coerced) provided locations
+- No distinction between hostile and peaceful tribes</p>
+<p><strong>Phase Two: Encirclement</strong>
+- Troops surrounded target settlements
+- Escape routes blocked
+- Operations conducted at night when possible
+- Element of surprise prioritized</p>
+<p><strong>Phase Three: Elimination</strong>
+- Settlements burned
+- Non-combatants killed alongside warriors
+- Children explicitly targeted ("eliminate the problem at its source")
+- Survivors captured for questioning or "re-education"
+- Cultural items and records destroyed</p>
+<p><strong>Phase Four: Documentation</strong>
+- Operations recorded as "successful security actions"
+- Body counts documented
+- Territory marked as "pacified"
+- Sites abandoned or claimed for human settlement</p>
+<h3 id="the-child-question">The Child Question</h3>
+<p>Standard military protocols explicitly addressed goblin children:</p>
+<p><strong>Official Policy:</strong>
+- "Goblin children become goblin raiders"
+- "Eliminate the problem at its source"
+- No mercy for age or non-combatant status
+- Killing children classified as preventive security measure</p>
+<p><strong>Occasional Exceptions:</strong>
+- Some officers refused to execute toddlers in cold blood
+- Religious scruples led to rare captures
+- Orphans occasionally delivered to monasteries for "civilization"
+- <a href="/Kingmaker/Characters/Rust.html">Rust</a> was one such exception</p>
+<p>These exceptions were rare enough to be noteworthy, common enough that institutions like the <a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters of the Golden Erinyes</a> incorporated them into their mission.</p>
+<h2 id="aftermath">Aftermath</h2>
+<h3 id="immediate-impact-4701-4705-ar">Immediate Impact (4701-4705 AR)</h3>
+<ul>
+<li>Goblin populations reduced by estimated 90%+</li>
+<li>Survivors fled to mountains or neighboring regions</li>
+<li>No organized tribal structures remained</li>
+<li>Isgeri territory "secured" for human settlement</li>
+<li>Thousands of orphans (both goblin and human)</li>
+</ul>
+<h3 id="long-term-consequences">Long-Term Consequences</h3>
+<p><strong>For Isger:</strong>
+- Economic devastation from war costs
+- Depopulated regions difficult to resettle
+- Labor shortages in formerly mixed areas
+- Legacy of brutality affecting regional culture
+- Ongoing poverty and instability</p>
+<p><strong>For Goblins:</strong>
+- Cultural knowledge lost with elder deaths
+- Oral traditions severed
+- Scattered survivors unable to preserve heritage
+- No written records of goblin perspective
+- Generational trauma for survivors</p>
+<p><strong>For the Region:</strong>
+- Created power vacuum later exploited by other threats
+- Set precedent for "purge solutions" to conflicts
+- Normalized genocide under cover of security operations
+- Provided orphans for institutions like the monastery
+- Legacy of unprocessed atrocity</p>
+<h2 id="historical-interpretation">Historical Interpretation</h2>
+<h3 id="official-history-chelaxianisgeri">Official History (Chelaxian/Isgeri)</h3>
+<p>The wars are recorded as:
+- Necessary defensive actions
+- Successful security operations
+- Restoration of proper order
+- Examples of Chelaxian military effectiveness
+- Minor conflicts of little lasting significance</p>
+<p>This version is taught in schools, including at the <a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery</a>.</p>
+<h3 id="surviving-goblin-oral-tradition">Surviving Goblin Oral Tradition</h3>
+<p>Among the scattered survivors:
+- Remembered as <em>ghev-zuul-murzon</em> ("the murder of families and children")
+- Stories of entire tribes exterminated
+- Warnings passed down about trusting humans
+- Names of lost settlements preserved in memory
+- Deep cultural trauma rarely expressed to outsiders</p>
+<h3 id="modern-scholarly-assessment">Modern Scholarly Assessment</h3>
+<p>More objective historians recognize:
+- Systematic nature indicates genocidal intent
+- Disproportionate targeting of civilians
+- Protocols explicitly aimed at elimination, not pacification
+- Cultural destruction beyond military necessity
+- Cover-up of atrocities in official records</p>
+<p>Few scholars openly publish these assessments in Chelaxian-controlled regions.</p>
+<h2 id="connection-to-rusts-story">Connection to <a href="/Kingmaker/Characters/Rust.html">Rust</a>'s Story</h2>
+<h3 id="his-origin">His Origin</h3>
+<p>Rust was born during or immediately after the Goblinblood Wars:
+- Found as a toddler in burned settlement wreckage
+- Only survivor of his tribe/community
+- Parents almost certainly killed in purge operation
+- Real name lost along with his people
+- Existed only because of rare exception to protocol</p>
+<h3 id="his-education">His "Education"</h3>
+<p>At the monastery, Rust learned about the wars:
+- Taught as "necessary genocide" (though not called that)
+- Goblin aggression portrayed as sole cause
+- Military operations described as defensive
+- Cultural elimination framed as civilization
+- His survival framed as undeserved mercy</p>
+<p>He learned to read both sides:
+- Official Chelaxian histories in Common
+- Captured goblin records in Goblin
+- Same events, completely different realities
+- Recognized lies through linguistic comparison</p>
+<h3 id="his-identity">His Identity</h3>
+<p>The wars shaped Rust's understanding of himself:
+- <strong>Age 5:</strong> Too young to understand what he'd lost
+- <strong>Age 9:</strong> Learned he was "the enemy" who survived
+- <strong>Age 12:</strong> Understood he existed by exception to extermination protocol
+- <strong>Age 13:</strong> Processes that his mere existence defied policy of elimination</p>
+<p>He carries the weight of being:
+- Last of his tribe (maybe)
+- Only one who remembers (he doesn't)
+- Survivor of genocide (too young to remember it)
+- Example of "successful re-education" (he rejected it)</p>
+<h3 id="his-perspective">His Perspective</h3>
+<p>At 13, Rust thinks about the wars as:
+- Context for his loss, not excuse for what happened to him
+- Explanation for his orphaning, not justification
+- Historical atrocity, not ancient history
+- Personal trauma he can't even remember experiencing
+- Reason he has no name, no parents, no people</p>
+<p>He rejects both the Chelaxian narrative (necessary security) and victimhood identity (defined by atrocity). He's simply trying to be himself despite everything that was taken.</p>
+<h2 id="legacy-and-ongoing-impact">Legacy and Ongoing Impact</h2>
+<h3 id="for-isger">For Isger</h3>
+<p>Years later, <a href="/Kingmaker/Locations/Isger.html">Isger</a> still shows scars:
+- Empty territories still not fully resettled
+- Economic struggles from war costs
+- Cultural wounds unhealed
+- Occasional goblin survivor encounters
+- Fear-based policies toward non-humans</p>
+<h3 id="for-survivors">For Survivors</h3>
+<p>Scattered goblin survivors:
+- Live in hiding or on margins
+- Carry generational trauma
+- Some seek revenge, most seek survival
+- Struggle to preserve any culture
+- Face continued prejudice</p>
+<h3 id="for-institutions">For Institutions</h3>
+<p>The wars created opportunities:
+- Monasteries gained "salvageable" orphans
+- Military gained reputation and promotions
+- Church gained examples of "proper order"
+- State gained territory and control
+- No one faced justice for atrocities</p>
+<h3 id="for-the-world">For the World</h3>
+<p>The Goblinblood Wars set dangerous precedents:
+- Genocide can be framed as security
+- Civilians are acceptable targets
+- Children are military threats
+- Cultural elimination is pacification
+- Records can be written to justify anything</p>
+<h2 id="in-play">In Play</h2>
+<h3 id="historical-context">Historical Context</h3>
+<p>Understanding the wars provides context for:
+- <a href="/Kingmaker/Characters/Rust.html">Rust</a>'s origin and loss
+- Why the <a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters</a> had goblin orphans
+- Anti-goblin prejudice in the region
+- <a href="/Kingmaker/Locations/Isger.html">Isger</a>'s poverty and instability
+- Rust's complicated relationship with his heritage</p>
+<h3 id="npc-reactions">NPC Reactions</h3>
+<p>Different NPCs might view the wars as:</p>
+<p><strong>Chelaxian Loyalists:</strong>
+- Necessary and successful operations
+- Proper enforcement of order
+- Examples to follow in other conflicts
+- No moral complexity at all</p>
+<p><strong>Veterans:</strong>
+- Complicated memories
+- Some proud, some haunted
+- Rarely discuss actual details
+- May recognize Rust as survivor</p>
+<p><strong>Other Goblins:</strong>
+- Deep distrust of humans
+- Possible connection through shared loss
+- Might know of Rust's lost tribe
+- Could provide fragments of culture</p>
+<p><strong>Younger Generation:</strong>
+- Largely unaware of true nature
+- Taught sanitized version
+- Might be shocked by reality
+- Could be allies in confronting truth</p>
+<h3 id="moral-complexity">Moral Complexity</h3>
+<p>The wars present questions without easy answers:
+- Can genocide be justified by security concerns?
+- Are child victims responsible for possible future actions?
+- Does "successful re-education" justify the taking?
+- Can historical atrocities be balanced against current stability?
+- Who gets to write history, and what gets forgotten?</p>
+<p>Rust embodies these questions. He shouldn't exist—protocol said so. But he does. What does that mean?</p>
+<h2 id="geographic-scope">Geographic Scope</h2>
+<h3 id="primary-theater">Primary Theater</h3>
+<p><strong>Western and Central Isger:</strong>
+- Most concentrated goblin populations
+- Heaviest fighting and purge operations
+- Near-complete elimination achieved
+- Where <a href="/Kingmaker/Characters/Rust.html">Rust</a>'s tribe was located</p>
+<p><strong>Eastern Isger:</strong>
+- Less intensive operations
+- Some survivors fled east
+- Scattered communities destroyed over time
+- Ongoing "mopping up" operations</p>
+<h3 id="border-regions">Border Regions</h3>
+<p><strong>Northern Borders (toward Druma):</strong>
+- Some goblins fled across borders
+- Druman authorities less aggressive in pursuit
+- Small survivor communities in mountains</p>
+<p><strong>Southern Borders (toward Molthune/Nirmathas):</strong>
+- Scattered refugees
+- Difficult terrain aided escape
+- Small hidden settlements remain</p>
+<h2 id="military-forces-involved">Military Forces Involved</h2>
+<h3 id="chelaxian-elements">Chelaxian Elements</h3>
+<ul>
+<li>Professional army units</li>
+<li>Hellknight observers (not direct participants)</li>
+<li>Military contractors and mercenaries</li>
+<li>Logistics and supply chains from Cheliax</li>
+</ul>
+<h3 id="isgeri-forces">Isgeri Forces</h3>
+<ul>
+<li>Local militias</li>
+<li>Conscripted soldiers</li>
+<li>Rangers and scouts</li>
+<li>Some acted with reluctance, most followed orders</li>
+</ul>
+<h3 id="commanders">Commanders</h3>
+<p>Names rarely recorded in detail, but included:
+- Chelaxian officers seeking advancement
+- Isgeri nobles protecting territories
+- Mercenary captains paid per operation
+- Some acted from belief, some from duty, all participated</p>
+<h2 id="the-unreported-truth">The Unreported Truth</h2>
+<h3 id="what-records-dont-show">What Records Don't Show</h3>
+<p>Official military records omit:
+- Scale of civilian casualties
+- Deliberate targeting of children
+- Burning of cultural sites
+- Torture during interrogations
+- Occasional acts of mercy (like sparing <a href="/Kingmaker/Characters/Rust.html">Rust</a>)
+- Soldiers who refused orders and faced consequences</p>
+<h3 id="what-survivors-remember">What Survivors Remember</h3>
+<p>The goblin perspective includes:
+- Names of lost tribes
+- Stories of resistance and betrayal
+- Moments of unexpected mercy
+- Locations of mass graves
+- Cultural practices now lost
+- Songs sung for the last time</p>
+<h3 id="what-rust-learned">What Rust Learned</h3>
+<p>At the monastery, through comparing sources:
+- Official histories are propaganda
+- Goblin records show different reality
+- Same events, completely opposite framing
+- Truth somewhere between, probably worse than both
+- His survival was accident, not mercy</p>
+<h2 id="timeline-of-key-events">Timeline of Key Events</h2>
+<p><strong>4697 AR - Early Raids:</strong>
+- Initial goblin raids increase
+- Chelaxian pressure on Isger to respond
+- First large-scale military operations</p>
+<p><strong>4698 AR - Escalation:</strong>
+- Systematic purge operations begin
+- Multiple tribes eliminated
+- Protocols established for civilian elimination</p>
+<p><strong>4699 AR - Peak Operations:</strong>
+- Most intensive period of conflict
+- Largest civilian casualties
+- Cultural sites destroyed
+- Rust probably born during this year</p>
+<p><strong>4700 AR - Mopping Up:</strong>
+- Most organized resistance eliminated
+- Scattered survivors hunted
+- Focus shifts to "re-pacifying" territory</p>
+<p><strong>4701 AR - Official End:</strong>
+- Wars declared concluded
+- Territory proclaimed secured
+- Celebrations of successful operations
+- Rust found as toddler in aftermath</p>
+<p><strong>4701-4705 AR - Aftermath:</strong>
+- Survivors flee or hide
+- Orphans distributed to institutions
+- Rust arrives at monastery (age ~2)
+- Chelaxian history written</p>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a href="/Kingmaker/Characters/Rust.html">Rust</a> - Survivor and orphan of the wars</li>
+<li><a href="/Kingmaker/Locations/Isger.html">Isger</a> - Primary theater of operations</li>
+<li><a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters of the Golden Erinyes</a> - Received war orphans</li>
+<li><a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery of the Golden Erinyes</a> - Where Rust was imprisoned</li>
+<li><a href="/Kingmaker/Deities/Asmodeus.html">Asmodeus</a> - Divine authority cited for operations</li>
+</ul>
+<hr />
+<p><em>They called it the Goblinblood Wars, as if the blood was the problem, as if goblins were the aggressors. But Rust learned to read both languages, and he knows what the goblin records called it: ghev-zuul-murzon. The murder of families and children. The deliberate ending of a people. His people. And he survived it only because someone, somewhere, made an exception to the rule that said he should die. He doesn't know if that was mercy or cruelty. Maybe both. Maybe neither. He just knows he's here, and they're not, and that's the weight he carries.</em></p>
+        </main>
+    </div>
+</body>
+</html>

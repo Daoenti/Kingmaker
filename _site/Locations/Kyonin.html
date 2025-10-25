@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyonin - Kingmaker Campaign</title>
+    <link rel="stylesheet" href="/Kingmaker/style.css">
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const icon = event.currentTarget.querySelector('.toggle-icon');
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                icon.textContent = '▼';
+            } else {
+                section.style.display = 'none';
+                icon.textContent = '▶';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+<div class="logo"><a href="/Kingmaker/"><img src="/Kingmaker/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('.venv')"><span class="toggle-icon">▼</span> .venv</h2>
+<ul id=".venv" class="nav-list">
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('.venv-lib')"><span class="toggle-icon">▼</span> Lib</h3>
+<ul id=".venv-lib" class="nav-list">
+<li><a href="/Kingmaker/.venv/Lib/site-packages/markdown-3.9.dist-info/licenses/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+<li><a href="/Kingmaker/.venv/Lib/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.html">LICENSE</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('characters')"><span class="toggle-icon">▼</span> Characters</h2>
+<ul id="characters" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust.html">Rust</a></li>
+<li class="subsection">
+<h3 class="collapsible" onclick="toggleSection('characters-rust-timeline')"><span class="toggle-icon">▼</span> Rust Timeline</h3>
+<ul id="characters-rust-timeline" class="nav-list">
+<li><a href="/Kingmaker/Characters/Rust Timeline/00 - README.html">00   README</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/01 - Unknown Origins.html">01   Unknown Origins</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/02 - Arrival and Conditioning.html">02   Arrival and Conditioning</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/03 - The Gift and the Curse.html">03   The Gift and the Curse</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/04 - Velennes Observation.html">04   Velennes Observation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/05 - Learning Languages.html">05   Learning Languages</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/06 - Survival Strategies.html">06   Survival Strategies</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/07 - Mika Arrives.html">07   Mika Arrives</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/08 - Escalation.html">08   Escalation</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/09 - The Final Year.html">09   The Final Year</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/10 - The Awakening.html">10   The Awakening</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/11 - First Months Free.html">11   First Months Free</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/12 - Sevenarches.html">12   Sevenarches</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/13 - Approaching Adulthood.html">13   Approaching Adulthood</a></li>
+<li><a href="/Kingmaker/Characters/Rust Timeline/14 - Campaign Start.html">14   Campaign Start</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('deities')"><span class="toggle-icon">▼</span> Deities</h2>
+<ul id="deities" class="nav-list">
+<li><a href="/Kingmaker/Deities/Asmodeus.html">Asmodeus</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('events')"><span class="toggle-icon">▼</span> Events</h2>
+<ul id="events" class="nav-list">
+<li><a href="/Kingmaker/Events/Goblinblood Wars.html">Goblinblood Wars</a></li>
+<li><a href="/Kingmaker/Events/Monastery Life Detailed.html">Monastery Life Detailed</a></li>
+<li><a href="/Kingmaker/Events/Rust's Awakening.html">Rust's Awakening</a></li>
+<li><a href="/Kingmaker/Events/Sevenarches Encounter.html">Sevenarches Encounter</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('game-mechanics')"><span class="toggle-icon">▼</span> Game Mechanics</h2>
+<ul id="game-mechanics" class="nav-list">
+<li><a href="/Kingmaker/Game Mechanics/Animal Whisperer Background.html">Animal Whisperer Background</a></li>
+<li><a href="/Kingmaker/Game Mechanics/Unbreakable Ancestry.html">Unbreakable Ancestry</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('locations')"><span class="toggle-icon">▼</span> Locations</h2>
+<ul id="locations" class="nav-list">
+<li><a href="/Kingmaker/Locations/Cheliax.html">Cheliax</a></li>
+<li><a href="/Kingmaker/Locations/Druma.html">Druma</a></li>
+<li><a href="/Kingmaker/Locations/Isger.html">Isger</a></li>
+<li><a href="/Kingmaker/Locations/Kyonin.html">Kyonin</a></li>
+<li><a href="/Kingmaker/Locations/Monastery of the Golden Erinyes.html">Monastery of the Golden Erinyes</a></li>
+<li><a href="/Kingmaker/Locations/River Kingdoms.html">River Kingdoms</a></li>
+<li><a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('npcs')"><span class="toggle-icon">▼</span> NPCs</h2>
+<ul id="npcs" class="nav-list">
+<li><a href="/Kingmaker/NPCs/Kresh.html">Kresh</a></li>
+<li><a href="/Kingmaker/NPCs/Marta Greenhill.html">Marta Greenhill</a></li>
+<li><a href="/Kingmaker/NPCs/Mika.html">Mika</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Malhana.html">Sister Malhana</a></li>
+<li><a href="/Kingmaker/NPCs/Sister Velenne.html">Sister Velenne</a></li>
+</ul>
+</div>
+<div class="nav-section">
+<h2 class="collapsible" onclick="toggleSection('organizations')"><span class="toggle-icon">▼</span> Organizations</h2>
+<ul id="organizations" class="nav-list">
+<li><a href="/Kingmaker/Organizations/Sisters of the Golden Erinyes.html">Sisters of the Golden Erinyes</a></li>
+</ul>
+</div>
+</nav>
+
+        <main>
+            <h1 id="kyonin">Kyonin</h1>
+<h2 id="overview">Overview</h2>
+<p><strong>Type:</strong> Nation/Kingdom
+<strong>Region:</strong> Inner Sea, eastern Avistan
+<strong>Government:</strong> Elven Monarchy
+<strong>Alignment:</strong> Predominantly Chaotic Good
+<strong>Capital:</strong> Iadara
+<strong>Ruler:</strong> Queen Tlandira Edasseril
+<strong>Predominant Race:</strong> Elves (&gt;95% of population)
+<strong>Notable Features:</strong> Ancient forests, <a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a>, extreme isolationism</p>
+<h2 id="description">Description</h2>
+<p>Kyonin is the elven homeland in Avistan, a realm of ancient forests and older magic. After millennia of absence during which elves retreated to Sovyrian, the elves returned to find their ancestral lands changed but still theirs. The kingdom is beautiful, isolated, and decidedly unwelcoming to non-elves.</p>
+<p>The nation is characterized by its pristine forests, elegant architecture that grows naturally from living trees, and an elven population determined to preserve their culture exactly as it was millennia ago—or as they remember it being.</p>
+<h2 id="geography">Geography</h2>
+<h3 id="the-fierani-forest">The Fierani Forest</h3>
+<p>Kyonin's heart is the vast Fierani Forest:
+- Ancient trees thousands of years old
+- Naturally occurring magical phenomena
+- Home to most elven settlements
+- Dangerous to those who don't know the paths
+- Beautiful and deadly in equal measure</p>
+<h3 id="border-regions">Border Regions</h3>
+<p>Kyonin's borders are distinct:
+- <strong>North:</strong> <a href="/Kingmaker/Locations/River Kingdoms.html">River Kingdoms</a> (frequent border disputes)
+- <strong>South:</strong> <a href="/Kingmaker/Locations/Isger.html">Isger</a> (minimal contact)
+- <strong>East:</strong> Plains and borderlands
+- <strong>West:</strong> Lake Encarthan and beyond</p>
+<h3 id="sevenarches"><a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a></h3>
+<p>The mysterious forest on Kyonin's northern border:
+- Seven stone arches marking thresholds
+- Primordial magic older than elven civilization
+- Officially within Kyonin but avoided by elves
+- No one really controls it
+- <a href="/Kingmaker/Characters/Rust.html">Rust</a> had his traumatic encounter there</p>
+<h2 id="government-and-society">Government and Society</h2>
+<h3 id="the-monarchy">The Monarchy</h3>
+<p>Queen Tlandira Edasseril rules:
+- Ancient bloodline stretching back millennia
+- Advised by equally ancient nobles
+- Governs through tradition and precedent
+- Rarely makes quick decisions
+- Views current events against centuries of context</p>
+<h3 id="social-structure">Social Structure</h3>
+<p>Elven society in Kyonin is:
+- Hierarchical but fluid
+- Based on age, magical ability, artistic achievement
+- Families matter, but personal accomplishment more
+- Non-elves exist outside social structure entirely
+- Exiles and half-elves occupy painful middle ground</p>
+<h3 id="isolationist-policy">Isolationist Policy</h3>
+<p>Kyonin keeps others at distance:
+- Extremely restricted immigration
+- Trade limited to border towns
+- Non-elves rarely allowed into interior
+- Even half-elves face discrimination
+- Diplomatic relations minimal and formal</p>
+<h2 id="culture-and-philosophy">Culture and Philosophy</h2>
+<h3 id="preservation-of-the-past">Preservation of the Past</h3>
+<p>Kyonin elves focus on maintaining tradition:
+- Architecture and art replicate pre-exodus styles
+- Languages preserved exactly as remembered
+- Customs observed with perfect fidelity
+- Change viewed with deep suspicion
+- Future matters less than honoring past</p>
+<h3 id="relationship-with-time">Relationship with Time</h3>
+<p>Elven longevity shapes culture:
+- Decades pass like months
+- Decisions made with centuries in mind
+- Personal relationships span lifetimes
+- Patience elevated to art form
+- Makes them seem aloof to shorter-lived races</p>
+<h3 id="arts-and-magic">Arts and Magic</h3>
+<p>Kyonin excels in:
+- Living architecture (buildings grown from trees)
+- Musical traditions thousands of years old
+- Magical research focused on nature and preservation
+- Poetry and literature of extraordinary beauty
+- Craftsmanship requiring decades to master</p>
+<h2 id="attitude-toward-non-elves">Attitude Toward Non-Elves</h2>
+<h3 id="official-policy">Official Policy</h3>
+<p>Non-elves face significant restrictions:
+- Entry permits difficult to obtain
+- Cannot own land in most regions
+- Viewed as temporary visitors at best
+- Cultural contamination feared
+- Some border towns more tolerant than interior</p>
+<h3 id="practical-reality">Practical Reality</h3>
+<p>In practice, this means:
+- Half-elves often face harsh discrimination
+- Humans viewed as children playing at civilization
+- Dwarves respected but not welcomed
+- Halflings and gnomes barely acknowledged
+- Goblins and similar races viewed with open hostility</p>
+<h3 id="rusts-experience"><a href="/Kingmaker/Characters/Rust.html">Rust</a>'s Experience</h3>
+<p>When Rust passed through southern Kyonin:
+- Stayed in border settlements only
+- Met <a href="/Kingmaker/NPCs/Marta Greenhill.html">Marta Greenhill</a> in one such town
+- Never ventured into elven lands proper
+- Would not have been welcome anyway
+- The brief human settlements were more cosmopolitan</p>
+<h2 id="relationship-to-sevenarches">Relationship to <a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a></h2>
+<h3 id="a-problem-they-avoid">A Problem They Avoid</h3>
+<p>Elves have complicated relationship with Sevenarches:
+- Technically within Kyonin borders
+- But predates elven civilization
+- Elves avoid it, don't attempt to control it
+- Magic there is older and stranger than theirs
+- Some say it's what was here before elves came</p>
+<h3 id="border-with-river-kingdoms">Border with River Kingdoms</h3>
+<p>The <a href="/Kingmaker/Locations/River Kingdoms.html">River Kingdoms</a> side of Sevenarches:
+- Less formal control
+- More willing to explore (and die)
+- Kyonin doesn't contest the border much
+- Happy to let others deal with it
+- Occasionally clean up messes that spill over</p>
+<h2 id="military-and-defense">Military and Defense</h2>
+<h3 id="the-lantern-bearers">The Lantern Bearers</h3>
+<p>Elite elven warriors:
+- Defend borders and hunt demons
+- Highly trained and magically enhanced
+- Rarely seen by outsiders
+- Focused on demon threats from Worldwound
+- Some serve as queen's personal guard</p>
+<h3 id="conventional-forces">Conventional Forces</h3>
+<p>Regular military consists of:
+- Militia from communities
+- Professional rangers
+- Magical defenders
+- Forest itself as defensive asset
+- Rarely tested due to isolation</p>
+<h3 id="defensive-strategy">Defensive Strategy</h3>
+<p>Kyonin's defense relies on:
+- Geographic isolation
+- Magical wards throughout forest
+- Knowledge of territory
+- Letting intruders get lost and die
+- Ancient pacts and magical defenses</p>
+<h2 id="trade-and-economy">Trade and Economy</h2>
+<h3 id="limited-external-trade">Limited External Trade</h3>
+<p>Kyonin trades minimally:
+- Border towns handle most commerce
+- Exotic woods and magical items exported
+- Art and crafts highly valued
+- Self-sufficient in most needs
+- Prefer to need nothing from outsiders</p>
+<h3 id="internal-economy">Internal Economy</h3>
+<p>Within Kyonin:
+- Gift economy among elves
+- Some formal trade in cities
+- Time measured differently affects pricing
+- Craftsmanship valued over speed
+- Magic supplements many industries</p>
+<h2 id="religion-and-spirituality">Religion and Spirituality</h2>
+<h3 id="elven-deities">Elven Deities</h3>
+<p>Primary worship focuses on:
+- Calistria (Savored Sting)
+- Desna (Song of the Spheres)
+- Ketephys (Hunter)
+- Findeladlara (Guiding Vine)
+- Nature and ancestor veneration</p>
+<h3 id="spiritual-practices">Spiritual Practices</h3>
+<p>Elven religion in Kyonin emphasizes:
+- Connection to forest and nature
+- Art as prayer
+- Music as meditation
+- Time spent in contemplation
+- Harmony with ancient places</p>
+<h2 id="historical-context">Historical Context</h2>
+<h3 id="the-exodus">The Exodus</h3>
+<p>Millennia ago, elves fled:
+- Prophecies warned of coming catastrophe
+- Mass exodus to Sovyrian (legendary homeland)
+- Left Kyonin to other races
+- Returned after thousands of years
+- Found land changed but recognizable</p>
+<h3 id="the-return">The Return</h3>
+<p>When elves returned:
+- Much of original civilization preserved
+- Some regions claimed by others
+- Reclamation mostly peaceful (from elven perspective)
+- Displaced communities have different memories
+- Elves believe they simply came home</p>
+<h3 id="modern-kyonin">Modern Kyonin</h3>
+<p>Current era characterized by:
+- Attempt to recreate what was lost
+- Resistance to change
+- Slow adaptation to modern world
+- Increasing pressure from outside
+- Younger elves questioning isolation</p>
+<h2 id="border-settlements">Border Settlements</h2>
+<h3 id="greengold-and-similar-towns">Greengold (and similar towns)</h3>
+<p>Border communities are different:
+- More cosmopolitan by necessity
+- Trade with non-elves regular
+- Less rigidly traditional
+- Often view interior elves as hopelessly hidebound
+- Where <a href="/Kingmaker/Characters/Rust.html">Rust</a> briefly stopped</p>
+<p>These towns are:
+- Technically in Kyonin
+- But not really "Kyonin" to interior elves
+- Where most non-elves experience elven culture
+- Often run by younger or exiled elves
+- Bridges between worlds</p>
+<h2 id="in-play">In Play</h2>
+<h3 id="as-background-setting">As Background Setting</h3>
+<p>Kyonin serves as:
+- Beautiful but unwelcoming land
+- Example of isolationism
+- Source of ancient magic and lore
+- Contrast to more diverse nations
+- Place party might pass through but not settle</p>
+<h3 id="potential-encounters">Potential Encounters</h3>
+<p>Party might face:
+- Elven rangers defending borders
+- Exiles from Kyonin seeking new life
+- Half-elves with complicated relationships to homeland
+- Merchants dealing in rare elven goods
+- Kyonin denying them entry to pursue quest</p>
+<h3 id="rusts-limited-connection">Rust's Limited Connection</h3>
+<p><a href="/Kingmaker/Characters/Rust.html">Rust</a>'s experience with Kyonin:
+- Passed through southern border region
+- Stayed in mixed settlements only
+- Met kind humans like <a href="/Kingmaker/NPCs/Marta Greenhill.html">Marta</a>
+- Never saw true elven lands
+- Encounter with <a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a> was near Kyonin
+- Wouldn't be welcome in interior anyway</p>
+<h3 id="moral-complexity">Moral Complexity</h3>
+<p>Kyonin presents interesting questions:
+- Right to preserve culture vs. obligations to others
+- Isolationism as protection vs. as privilege
+- Beauty of tradition vs. inflexibility
+- Their land, their rules vs. common decency
+- Individual elves often better than nation's reputation</p>
+<h2 id="sevenarches-connection">Sevenarches Connection</h2>
+<p>The relationship between Kyonin and <a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a> matters:
+- Sevenarches predates even ancient Kyonin
+- Elves respect it by avoiding it
+- Border settlements deal with spillover
+- <a href="/Kingmaker/Characters/Rust.html">Rust</a>'s encounter there was on nominal Kyonin territory
+- But Sevenarches answers to no nation</p>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a href="/Kingmaker/Locations/Sevenarches.html">Sevenarches</a> - Ancient forest on Kyonin's border</li>
+<li><a href="/Kingmaker/Locations/River Kingdoms.html">River Kingdoms</a> - Northern neighbor</li>
+<li><a href="/Kingmaker/Locations/Isger.html">Isger</a> - Southern neighbor</li>
+<li><a href="/Kingmaker/Characters/Rust.html">Rust</a> - Passed through border regions</li>
+<li><a href="/Kingmaker/NPCs/Marta Greenhill.html">Marta Greenhill</a> - Met Rust in Kyonin border town</li>
+</ul>
+<hr />
+<p><em>Kyonin is beautiful, ancient, and closed. Its forests hold magic older than empires, its people remember millennia, its culture is preserved like a museum exhibit. Rust spent maybe a week in its southernmost border towns—human settlements tolerated on the edge of elven lands—and never saw the true Kyonin. He probably never will. They wouldn't want him there, and honestly, he's fine with that. He found kindness in a human bakery on Kyonin's border and terror in an ancient forest Kyonin won't claim. That's enough Kyonin for him.</em></p>
+        </main>
+    </div>
+</body>
+</html>
