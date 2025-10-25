@@ -19,12 +19,19 @@ tags:
 # Cheliax
 
 ## Overview
+
 **Type:** Nation/Empire
+
 **Region:** Inner Sea, western Avistan
+
 **Government:** Diabolical Empire ruled by House Thrune
+
 **Alignment:** Lawful Evil
+
 **Capital:** Egorian
+
 **State Religion:** [[Deities/Asmodeus|Asmodeus]] (mandatory worship)
+
 **Notable Features:** Hellknight orders, contract law, state-sanctioned devil binding
 
 ## Description

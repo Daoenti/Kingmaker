@@ -18,12 +18,19 @@ tags:
 # Asmodeus
 
 ## Overview
+
 **Alignment:** Lawful Evil
+
 **Titles:** Prince of Darkness, King of Hell, Lord of Contracts
+
 **Portfolio:** Tyranny, Slavery, Pride, Contracts, Punishment
+
 **Domains:** Fire, Law, Magic, Trickery
+
 **Favored Weapon:** Heavy mace
+
 **Symbol:** Red pentagram
+
 **Worshippers:** Devils, tyrants, slavers, Hellknights, corrupt nobility, contract-makers
 
 ## Description

@@ -16,10 +16,15 @@ tags:
 # Isger
 
 ## Overview
-**Region:** Inner Sea, southern Avistan  
-**Government:** Vassal state of Cheliax  
-**Capital:** Elidir  
-**Status:** Recovering from [[Events/Goblinblood Wars|Goblinblood Wars]]  
+
+**Region:** Inner Sea, southern Avistan
+
+**Government:** Vassal state of Cheliax
+
+**Capital:** Elidir
+
+**Status:** Recovering from [[Events/Goblinblood Wars|Goblinblood Wars]]
+
 **Population:** Mixed, war-depleted
 
 ## Relevance to Rust

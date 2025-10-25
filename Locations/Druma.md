@@ -19,13 +19,21 @@ tags:
 # Druma
 
 ## Overview
+
 **Type:** Nation/Plutocracy
+
 **Region:** Inner Sea, central Avistan
+
 **Government:** Merchant plutocracy ruled by the Resplendent Bureaucracy
+
 **Alignment:** Lawful Neutral
+
 **Capital:** Kerse
+
 **Ruler:** High Prophet of Abadar and Resplendent Bureaucracy
+
 **State Religion:** Abadar (god of cities, wealth, law)
+
 **Notable Features:** Wealth-based citizenship, mercenary armies, religious capitalism
 
 ## Description

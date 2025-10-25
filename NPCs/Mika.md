@@ -15,9 +15,13 @@ tags:
 # Mika
 
 ## Overview
-**Role:** Fellow orphan at the [[Locations/Monastery of the Golden Erinyes|Monastery]]  
-**Organization:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]] (unwillingly)  
-**Status:** Unknown  
+
+**Role:** Fellow orphan at the [[Locations/Monastery of the Golden Erinyes|Monastery]]
+
+**Organization:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]] (unwillingly)
+
+**Status:** Unknown
+
 **Age:** Younger than [[Characters/Rust|Rust]] (was a young girl when he escaped)
 
 ## Description
