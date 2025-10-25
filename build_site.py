@@ -217,11 +217,19 @@ for f in Path('.').rglob('*.md'):
 
 print(f"Found {len(md_files)} markdown files")
 
-# Build navigation structure
+# Build navigation structure - special handling for Rust Timeline
 nav_structure = {}
 for f in md_files:
-    if len(f.parts) > 1:
-        folder = f.parts[0]
+    path_parts = list(f.parts)
+    
+    # Special case: move Rust Timeline files to their own folder
+    if len(path_parts) >= 3 and path_parts[0] == 'Characters' and path_parts[1] == 'Rust Timeline':
+        folder = 'Characters/Rust Timeline'
+        if folder not in nav_structure:
+            nav_structure[folder] = []
+        nav_structure[folder].append(f)
+    elif len(path_parts) > 1:
+        folder = path_parts[0]
         if folder not in nav_structure:
             nav_structure[folder] = []
         nav_structure[folder].append(f)
@@ -236,10 +244,12 @@ def generate_nav():
     nav_html += '<h1>🎲 Kingmaker Campaign</h1>\n'
     
     for folder in sorted(nav_structure.keys()):
-        nav_html += f'<h2>{folder}</h2>\n'
+        # Display folder name nicely
+        display_name = folder.replace('/', ' / ')
+        nav_html += f'<h2>{display_name}</h2>\n'
         nav_html += '<ul>\n'
         for file in sorted(nav_structure[folder]):
-            url = str(file).replace('\\', '/').replace('.md', '.html')
+            url = '/' + str(file).replace('\\', '/').replace('.md', '.html')
             title = file.stem.replace('-', ' ').replace('_', ' ')
             nav_html += f'<li><a href="{url}">{title}</a></li>\n'
         nav_html += '</ul>\n'
@@ -248,6 +258,15 @@ def generate_nav():
     return nav_html
 
 nav_html = generate_nav()
+
+# Helper function to calculate relative path depth
+def get_css_path(file_path):
+    """Calculate the correct path to style.css based on file depth"""
+    depth = len(file_path.parts) - 1
+    if depth == 0:
+        return 'style.css'
+    else:
+        return '../' * depth + 'style.css'
 
 # Convert each markdown file to HTML
 for md_file in md_files:
@@ -260,6 +279,9 @@ for md_file in md_files:
     out_file = output_dir / str(md_file).replace('.md', '.html')
     out_file.parent.mkdir(parents=True, exist_ok=True)
     
+    # Get correct CSS path for this file
+    css_path = get_css_path(md_file)
+    
     page_title = md_file.stem.replace('-', ' ').replace('_', ' ')
     full_html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -267,7 +289,7 @@ for md_file in md_files:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{page_title} - Kingmaker Campaign</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="{css_path}">
 </head>
 <body>
     <div class="container">
