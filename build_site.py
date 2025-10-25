@@ -12,7 +12,6 @@ md = markdown.Markdown(extensions=[
     'fenced_code',
     'attr_list',
     'def_list',
-    'wikilinks',
 ])
 
 # Create output directory
@@ -238,9 +237,14 @@ print(f"Found {len(md_files)} markdown files")
 # Build a map of file names to paths for internal links
 file_map = {}
 for f in md_files:
-    # Store both with and without .md extension
+    # Store by stem (filename without extension)
     file_map[f.stem] = f
+    # Also store full path variants
+    file_map[str(f).replace('\\', '/')] = f
+    # Store with .md extension
     file_map[f.name] = f
+    
+print(f"File map has {len(file_map)} entries")
 
 # Build navigation structure
 nav_structure = {}
@@ -300,11 +304,10 @@ def generate_nav():
 
 nav_html = generate_nav()
 
-# Function to fix internal links
-def fix_internal_links(html_content, current_file):
-    """Convert Obsidian-style [[links]] and markdown links to proper HTML links"""
+# Function to fix internal links BEFORE markdown conversion
+def fix_internal_links_pre(content, current_file):
+    """Convert Obsidian-style [[links]] to markdown links before processing"""
     
-    # Fix [[WikiLinks]]
     def replace_wikilink(match):
         link_text = match.group(1)
         # Check if it has a pipe for custom text [[link|text]]
@@ -315,46 +318,77 @@ def fix_internal_links(html_content, current_file):
         
         # Try to find the target file
         target_clean = target.strip()
+        
+        # Try exact match first
         if target_clean in file_map:
             target_path = file_map[target_clean]
             url = BASE_URL + '/' + str(target_path).replace('\\', '/').replace('.md', '.html')
-            return f'<a href="{url}">{display}</a>'
-        else:
-            # Link not found, just return the text
-            return display
+            return f'[{display}]({url})'
+        
+        # Try with .md extension
+        if target_clean + '.md' in file_map:
+            target_path = file_map[target_clean + '.md']
+            url = BASE_URL + '/' + str(target_path).replace('\\', '/').replace('.md', '.html')
+            return f'[{display}]({url})'
+        
+        # Try case-insensitive match
+        for key, path in file_map.items():
+            if key.lower() == target_clean.lower():
+                url = BASE_URL + '/' + str(path).replace('\\', '/').replace('.md', '.html')
+                return f'[{display}]({url})'
+        
+        print(f"  Warning: Could not find link target '{target_clean}'")
+        # Link not found, just return the text
+        return display
     
-    html_content = re.sub(r'\[\[([^\]]+)\]\]', replace_wikilink, html_content)
+    content = re.sub(r'\[\[([^\]]+)\]\]', replace_wikilink, content)
+    return content
+
+# Function to fix markdown links to .md files
+def fix_md_links(content):
+    """Fix relative markdown links to .md files"""
     
-    # Fix relative markdown links like [text](File.md)
     def replace_mdlink(match):
+        full_match = match.group(0)
         display = match.group(1)
         target = match.group(2)
         
-        # Only process .md links
-        if target.endswith('.md'):
+        # Only process .md links (not URLs)
+        if target.endswith('.md') and not target.startswith('http'):
+            # Extract filename
             target_name = Path(target).stem
+            
+            # Try to find it
             if target_name in file_map:
                 target_path = file_map[target_name]
                 url = BASE_URL + '/' + str(target_path).replace('\\', '/').replace('.md', '.html')
-                return f'<a href="{url}">{display}</a>'
+                return f'[{display}]({url})'
+            
+            # Try with full relative path
+            if target in file_map:
+                target_path = file_map[target]
+                url = BASE_URL + '/' + str(target_path).replace('\\', '/').replace('.md', '.html')
+                return f'[{display}]({url})'
         
         # Return original if not found or not .md
-        return match.group(0)
+        return full_match
     
-    html_content = re.sub(r'\[([^\]]+)\]\(([^\)]+)\)', replace_mdlink, html_content)
-    
-    return html_content
+    content = re.sub(r'\[([^\]]+)\]\(([^\)]+)\)', replace_mdlink, content)
+    return content
 
 # Convert each markdown file to HTML
 for md_file in md_files:
     print(f"Converting: {md_file}")
     
     content = md_file.read_text(encoding='utf-8')
+    
+    # Fix internal links BEFORE markdown conversion
+    content = fix_internal_links_pre(content, md_file)
+    content = fix_md_links(content)
+    
+    # Now convert to HTML
     html_content = md.convert(content)
     md.reset()
-    
-    # Fix internal links
-    html_content = fix_internal_links(html_content, md_file)
     
     out_file = output_dir / str(md_file).replace('.md', '.html')
     out_file.parent.mkdir(parents=True, exist_ok=True)
