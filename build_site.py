@@ -262,15 +262,6 @@ def generate_nav():
 
 nav_html = generate_nav()
 
-# Helper function to calculate relative path depth
-def get_css_path(file_path):
-    """Calculate the correct path to style.css based on file depth"""
-    depth = len(file_path.parts) - 1
-    if depth == 0:
-        return f'{BASE_URL}/style.css'
-    else:
-        return '../' * depth + 'style.css'
-
 # Convert each markdown file to HTML
 for md_file in md_files:
     print(f"Converting: {md_file}")
@@ -282,17 +273,16 @@ for md_file in md_files:
     out_file = output_dir / str(md_file).replace('.md', '.html')
     out_file.parent.mkdir(parents=True, exist_ok=True)
     
-    # Get correct CSS path for this file
-    css_path = get_css_path(md_file)
-    
     page_title = md_file.stem.replace('-', ' ').replace('_', ' ')
+    
+    # Use absolute path to CSS for all pages
     full_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{page_title} - Kingmaker Campaign</title>
-    <link rel="stylesheet" href="{css_path}">
+    <link rel="stylesheet" href="{BASE_URL}/style.css">
 </head>
 <body>
     <div class="container">
