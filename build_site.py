@@ -1,5 +1,6 @@
 import os
 import markdown
+import re
 from pathlib import Path
 
 # Markdown extensions for better rendering
@@ -11,6 +12,7 @@ md = markdown.Markdown(extensions=[
     'fenced_code',
     'attr_list',
     'def_list',
+    'wikilinks',
 ])
 
 # Create output directory
@@ -69,12 +71,25 @@ nav h2 {
     letter-spacing: 1px;
 }
 
+nav h3 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: #95a5a6;
+    font-weight: normal;
+}
+
 nav ul {
     list-style: none;
 }
 
 nav li {
     margin: 5px 0;
+}
+
+nav .subsection {
+    margin-left: 15px;
 }
 
 nav a {
@@ -220,26 +235,36 @@ for f in Path('.').rglob('*.md'):
 
 print(f"Found {len(md_files)} markdown files")
 
-# Build navigation structure - special handling for Rust Timeline
+# Build a map of file names to paths for internal links
+file_map = {}
+for f in md_files:
+    # Store both with and without .md extension
+    file_map[f.stem] = f
+    file_map[f.name] = f
+
+# Build navigation structure
 nav_structure = {}
 for f in md_files:
     path_parts = list(f.parts)
     
-    # Special case: move Rust Timeline files to their own folder
-    if len(path_parts) >= 3 and path_parts[0] == 'Characters' and path_parts[1] == 'Rust Timeline':
-        folder = 'Characters/Rust Timeline'
-        if folder not in nav_structure:
-            nav_structure[folder] = []
-        nav_structure[folder].append(f)
-    elif len(path_parts) > 1:
+    if len(path_parts) > 1:
+        # Use first part as main folder
         folder = path_parts[0]
         if folder not in nav_structure:
-            nav_structure[folder] = []
-        nav_structure[folder].append(f)
+            nav_structure[folder] = {'files': [], 'subfolders': {}}
+        
+        # Check if there's a subfolder
+        if len(path_parts) > 2:
+            subfolder = path_parts[1]
+            if subfolder not in nav_structure[folder]['subfolders']:
+                nav_structure[folder]['subfolders'][subfolder] = []
+            nav_structure[folder]['subfolders'][subfolder].append(f)
+        else:
+            nav_structure[folder]['files'].append(f)
     else:
         if 'Root' not in nav_structure:
-            nav_structure['Root'] = []
-        nav_structure['Root'].append(f)
+            nav_structure['Root'] = {'files': [], 'subfolders': {}}
+        nav_structure['Root']['files'].append(f)
 
 # Generate navigation HTML
 def generate_nav():
@@ -247,20 +272,78 @@ def generate_nav():
     nav_html += '<h1>🎲 Kingmaker Campaign</h1>\n'
     
     for folder in sorted(nav_structure.keys()):
-        # Display folder name nicely
-        display_name = folder.replace('/', ' / ')
-        nav_html += f'<h2>{display_name}</h2>\n'
+        nav_html += f'<h2>{folder}</h2>\n'
         nav_html += '<ul>\n'
-        for file in sorted(nav_structure[folder]):
+        
+        # Add main files in this folder
+        for file in sorted(nav_structure[folder]['files']):
             url = BASE_URL + '/' + str(file).replace('\\', '/').replace('.md', '.html')
             title = file.stem.replace('-', ' ').replace('_', ' ')
             nav_html += f'<li><a href="{url}">{title}</a></li>\n'
+        
+        # Add subfolders
+        for subfolder in sorted(nav_structure[folder]['subfolders'].keys()):
+            nav_html += f'<li class="subsection">\n'
+            nav_html += f'<h3>{subfolder}</h3>\n'
+            nav_html += '<ul>\n'
+            for file in sorted(nav_structure[folder]['subfolders'][subfolder]):
+                url = BASE_URL + '/' + str(file).replace('\\', '/').replace('.md', '.html')
+                title = file.stem.replace('-', ' ').replace('_', ' ')
+                nav_html += f'<li><a href="{url}">{title}</a></li>\n'
+            nav_html += '</ul>\n'
+            nav_html += '</li>\n'
+        
         nav_html += '</ul>\n'
     
     nav_html += '</nav>\n'
     return nav_html
 
 nav_html = generate_nav()
+
+# Function to fix internal links
+def fix_internal_links(html_content, current_file):
+    """Convert Obsidian-style [[links]] and markdown links to proper HTML links"""
+    
+    # Fix [[WikiLinks]]
+    def replace_wikilink(match):
+        link_text = match.group(1)
+        # Check if it has a pipe for custom text [[link|text]]
+        if '|' in link_text:
+            target, display = link_text.split('|', 1)
+        else:
+            target = display = link_text
+        
+        # Try to find the target file
+        target_clean = target.strip()
+        if target_clean in file_map:
+            target_path = file_map[target_clean]
+            url = BASE_URL + '/' + str(target_path).replace('\\', '/').replace('.md', '.html')
+            return f'<a href="{url}">{display}</a>'
+        else:
+            # Link not found, just return the text
+            return display
+    
+    html_content = re.sub(r'\[\[([^\]]+)\]\]', replace_wikilink, html_content)
+    
+    # Fix relative markdown links like [text](File.md)
+    def replace_mdlink(match):
+        display = match.group(1)
+        target = match.group(2)
+        
+        # Only process .md links
+        if target.endswith('.md'):
+            target_name = Path(target).stem
+            if target_name in file_map:
+                target_path = file_map[target_name]
+                url = BASE_URL + '/' + str(target_path).replace('\\', '/').replace('.md', '.html')
+                return f'<a href="{url}">{display}</a>'
+        
+        # Return original if not found or not .md
+        return match.group(0)
+    
+    html_content = re.sub(r'\[([^\]]+)\]\(([^\)]+)\)', replace_mdlink, html_content)
+    
+    return html_content
 
 # Convert each markdown file to HTML
 for md_file in md_files:
@@ -269,6 +352,9 @@ for md_file in md_files:
     content = md_file.read_text(encoding='utf-8')
     html_content = md.convert(content)
     md.reset()
+    
+    # Fix internal links
+    html_content = fix_internal_links(html_content, md_file)
     
     out_file = output_dir / str(md_file).replace('.md', '.html')
     out_file.parent.mkdir(parents=True, exist_ok=True)
