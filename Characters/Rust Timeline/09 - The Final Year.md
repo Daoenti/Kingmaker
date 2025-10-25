@@ -252,6 +252,4 @@ Until tomorrow, when everything changed.
 
 ---
 
-**Previous:** ← [[08 - Escalation]]
-
-**Next:** → [[10 - The Awakening]]
+<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[08 - Escalation]]</span><span>**Next:** → [[10 - The Awakening]]</span></div>

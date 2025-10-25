@@ -231,6 +231,4 @@ Purpose would have to wait. For now, survival was enough.
 
 ---
 
-**Previous:** ← [[10 - The Awakening]]
-
-**Next:** → [[12 - Sevenarches]]
+<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[10 - The Awakening]]</span><span>**Next:** → [[12 - Sevenarches]]</span></div>

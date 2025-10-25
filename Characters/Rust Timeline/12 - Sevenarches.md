@@ -327,6 +327,4 @@ Most days.
 
 ---
 
-**Previous:** ← [[11 - First Months Free]]
-
-**Next:** → [[13 - Approaching Adulthood]]
+<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[11 - First Months Free]]</span><span>**Next:** → [[13 - Approaching Adulthood]]</span></div>

@@ -130,6 +130,4 @@ He filed that understanding away, deep in the part of his mind the Sisters could
 
 ---
 
-**Previous:** ← [[04 - Velennes Observation]]
-
-**Next:** → [[06 - Survival Strategies]]
+<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[04 - Velennes Observation]]</span><span>**Next:** → [[06 - Survival Strategies]]</span></div>

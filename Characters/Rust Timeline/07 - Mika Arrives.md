@@ -205,6 +205,4 @@ And though he didn't know it yet, that choice would define everything that came 
 
 ---
 
-**Previous:** ← [[06 - Survival Strategies]]
-
-**Next:** → [[08 - Escalation]]
+<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[06 - Survival Strategies]]</span><span>**Next:** → [[08 - Escalation]]</span></div>
