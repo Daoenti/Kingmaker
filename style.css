@@ -1,3 +1,24 @@
+/* Gruvbox Dark Color Palette */
+:root {
+    --bg0-hard: #1d2021;
+    --bg0: #282828;
+    --bg1: #3c3836;
+    --bg2: #504945;
+    --bg3: #665c54;
+    --fg0: #fbf1c7;
+    --fg1: #ebdbb2;
+    --fg2: #d5c4a1;
+    --fg3: #bdae93;
+    --fg4: #a89984;
+    --red: #fb4934;
+    --green: #b8bb26;
+    --yellow: #fabd2f;
+    --blue: #83a598;
+    --purple: #d3869b;
+    --aqua: #8ec07c;
+    --orange: #fe8019;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +28,8 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    color: #e4e4e4;
-    background: #1a1a1a;
+    color: var(--fg1);
+    background: var(--bg0-hard);
 }
 
 .container {
@@ -20,21 +41,21 @@ body {
 
 nav {
     width: 300px;
-    background: #0d1117;
-    color: #c9d1d9;
+    background: var(--bg0);
+    color: var(--fg1);
     padding: 20px;
     position: sticky;
     top: 0;
     height: 100vh;
     overflow-y: auto;
-    border-right: 1px solid #30363d;
+    border-right: 1px solid var(--bg2);
 }
 
 nav .logo {
     width: 100%;
     margin-bottom: 20px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #30363d;
+    border-bottom: 2px solid var(--bg2);
 }
 
 nav .logo img {
@@ -46,16 +67,16 @@ nav .logo img {
 nav h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #58a6ff;
+    border-bottom: 2px solid var(--yellow);
     padding-bottom: 10px;
-    color: #58a6ff;
+    color: var(--yellow);
 }
 
 nav h2 {
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #58a6ff;
+    color: var(--orange);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -65,7 +86,7 @@ nav h3 {
     margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 10px;
-    color: #8b949e;
+    color: var(--fg4);
     font-weight: normal;
 }
 
@@ -82,7 +103,7 @@ nav .subsection {
 }
 
 nav a {
-    color: #c9d1d9;
+    color: var(--fg2);
     text-decoration: none;
     display: block;
     padding: 5px 10px;
@@ -91,46 +112,46 @@ nav a {
 }
 
 nav a:hover {
-    background: #21262d;
-    color: #58a6ff;
+    background: var(--bg1);
+    color: var(--aqua);
 }
 
 main {
     flex: 1;
     padding: 40px;
-    background: #0d1117;
+    background: var(--bg0);
 }
 
 main h1 {
-    color: #c9d1d9;
-    border-bottom: 3px solid #58a6ff;
+    color: var(--fg0);
+    border-bottom: 3px solid var(--yellow);
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 main h2 {
-    color: #c9d1d9;
+    color: var(--fg0);
     margin-top: 30px;
     margin-bottom: 15px;
-    border-bottom: 1px solid #30363d;
+    border-bottom: 1px solid var(--bg2);
     padding-bottom: 8px;
 }
 
 main h3 {
-    color: #c9d1d9;
+    color: var(--fg1);
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 main h4, main h5, main h6 {
-    color: #c9d1d9;
+    color: var(--fg1);
     margin-top: 15px;
     margin-bottom: 8px;
 }
 
 main p {
     margin-bottom: 15px;
-    color: #c9d1d9;
+    color: var(--fg1);
 }
 
 main ul, main ol {
@@ -140,48 +161,49 @@ main ul, main ol {
 
 main li {
     margin-bottom: 5px;
-    color: #c9d1d9;
+    color: var(--fg1);
 }
 
 main a {
-    color: #58a6ff;
+    color: var(--blue);
     text-decoration: none;
 }
 
 main a:hover {
     text-decoration: underline;
+    color: var(--aqua);
 }
 
 main code {
-    background: #161b22;
-    color: #f0883e;
+    background: var(--bg1);
+    color: var(--orange);
     padding: 2px 6px;
     border-radius: 3px;
     font-family: 'Courier New', monospace;
-    border: 1px solid #30363d;
+    border: 1px solid var(--bg2);
 }
 
 main pre {
-    background: #161b22;
+    background: var(--bg1);
     padding: 15px;
     border-radius: 5px;
     overflow-x: auto;
     margin-bottom: 15px;
-    border: 1px solid #30363d;
+    border: 1px solid var(--bg2);
 }
 
 main pre code {
     background: none;
     padding: 0;
     border: none;
-    color: #c9d1d9;
+    color: var(--fg1);
 }
 
 main blockquote {
-    border-left: 4px solid #58a6ff;
+    border-left: 4px solid var(--aqua);
     padding-left: 20px;
     margin: 20px 0;
-    color: #8b949e;
+    color: var(--fg3);
     font-style: italic;
 }
 
@@ -192,42 +214,42 @@ main table {
 }
 
 main th, main td {
-    border: 1px solid #30363d;
+    border: 1px solid var(--bg2);
     padding: 10px;
     text-align: left;
 }
 
 main th {
-    background: #161b22;
-    color: #58a6ff;
+    background: var(--bg1);
+    color: var(--yellow);
     font-weight: 600;
 }
 
 main td {
-    color: #c9d1d9;
+    color: var(--fg1);
 }
 
 main tr:nth-child(even) {
-    background: #161b22;
+    background: var(--bg1);
 }
 
 main tr:hover {
-    background: #21262d;
+    background: var(--bg2);
 }
 
 main hr {
     border: none;
-    border-top: 1px solid #30363d;
+    border-top: 1px solid var(--bg2);
     margin: 20px 0;
 }
 
 main strong {
-    color: #c9d1d9;
+    color: var(--fg0);
     font-weight: 600;
 }
 
 main em {
-    color: #c9d1d9;
+    color: var(--fg1);
 }
 
 .home-content {
@@ -239,30 +261,30 @@ main em {
     font-size: 48px;
     margin-bottom: 20px;
     border: none;
-    color: #58a6ff;
+    color: var(--yellow);
 }
 
 .home-content p {
     font-size: 20px;
-    color: #8b949e;
+    color: var(--fg3);
 }
 
-/* Scrollbar styling for dark mode */
+/* Scrollbar styling for Gruvbox dark mode */
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #0d1117;
+    background: var(--bg0);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #30363d;
+    background: var(--bg2);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #484f58;
+    background: var(--bg3);
 }
 
 @media (max-width: 768px) {
