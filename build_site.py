@@ -21,7 +21,7 @@ output_dir.mkdir(exist_ok=True)
 # Base URL for GitHub Pages (repo name)
 BASE_URL = '/Kingmaker'
 
-# CSS for the site
+# CSS for the site - DARK MODE
 css = """
 * {
     margin: 0;
@@ -32,8 +32,8 @@ css = """
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: #f5f5f5;
+    color: #e4e4e4;
+    background: #1a1a1a;
 }
 
 .container {
@@ -45,27 +45,29 @@ body {
 
 nav {
     width: 300px;
-    background: #2c3e50;
-    color: white;
+    background: #0d1117;
+    color: #c9d1d9;
     padding: 20px;
     position: sticky;
     top: 0;
     height: 100vh;
     overflow-y: auto;
+    border-right: 1px solid #30363d;
 }
 
 nav h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid #58a6ff;
     padding-bottom: 10px;
+    color: #58a6ff;
 }
 
 nav h2 {
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #3498db;
+    color: #58a6ff;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -75,7 +77,7 @@ nav h3 {
     margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 10px;
-    color: #95a5a6;
+    color: #8b949e;
     font-weight: normal;
 }
 
@@ -92,7 +94,7 @@ nav .subsection {
 }
 
 nav a {
-    color: #ecf0f1;
+    color: #c9d1d9;
     text-decoration: none;
     display: block;
     padding: 5px 10px;
@@ -101,37 +103,46 @@ nav a {
 }
 
 nav a:hover {
-    background: #34495e;
-    color: #3498db;
+    background: #21262d;
+    color: #58a6ff;
 }
 
 main {
     flex: 1;
     padding: 40px;
-    background: white;
+    background: #0d1117;
 }
 
 main h1 {
-    color: #2c3e50;
-    border-bottom: 3px solid #3498db;
+    color: #c9d1d9;
+    border-bottom: 3px solid #58a6ff;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 main h2 {
-    color: #2c3e50;
+    color: #c9d1d9;
     margin-top: 30px;
     margin-bottom: 15px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 8px;
 }
 
 main h3 {
-    color: #34495e;
+    color: #c9d1d9;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
+main h4, main h5, main h6 {
+    color: #c9d1d9;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
 main p {
     margin-bottom: 15px;
+    color: #c9d1d9;
 }
 
 main ul, main ol {
@@ -141,33 +152,48 @@ main ul, main ol {
 
 main li {
     margin-bottom: 5px;
+    color: #c9d1d9;
+}
+
+main a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
 }
 
 main code {
-    background: #f4f4f4;
+    background: #161b22;
+    color: #f0883e;
     padding: 2px 6px;
     border-radius: 3px;
     font-family: 'Courier New', monospace;
+    border: 1px solid #30363d;
 }
 
 main pre {
-    background: #f4f4f4;
+    background: #161b22;
     padding: 15px;
     border-radius: 5px;
     overflow-x: auto;
     margin-bottom: 15px;
+    border: 1px solid #30363d;
 }
 
 main pre code {
     background: none;
     padding: 0;
+    border: none;
+    color: #c9d1d9;
 }
 
 main blockquote {
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #58a6ff;
     padding-left: 20px;
     margin: 20px 0;
-    color: #555;
+    color: #8b949e;
     font-style: italic;
 }
 
@@ -178,18 +204,42 @@ main table {
 }
 
 main th, main td {
-    border: 1px solid #ddd;
+    border: 1px solid #30363d;
     padding: 10px;
     text-align: left;
 }
 
 main th {
-    background: #3498db;
-    color: white;
+    background: #161b22;
+    color: #58a6ff;
+    font-weight: 600;
+}
+
+main td {
+    color: #c9d1d9;
 }
 
 main tr:nth-child(even) {
-    background: #f9f9f9;
+    background: #161b22;
+}
+
+main tr:hover {
+    background: #21262d;
+}
+
+main hr {
+    border: none;
+    border-top: 1px solid #30363d;
+    margin: 20px 0;
+}
+
+main strong {
+    color: #c9d1d9;
+    font-weight: 600;
+}
+
+main em {
+    color: #c9d1d9;
 }
 
 .home-content {
@@ -201,11 +251,30 @@ main tr:nth-child(even) {
     font-size: 48px;
     margin-bottom: 20px;
     border: none;
+    color: #58a6ff;
 }
 
 .home-content p {
     font-size: 20px;
-    color: #666;
+    color: #8b949e;
+}
+
+/* Scrollbar styling for dark mode */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0d1117;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #30363d;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #484f58;
 }
 
 @media (max-width: 768px) {
@@ -304,6 +373,18 @@ def generate_nav():
 
 nav_html = generate_nav()
 
+# Function to remove YAML frontmatter
+def remove_frontmatter(content):
+    """Remove YAML frontmatter from markdown content"""
+    # Check if content starts with ---
+    if content.startswith('---'):
+        # Find the end of frontmatter (second ---)
+        parts = content.split('---', 2)
+        if len(parts) >= 3:
+            # Return everything after the frontmatter
+            return parts[2].lstrip()
+    return content
+
 # Function to fix internal links BEFORE markdown conversion
 def fix_internal_links_pre(content, current_file):
     """Convert Obsidian-style [[links]] to markdown links before processing"""
@@ -381,6 +462,9 @@ for md_file in md_files:
     print(f"Converting: {md_file}")
     
     content = md_file.read_text(encoding='utf-8')
+    
+    # Remove frontmatter
+    content = remove_frontmatter(content)
     
     # Fix internal links BEFORE markdown conversion
     content = fix_internal_links_pre(content, md_file)
