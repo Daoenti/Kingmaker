@@ -331,4 +331,6 @@ And breaks can become escapes.
 
 ---
 
-<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[01 - Unknown Origins]]</span><span>**Next:** → [[03 - The Gift and the Curse]]</span></div>
+| | |
+|:---|---:|
+| **Previous:** ← [[01 - Unknown Origins]] | **Next:** → [[03 - The Gift and the Curse]] |

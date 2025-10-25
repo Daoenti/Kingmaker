@@ -137,4 +137,6 @@ But he knew this: when opportunity came, he would be ready.
 
 ---
 
-<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[05 - Learning Languages]]</span><span>**Next:** → [[07 - Mika Arrives]]</span></div>
+| | |
+|:---|---:|
+| **Previous:** ← [[05 - Learning Languages]] | **Next:** → [[07 - Mika Arrives]] |

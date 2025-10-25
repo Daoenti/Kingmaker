@@ -356,4 +356,6 @@ That was the moment his real education in suffering began.
 
 ---
 
-<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[02 - Arrival and Conditioning]]</span><span>**Next:** → [[04 - Velennes Observation]]</span></div>
+| | |
+|:---|---:|
+| **Previous:** ← [[02 - Arrival and Conditioning]] | **Next:** → [[04 - Velennes Observation]] |

@@ -272,4 +272,6 @@ Both of them changed forever by ten years in a place designed to break children.
 
 ---
 
-<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[09 - The Final Year]]</span><span>**Next:** → [[11 - First Months Free]]</span></div>
+| | |
+|:---|---:|
+| **Previous:** ← [[09 - The Final Year]] | **Next:** → [[11 - First Months Free]] |

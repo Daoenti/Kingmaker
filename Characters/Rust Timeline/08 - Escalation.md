@@ -236,4 +236,6 @@ The only question was what would happen after.
 
 ---
 
-<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[07 - Mika Arrives]]</span><span>**Next:** → [[09 - The Final Year]]</span></div>
+| | |
+|:---|---:|
+| **Previous:** ← [[07 - Mika Arrives]] | **Next:** → [[09 - The Final Year]] |

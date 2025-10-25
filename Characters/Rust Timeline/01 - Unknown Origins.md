@@ -230,4 +230,6 @@ This is perhaps the deepest wound: to grieve for something you cannot name, to m
 
 ---
 
-<div style="display: flex; justify-content: space-between;"><span></span><span>**Next:** → [[02 - Arrival and Conditioning]]</span></div>
+| | |
+|:---|---:|
+| | **Next:** → [[02 - Arrival and Conditioning]] |

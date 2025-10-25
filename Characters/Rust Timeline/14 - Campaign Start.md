@@ -207,7 +207,9 @@ Rust chose a direction and started walking.
 
 ---
 
-<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[13 - Approaching Adulthood]]</span><span></span></div>
+| | |
+|:---|---:|
+| **Previous:** ← [[13 - Approaching Adulthood]] | |
 
 ---
 

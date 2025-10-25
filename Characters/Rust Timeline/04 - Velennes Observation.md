@@ -446,4 +446,6 @@ Four more years of becoming someone harder to break than anyone imagined.
 
 ---
 
-<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[03 - The Gift and the Curse]]</span><span>**Next:** → [[05 - Learning Languages]]</span></div>
+| | |
+|:---|---:|
+| **Previous:** ← [[03 - The Gift and the Curse]] | **Next:** → [[05 - Learning Languages]] |

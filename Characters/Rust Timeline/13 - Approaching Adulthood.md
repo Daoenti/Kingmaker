@@ -59,4 +59,6 @@ Rust ate the bread slowly, making it last, trying to figure out which version of
 
 ---
 
-<div style="display: flex; justify-content: space-between;"><span>**Previous:** ← [[12 - Sevenarches]]</span><span>**Next:** → [[14 - Campaign Start]]</span></div>
+| | |
+|:---|---:|
+| **Previous:** ← [[12 - Sevenarches]] | **Next:** → [[14 - Campaign Start]] |
