@@ -17,6 +17,9 @@ md = markdown.Markdown(extensions=[
 output_dir = Path('_site')
 output_dir.mkdir(exist_ok=True)
 
+# Base URL for GitHub Pages (repo name)
+BASE_URL = '/Kingmaker'
+
 # CSS for the site
 css = """
 * {
@@ -249,7 +252,7 @@ def generate_nav():
         nav_html += f'<h2>{display_name}</h2>\n'
         nav_html += '<ul>\n'
         for file in sorted(nav_structure[folder]):
-            url = '/' + str(file).replace('\\', '/').replace('.md', '.html')
+            url = BASE_URL + '/' + str(file).replace('\\', '/').replace('.md', '.html')
             title = file.stem.replace('-', ' ').replace('_', ' ')
             nav_html += f'<li><a href="{url}">{title}</a></li>\n'
         nav_html += '</ul>\n'
@@ -264,7 +267,7 @@ def get_css_path(file_path):
     """Calculate the correct path to style.css based on file depth"""
     depth = len(file_path.parts) - 1
     if depth == 0:
-        return 'style.css'
+        return f'{BASE_URL}/style.css'
     else:
         return '../' * depth + 'style.css'
 
@@ -310,7 +313,7 @@ index_html = f"""<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kingmaker Campaign</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{BASE_URL}/style.css">
 </head>
 <body>
     <div class="container">
