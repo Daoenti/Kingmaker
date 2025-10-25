@@ -207,6 +207,10 @@ Rust chose a direction and started walking.
 
 ---
 
+**Previous:** [[13 - Approaching Adulthood|Approaching Adulthood]] - The wandering year continues
+
+---
+
 **The Story Begins Here**
 
 This timeline documents everything that brought Rust to this moment. The abuse, the awakening, the escape, the recovery, the learning. All of it is foundation—but not destiny.

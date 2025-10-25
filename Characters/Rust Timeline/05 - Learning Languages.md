@@ -130,4 +130,6 @@ He filed that understanding away, deep in the part of his mind the Sisters could
 
 ---
 
+**Previous:** [[04 - Velennes Observation|Velennes Observation]] - Ages 6-8: Sister Velenne's systematic testing
+
 **Next:** [[06 - Survival Strategies|Survival Strategies]] - Ages 8-9, where Rust begins deliberately preparing for a future beyond the monastery walls.

@@ -231,4 +231,6 @@ Purpose would have to wait. For now, survival was enough.
 
 ---
 
+**Previous:** [[10 - The Awakening|The Awakening]] - The night everything changed, when power manifested and freedom became possible
+
 **Next:** [[12 - Sevenarches|Sevenarches]] - Age 12, six months after escape, when an ancient forest offers knowledge at a price too high to pay.
