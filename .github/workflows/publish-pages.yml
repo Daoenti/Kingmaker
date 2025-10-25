@@ -271,17 +271,19 @@ jobs:
 
         # Generate navigation HTML
         def generate_nav():
-            nav_html = '<nav>\\n<h1>🎲 Kingmaker Campaign</h1>\\n'
+            nav_html = '<nav>\n'
+            nav_html += '<h1>🎲 Kingmaker Campaign</h1>\n'
             
             for folder in sorted(nav_structure.keys()):
-                nav_html += f'<h2>{folder}</h2>\\n<ul>\\n'
+                nav_html += f'<h2>{folder}</h2>\n'
+                nav_html += '<ul>\n'
                 for file in sorted(nav_structure[folder]):
-                    url = str(file).replace('\\\\', '/').replace('.md', '.html')
+                    url = str(file).replace('\\', '/').replace('.md', '.html')
                     title = file.stem.replace('-', ' ').replace('_', ' ')
-                    nav_html += f'<li><a href="{url}">{title}</a></li>\\n'
-                nav_html += '</ul>\\n'
+                    nav_html += f'<li><a href="{url}">{title}</a></li>\n'
+                nav_html += '</ul>\n'
             
-            nav_html += '</nav>\\n'
+            nav_html += '</nav>\n'
             return nav_html
 
         nav_html = generate_nav()
@@ -299,51 +301,51 @@ jobs:
             
             page_title = md_file.stem.replace('-', ' ').replace('_', ' ')
             full_html = f"""<!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>{page_title} - Kingmaker Campaign</title>
-            <link rel="stylesheet" href="/style.css">
-        </head>
-        <body>
-            <div class="container">
-                {nav_html}
-                <main>
-                    {html_content}
-                </main>
-            </div>
-        </body>
-        </html>"""
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{page_title} - Kingmaker Campaign</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        {nav_html}
+        <main>
+            {html_content}
+        </main>
+    </div>
+</body>
+</html>"""
             
             out_file.write_text(full_html, encoding='utf-8')
 
         # Create index.html
         index_html = f"""<!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Kingmaker Campaign</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <div class="container">
-                {nav_html}
-                <main>
-                    <div class="home-content">
-                        <h1>⚔️ Kingmaker Campaign</h1>
-                        <p>Pathfinder Campaign Notes</p>
-                        <p>Use the navigation on the left to explore the campaign world.</p>
-                    </div>
-                </main>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingmaker Campaign</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        {nav_html}
+        <main>
+            <div class="home-content">
+                <h1>⚔️ Kingmaker Campaign</h1>
+                <p>Pathfinder Campaign Notes</p>
+                <p>Use the navigation on the left to explore the campaign world.</p>
             </div>
-        </body>
-        </html>"""
+        </main>
+    </div>
+</body>
+</html>"""
 
         (output_dir / 'index.html').write_text(index_html, encoding='utf-8')
         
-        print(f"\\n✅ Site built successfully!")
+        print(f"\n✅ Site built successfully!")
         print(f"   Generated {len(md_files)} pages")
         EOF
         
