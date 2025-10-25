@@ -34,10 +34,6 @@ jobs:
       run: |
         pip install markdown pymdown-extensions
         
-    - name: Build site
-      run: |
-        python3 build_site.py
-        
     - name: Create build script
       run: |
         cat > build_site.py << 'EOF'
@@ -350,6 +346,10 @@ jobs:
         print(f"\\n✅ Site built successfully!")
         print(f"   Generated {len(md_files)} pages")
         EOF
+        
+    - name: Build site
+      run: |
+        python3 build_site.py
     
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
