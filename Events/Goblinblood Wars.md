@@ -20,15 +20,10 @@ tags:
 ## Overview
 
 **Dates:** 4697-4701 AR (approximately)
-
 **Location:** [[Locations/Isger|Isger]]
-
 **Belligerents:** Chelaxian/Isgeri military forces and goblinoid tribes
-
 **Nature:** Series of conflicts characterized by systematic purge operations
-
 **Outcome:** Near-complete elimination of organized goblin populations in Isger
-
 **Casualties:** Tens of thousands (mostly goblinoid civilians)
 
 ## Background

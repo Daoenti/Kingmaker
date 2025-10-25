@@ -18,11 +18,8 @@ tags:
 ## Overview
 
 **Role:** Mercenary and caravan guard
-
 **Species:** Half-orc
-
 **Status:** Unknown (last seen in northern Andoran)
-
 **Relationship to [[Characters/Rust|Rust]]:** Brief mentor figure during caravan journey
 
 ## Description

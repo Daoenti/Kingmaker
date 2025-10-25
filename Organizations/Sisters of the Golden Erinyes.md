@@ -19,13 +19,9 @@ tags:
 ## Overview
 
 **Alignment:** Lawful Evil
-
 **Headquarters:** [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]], western [[Locations/Isger|Isger]]
-
 **Deity:** [[Deities/Asmodeus|Asmodeus]]
-
 **Founded:** Shortly after the [[Events/Goblinblood Wars|Goblinblood Wars]]
-
 **Current Status:** Active and operating
 
 ## Purpose and Philosophy

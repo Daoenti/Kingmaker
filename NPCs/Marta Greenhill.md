@@ -18,15 +18,10 @@ tags:
 ## Overview
 
 **Role:** Shopkeeper and tavern keeper
-
 **Species:** Human
-
 **Age:** Middle-aged (around 40 when Rust met her)
-
 **Status:** Unknown (presumably still running her shop)
-
 **Location:** Small settlement in southern Kyonin, near the Sevenarches border
-
 **Relationship to [[Characters/Rust|Rust]]:** First person to show him casual kindness after his escape
 
 ## Description

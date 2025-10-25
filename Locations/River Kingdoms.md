@@ -19,15 +19,10 @@ tags:
 ## Overview
 
 **Type:** Region of independent kingdoms
-
 **Location:** Central Avistan, east of [[Locations/Druma|Druma]]
-
 **Government:** None unified; dozens of small kingdoms, republics, and city-states
-
 **Alignment:** Mixed, predominantly Chaotic
-
 **Notable Features:** Constant border changes, freedom, lawlessness, opportunity
-
 **Primary Geography:** River valleys and plains
 
 ## Description
