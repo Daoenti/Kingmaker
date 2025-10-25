@@ -303,9 +303,35 @@ for f in Path('.').rglob('*.md'):
 
 print(f"Found {len(md_files)} markdown files")
 
-# Build a map of file names to paths for internal links
-file_map = {}
+# Function to remove YAML frontmatter
+def remove_frontmatter(content):
+    """Remove YAML frontmatter from markdown content"""
+    # Check if content starts with ---
+    if content.startswith('---'):
+        # Find the end of frontmatter (second ---)
+        parts = content.split('---', 2)
+        if len(parts) >= 3:
+            # Return everything after the frontmatter
+            return parts[2].lstrip()
+    return content
+
+# Pre-process files to check if they have content after frontmatter removal
+valid_files = []
 for f in md_files:
+    content = f.read_text(encoding='utf-8')
+    content_no_frontmatter = remove_frontmatter(content)
+    
+    # Check if there's actual content (not just whitespace)
+    if content_no_frontmatter.strip():
+        valid_files.append(f)
+    else:
+        print(f"  Skipping {f} (empty after frontmatter removal)")
+
+print(f"Valid files with content: {len(valid_files)}")
+
+# Build a map of file names to paths for internal links (only valid files)
+file_map = {}
+for f in valid_files:
     # Store by stem (filename without extension)
     file_map[f.stem] = f
     # Also store full path variants
@@ -315,9 +341,9 @@ for f in md_files:
     
 print(f"File map has {len(file_map)} entries")
 
-# Build navigation structure
+# Build navigation structure (only valid files)
 nav_structure = {}
-for f in md_files:
+for f in valid_files:
     path_parts = list(f.parts)
     
     if len(path_parts) > 1:
@@ -372,18 +398,6 @@ def generate_nav():
     return nav_html
 
 nav_html = generate_nav()
-
-# Function to remove YAML frontmatter
-def remove_frontmatter(content):
-    """Remove YAML frontmatter from markdown content"""
-    # Check if content starts with ---
-    if content.startswith('---'):
-        # Find the end of frontmatter (second ---)
-        parts = content.split('---', 2)
-        if len(parts) >= 3:
-            # Return everything after the frontmatter
-            return parts[2].lstrip()
-    return content
 
 # Function to fix internal links BEFORE markdown conversion
 def fix_internal_links_pre(content, current_file):
@@ -457,8 +471,8 @@ def fix_md_links(content):
     content = re.sub(r'\[([^\]]+)\]\(([^\)]+)\)', replace_mdlink, content)
     return content
 
-# Convert each markdown file to HTML
-for md_file in md_files:
+# Convert each markdown file to HTML (only valid files)
+for md_file in valid_files:
     print(f"Converting: {md_file}")
     
     content = md_file.read_text(encoding='utf-8')
@@ -526,4 +540,4 @@ index_html = f"""<!DOCTYPE html>
 (output_dir / 'index.html').write_text(index_html, encoding='utf-8')
 
 print(f"\n✅ Site built successfully!")
-print(f"   Generated {len(md_files)} pages")
+print(f"   Generated {len(valid_files)} pages")
