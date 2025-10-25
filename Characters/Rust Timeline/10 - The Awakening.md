@@ -272,6 +272,6 @@ Both of them changed forever by ten years in a place designed to break children.
 
 ---
 
-**Previous:** [[09 - The Final Year|The Final Year]] - Age 12, the year leading up to the awakening
+**Previous:** ← [[09 - The Final Year]]
 
-**Next:** [[11 - First Months Free|First Months Free]] - Age 12, immediate aftermath of escape and learning to survive in a world he'd only seen through monastery walls.
+**Next:** → [[11 - First Months Free]]

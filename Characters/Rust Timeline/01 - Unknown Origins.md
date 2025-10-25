@@ -230,4 +230,4 @@ This is perhaps the deepest wound: to grieve for something you cannot name, to m
 
 ---
 
-**Next:** [[02 - Arrival and Conditioning|Arrival and Conditioning]] - Ages 2-5: First memories at the monastery
+**Next:** → [[02 - Arrival and Conditioning]]

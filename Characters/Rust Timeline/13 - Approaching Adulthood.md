@@ -56,3 +56,9 @@ He left. Sat outside the settlement for an hour trying to understand what had ju
 This hadn't felt like that. It had felt... casual. Like feeding a hungry kid was just what you did, no ceremony required.
 
 Rust ate the bread slowly, making it last, trying to figure out which version of the world was real—the monastery's, or this.
+
+---
+
+**Previous:** ← [[12 - Sevenarches]]
+
+**Next:** → [[14 - Campaign Start]]

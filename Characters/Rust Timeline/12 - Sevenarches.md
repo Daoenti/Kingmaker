@@ -327,4 +327,6 @@ Most days.
 
 ---
 
-**Next:** [[13 - Approaching Adulthood|Approaching Adulthood]] - The wandering year continues
+**Previous:** ← [[11 - First Months Free]]
+
+**Next:** → [[13 - Approaching Adulthood]]

@@ -137,6 +137,6 @@ But he knew this: when opportunity came, he would be ready.
 
 ---
 
-**Previous:** [[05 - Learning Languages|Learning Languages]] - Age 7: Infernal, Goblin, and the weight of words
+**Previous:** ← [[05 - Learning Languages]]
 
-**Next:** [[07 - Mika Arrives|Mika Arrives]] - Age 10, when Rust finally finds someone he can protect and trust, and learns what friendship means in a place designed to prevent it.
+**Next:** → [[07 - Mika Arrives]]

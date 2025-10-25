@@ -205,6 +205,6 @@ And though he didn't know it yet, that choice would define everything that came 
 
 ---
 
-**Previous:** [[06 - Survival Strategies|Survival Strategies]] - Ages 8-9, where Rust begins deliberately preparing for a future beyond the monastery walls
+**Previous:** ← [[06 - Survival Strategies]]
 
-**Next:** [[08 - Escalation|Escalation]] - Age 11, when the Sisters intensify their control and Rust begins to understand that time is running out.
+**Next:** → [[08 - Escalation]]

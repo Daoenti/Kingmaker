@@ -356,6 +356,6 @@ That was the moment his real education in suffering began.
 
 ---
 
-**Previous:** [[02 - Arrival and Conditioning|Arrival and Conditioning]] - Ages 2-5: First memories at the monastery
+**Previous:** ← [[02 - Arrival and Conditioning]]
 
-**Next:** [[04 - Velennes Observation|Velennes Observation]] - Ages 6-8: Sister Velenne's systematic testing
+**Next:** → [[04 - Velennes Observation]]

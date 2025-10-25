@@ -236,6 +236,6 @@ The only question was what would happen after.
 
 ---
 
-**Previous:** [[07 - Mika Arrives|Mika Arrives]] - Age 10, when Rust finally finds someone he can protect and trust
+**Previous:** ← [[07 - Mika Arrives]]
 
-**Next:** [[09 - The Final Year|The Final Year]] - Age 12, the year leading up to the awakening when everything changed.
+**Next:** → [[09 - The Final Year]]

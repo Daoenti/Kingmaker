@@ -252,6 +252,6 @@ Until tomorrow, when everything changed.
 
 ---
 
-**Previous:** [[08 - Escalation|Escalation]] - Age 11, when the Sisters intensify their control
+**Previous:** ← [[08 - Escalation]]
 
-**Next:** [[10 - The Awakening|The Awakening]] - The night everything changed, when power manifested and freedom became possible at a terrible price.
+**Next:** → [[10 - The Awakening]]

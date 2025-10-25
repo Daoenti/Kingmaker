@@ -22,13 +22,13 @@ output_dir.mkdir(exist_ok=True)
 BASE_URL = '/Kingmaker'
 
 # Copy logo to output directory
-logo_src = Path('kingmaker-logo.png')
+logo_src = Path('Resources/Images/kingmaker-logo.png')
 if logo_src.exists():
     shutil.copy(logo_src, output_dir / 'kingmaker-logo.png')
     print("Logo copied to output directory")
 
 # Copy CSS file to output directory
-css_src = Path('style.css')
+css_src = Path('Resources/Styles/style.css')
 if css_src.exists():
     shutil.copy(css_src, output_dir / 'style.css')
     print("CSS file copied to output directory")

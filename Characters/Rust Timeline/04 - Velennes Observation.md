@@ -446,6 +446,6 @@ Four more years of becoming someone harder to break than anyone imagined.
 
 ---
 
-**Previous:** [[03 - The Gift and the Curse|The Gift and the Curse]] - Age 5: The literacy test that changed everything
+**Previous:** ← [[03 - The Gift and the Curse]]
 
-**Next:** [[05 - Learning Languages|Learning Languages]] - Age 7: Infernal, Goblin, and the weight of words
+**Next:** → [[05 - Learning Languages]]

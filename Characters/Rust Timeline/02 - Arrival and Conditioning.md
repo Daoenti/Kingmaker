@@ -331,6 +331,6 @@ And breaks can become escapes.
 
 ---
 
-**Previous:** [[01 - Unknown Origins|Unknown Origins]] - Birth to Age 2: The void before memory
+**Previous:** ← [[01 - Unknown Origins]]
 
-**Next:** [[03 - The Gift and the Curse|The Gift and the Curse]] - Age 5: The literacy test that changed everything
+**Next:** → [[03 - The Gift and the Curse]]

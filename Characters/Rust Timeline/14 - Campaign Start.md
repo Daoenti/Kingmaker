@@ -207,7 +207,7 @@ Rust chose a direction and started walking.
 
 ---
 
-**Previous:** [[13 - Approaching Adulthood|Approaching Adulthood]] - The wandering year continues
+**Previous:** ← [[13 - Approaching Adulthood]]
 
 ---
 
