@@ -2,6 +2,7 @@ import os
 import markdown
 import re
 from pathlib import Path
+import shutil
 
 # Markdown extensions for better rendering
 md = markdown.Markdown(extensions=[
@@ -20,6 +21,12 @@ output_dir.mkdir(exist_ok=True)
 
 # Base URL for GitHub Pages (repo name)
 BASE_URL = '/Kingmaker'
+
+# Copy logo to output directory
+logo_src = Path('kingmaker-logo.png')
+if logo_src.exists():
+    shutil.copy(logo_src, output_dir / 'kingmaker-logo.png')
+    print("Logo copied to output directory")
 
 # CSS for the site - DARK MODE
 css = """
@@ -53,6 +60,19 @@ nav {
     height: 100vh;
     overflow-y: auto;
     border-right: 1px solid #30363d;
+}
+
+nav .logo {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #30363d;
+}
+
+nav .logo img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 nav h1 {
@@ -368,7 +388,7 @@ for f in valid_files:
 # Generate navigation HTML
 def generate_nav():
     nav_html = '<nav>\n'
-    nav_html += '<h1>🎲 Kingmaker Campaign</h1>\n'
+    nav_html += f'<div class="logo"><a href="{BASE_URL}/"><img src="{BASE_URL}/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>\n'
     
     for folder in sorted(nav_structure.keys()):
         nav_html += f'<h2>{folder}</h2>\n'
