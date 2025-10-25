@@ -66,13 +66,5 @@ Unknown. Presumably still running her shop in that small Kyonin settlement. She 
 
 *"Go on now, before you draw flies standing there gawking."*
 
-## DM Notes
-- Marta represents the ordinary decency that Rust struggles to accept as real
-- Could reappear if the party travels through southern Kyonin
-- She wouldn't remember Rust specifically, which might be its own interesting encounter
-- Useful as contrast to the structured cruelty of the monastery—showing that kindness doesn't require grand gestures or moral frameworks
-- If brought back, keep her pragmatic and unsentimental—that's what made her kindness genuine
-- The settlement itself was never named, which could be a plot point if Rust wants to find her again
-
 ---
 *"You look like you need it more than I need the copper."*

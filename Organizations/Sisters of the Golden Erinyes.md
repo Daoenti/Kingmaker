@@ -92,17 +92,6 @@ Those who know the truth either lack the power to stop them or benefit from thei
 - Current orphans in need of rescue
 - Records containing information about character backgrounds
 
-## DM Guidance
-The Sisters should be genuinely disturbing, not cartoonish. Their horror comes from:
-- Sincere belief they are helping
-- Legal and social sanction for their abuse
-- Methodical, systematic approach to breaking people
-- The way they make victims doubt their own reality
-
-Do not overuse them - they are most effective as background radiation and occasional direct threat. The monastery should feel like a place that damaged [[Characters/Rust|Rust]] in ways he is still discovering.
-
-Consider carefully whether your table is comfortable with this level of institutional abuse in the narrative. The Sisters represent real-world horrors and should be handled with appropriate gravity.
-
 ## Weaknesses
 - Dependent on legal sanction and social approval
 - Records could expose true nature of methods

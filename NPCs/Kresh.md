@@ -62,12 +62,5 @@ This casual respect, given without strings attached, was novel enough to stick w
 
 *"Fair. But sometimes you can't run. Might as well learn to end fights fast when you can't."*
 
-## DM Notes
-- Kresh could reappear as a traveling mercenary if the campaign needs a competent, non-hostile warrior
-- He'd remember Rust if they met again—not sentimentally, but as "that quick goblin kid from the Andoran run"
-- Could be used to show how Rust's combat style has evolved since their last meeting
-- Represents the possibility of learning from people without trauma or strings attached
-- If brought back, keep him pragmatic and unsentimental—that's what made his teaching valuable
-
 ---
 *"Sometimes you can't run. Might as well learn to end fights fast when you can't."*

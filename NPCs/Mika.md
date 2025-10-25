@@ -46,11 +46,5 @@ Unknown. Possibilities include:
 ## Thematic Significance
 Mika represents the cost of compassion and the uncertainty that haunts survivors. Rust helped her and suffered for it, then abandoned her by escaping. His guilt over leaving her behind is part of why he helps others now—he's trying to balance accounts that can never truly be balanced.
 
-## DM Notes
-- Reveal Mika's fate carefully for maximum emotional impact
-- Consider what message her fate sends about the world and hope
-- A reunion could be healing, devastating, or complicatedly both
-- Her presence in the story should complicate Rust's relationship with his past, not resolve it neatly
-
 ---
 *In Rust's memories, she's always crying softly during evening prayers, trying so hard to be quiet enough that the Sisters won't notice. He wonders if she ever learned to stop crying, or if they broke that part of her.*

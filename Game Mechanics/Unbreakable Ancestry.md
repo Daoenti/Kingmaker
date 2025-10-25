@@ -192,27 +192,6 @@ As the campaign progresses:
 - Understanding grows (or doesn't) about its source
 - Late game: confronting what being truly Unbreakable means
 
-## DM Considerations for Level 1
-
-### Balance
-- The trait should help survival without trivializing danger
-- Fast healing 1 when dying is useful but not overwhelming
-- +2 to recovery checks is meaningful but not game-breaking
-- Normal damage still affects him normally
-
-### Narrative Use
-- Use near-death moments to showcase the trait
-- Have NPCs occasionally notice his remarkable recovery
-- Foreshadow greater power to come
-- Create situations where surviving isn't the same as winning
-
-### Growth Path
-Plan for the trait to:
-- Become more prominent as levels increase
-- Draw attention from those who study such things
-- Connect to larger mysteries (Sevenarches, his oracle source)
-- Eventually require confronting its true nature
-
 ## Rust-Specific Elements at Level 1
 
 ### Current Relationship with the Trait

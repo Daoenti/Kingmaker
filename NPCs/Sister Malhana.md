@@ -36,11 +36,5 @@ Detached, methodical, sees people as data points in a theological project. She l
 ## Relationship to Rust
 She gave him his name and his initial classification within the monastery hierarchy. Beyond that, she likely had minimal direct contact. To her, he was case file GBL-47 or similar, a goblin specimen to be civilized or discarded based on results.
 
-## DM Notes
-- Represents the banality of evil
-- Could be source of records if party needs information about Rust's past
-- Might not even remember Rust personally, which could be its own kind of wound
-- Useful for demonstrating that abuse doesn't require passion, just indifference
-
 ---
 *"Specimen intake, fourth day of Rova: One goblin whelp, rust coloring, approximately 2-3 years. Designated: Rust. Classification: Salvageable with extensive correction."*

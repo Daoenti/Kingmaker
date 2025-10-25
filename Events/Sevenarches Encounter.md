@@ -188,33 +188,6 @@ The Sisters taught suffering has meaning. Sevenarches taught knowledge has cost.
 
 At 13, he's still working out what that means.
 
-## DM Usage
-
-### Early Campaign
-- Rust mentions avoiding forests, refuses to elaborate
-- Dreams provide cryptic hints and atmosphere
-- NPCs who've been to Sevenarches react to Rust oddly
-- He's defensive about what happened there
-
-### Mid Campaign
-- Other primordial locations trigger similar responses
-- Rust's curse begins acting more erratically
-- Hints that understanding might become necessary
-- The dreams intensify
-
-### Late Campaign
-- Crisis requires knowledge only Sevenarches can provide
-- Rust must choose between ignorance and transformation
-- Party might need to help him navigate without losing himself
-- He's older, more experienced, but still frightened
-- Potential bittersweet resolution
-
-### Alternative Hooks
-- Another party member needs something from Sevenarches
-- The forest's doors begin opening elsewhere
-- Someone else makes the bargain Rust refused
-- Investigation into primordial magic leads there inevitably
-
 ## Parallel Themes
 This encounter mirrors the monastery experience:
 - **Monastery:** Break yourself to belong

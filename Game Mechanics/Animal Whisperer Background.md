@@ -286,45 +286,6 @@ As Rust levels and ages:
 
 His animal skills should grow alongside his oracle powers and maturity.
 
-## DM Guidance for Level 1, Age 13
-
-### Appropriate Challenges
-- Domestic animals: Easy to Normal DC (his comfort zone)
-- Wild animals (calm): Normal to Hard DC (less experience)
-- Aggressive/injured animals: Hard to Very Hard DC (dangerous for him)
-- Unfamiliar species: Hard DC (limited exposure)
-- Magical beasts: Very Hard to Impossible DC (no experience)
-
-### Using the Background in Play
-**Early Campaign:**
-- Let him succeed at basic animal tasks
-- Create learning opportunities through failure
-- Show animals providing emotional support
-- Use his skills to help party occasionally
-- Demonstrate he's competent but young
-
-**Character Moments:**
-- Animals reveal his vulnerability
-- Success with creatures boosts confidence
-- Failure teaches humility
-- Party sees his gentleness
-- NPCs react to young goblin's talent
-
-**Plot Integration:**
-- Stable work provides information/contacts
-- Animals witness crimes/events
-- His reputation spreads (talented young goblin)
-- Former employers remember him
-- Animals lead to adventure hooks
-
-### Respecting Age and Level
-At 13 and level 1, Rust should:
-- Succeed at appropriate-level tasks
-- Struggle with advanced challenges
-- Need help with dangerous situations
-- Show both competence and youth
-- Have room to grow dramatically
-
 ## Timeline Corrections
 
 ### One Year Breakdown (Age 12-13)

@@ -62,12 +62,5 @@ If she learned he escaped and developed unusual healing abilities, she might see
 - She's risen in the organization and has greater resources now
 - She's developed methods to counter or suppress healing magic
 
-## DM Notes
-- Use Velenne sparingly but memorably
-- Her conviction should be unsettling, not cartoonish
-- She genuinely believes she's helping, which makes her worse
-- A confrontation with her should be psychological as much as physical
-- Consider whether she's actually still looking for Rust or if his fear exceeds reality
-
 ---
 *"The body must be broken before the soul can be remade. You'll thank me one day, creature. When you understand what I've made of you."*

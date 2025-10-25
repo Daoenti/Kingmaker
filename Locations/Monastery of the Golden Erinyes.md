@@ -99,16 +99,5 @@ Whether [[NPCs/Sister Velenne|Sister Velenne]] still seeks him specifically or h
 - Isger officials who've wanted evidence for years
 - [[NPCs/Mika|Mika]], if she survived and escaped
 
-## DM Notes
-This location represents institutional evil—banal, legal, systematic. Use it sparingly and with care. Consider:
-
-- Session zero discussion about abuse content
-- Allowing [[Characters/Rust|Rust]]'s player agency in how deeply to engage
-- Not making the Sisters cartoonishly evil—their mundane certainty is worse
-- Showing consequences of confronting them (legal, social, psychological)
-- Possibility of bittersweet victory (freeing current orphans but not undoing past harm)
-
-The monastery should feel like a real place that exists independent of [[Characters/Rust|Rust]]'s story. Other victims, other perpetrators, ongoing operations. The party can damage it but likely can't eliminate it entirely without significant resources and allies.
-
 ---
 *The sign above the gate reads: "Salvation Through Submission, Order Through Obedience." Most who pass beneath it are too young to read it. By the time they can, they believe it.*

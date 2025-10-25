@@ -176,40 +176,6 @@ If absolutely necessary:
 
 [[Characters/Rust|Rust]] survived by running on pure panic and being released by the forest's decision. This is not a reliable escape strategy.
 
-## DM Guidance
-
-### Using Sevenarches
-This location is a high-level reveal and late-game option. It represents:
-- Answers that come with costs
-- Power that requires sacrifice
-- Knowledge that changes you
-- The price of understanding
-
-### Tone
-Sevenarches should feel **strange** rather than scary. Unsettling rather than horrifying. The danger isn't that it wants to hurt you—it's that it wants to teach you things your mind isn't built to know.
-
-Think cosmic indifference meets fey bargaining meets temporal anomaly. The forest isn't malicious; it simply operates on rules that mortal minds can't safely process.
-
-### Rust's Relationship
-For [[Characters/Rust|Rust]], Sevenarches represents:
-- Temptation (finally understand his curse)
-- Terror (lose himself in the process)
-- Unfinished business (the forest remembers him)
-- Limit point (how far will he go for answers?)
-
-A return to Sevenarches should be a major character moment, possibly campaign climax. The question isn't whether he can survive it—it's whether he'll still be himself afterward.
-
-### Reality Bending
-When describing Sevenarches, embrace the impossible:
-- Paths that circle back on themselves
-- Trees that grow downward
-- Sounds that arrive before their sources
-- Light that casts shadows in wrong directions
-- Conversations with your past self
-- Futures that might have been
-
-Make players uncomfortable with wrongness rather than danger. The forest won't kill them—but it might remake them.
-
 ## Potential Resolutions
 
 ### Rust Accepts
