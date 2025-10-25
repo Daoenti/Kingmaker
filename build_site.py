@@ -1,4 +1,3 @@
-import os
 import markdown
 import re
 from pathlib import Path
