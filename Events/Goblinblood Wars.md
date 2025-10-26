@@ -18,7 +18,6 @@ tags:
 # The Goblinblood Wars
 
 ## Overview
-
 **Dates:** 4697-4701 AR (approximately)
 **Location:** [[Locations/Isger|Isger]]
 **Belligerents:** Chelaxian/Isgeri military forces and goblinoid tribes

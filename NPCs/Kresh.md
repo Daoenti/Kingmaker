@@ -16,7 +16,6 @@ tags:
 # Kresh
 
 ## Overview
-
 **Role:** Mercenary and caravan guard
 **Species:** Half-orc
 **Status:** Unknown (last seen in northern Andoran)

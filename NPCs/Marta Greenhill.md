@@ -16,7 +16,6 @@ tags:
 # Marta Greenhill
 
 ## Overview
-
 **Role:** Shopkeeper and tavern keeper
 **Species:** Human
 **Age:** Middle-aged (around 40 when Rust met her)

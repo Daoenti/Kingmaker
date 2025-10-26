@@ -19,7 +19,6 @@ tags:
 # Druma
 
 ## Overview
-
 **Type:** Nation/Plutocracy
 **Region:** Inner Sea, central Avistan
 **Government:** Merchant plutocracy ruled by the Resplendent Bureaucracy

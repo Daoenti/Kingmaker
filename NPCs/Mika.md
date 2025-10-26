@@ -15,7 +15,6 @@ tags:
 # Mika
 
 ## Overview
-
 **Role:** Fellow orphan at the [[Locations/Monastery of the Golden Erinyes|Monastery]]
 **Organization:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]] (unwillingly)
 **Status:** Unknown

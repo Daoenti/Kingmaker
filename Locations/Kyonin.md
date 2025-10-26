@@ -18,7 +18,6 @@ tags:
 # Kyonin
 
 ## Overview
-
 **Type:** Nation/Kingdom
 **Region:** Inner Sea, eastern Avistan
 **Government:** Elven Monarchy

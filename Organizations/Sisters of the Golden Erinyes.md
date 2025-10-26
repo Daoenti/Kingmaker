@@ -17,7 +17,6 @@ tags:
 # Sisters of the Golden Erinyes
 
 ## Overview
-
 **Alignment:** Lawful Evil
 **Headquarters:** [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]], western [[Locations/Isger|Isger]]
 **Deity:** [[Deities/Asmodeus|Asmodeus]]

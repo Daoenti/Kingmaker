@@ -19,7 +19,6 @@ tags:
 # Cheliax
 
 ## Overview
-
 **Type:** Nation/Empire
 **Region:** Inner Sea, western Avistan
 **Government:** Diabolical Empire ruled by House Thrune

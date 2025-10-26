@@ -31,7 +31,6 @@ sticker: lucide//user
 # Rust Freelox
 
 ## Overview
-
 **Full Name:** Rust Freelox
 **Race:** Goblin (Small)
 **Class:** Life Oracle (Level 1)

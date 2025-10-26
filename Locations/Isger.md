@@ -16,7 +16,6 @@ tags:
 # Isger
 
 ## Overview
-
 **Region:** Inner Sea, southern Avistan
 **Government:** Vassal state of Cheliax
 **Capital:** Elidir
