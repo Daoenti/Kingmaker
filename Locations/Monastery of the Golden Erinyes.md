@@ -19,11 +19,11 @@ tags:
 # Monastery of the Golden Erinyes
 
 ## Overview
-**Type:** Asmodean monastery and "orphanage"
-**Location:** Western [[Locations/Isger|Isger]], remote countryside
-**Operated By:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]]
-**Founded:** Shortly after the [[Events/Goblinblood Wars|Goblinblood Wars]] (early 4700s AR)
-**Purpose:** Ostensibly civilizing orphans; actually systematic abuse disguised as education
+**Type:** Asmodean monastery and "orphanage"  
+**Location:** Western [[Locations/Isger|Isger]], remote countryside  
+**Operated By:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]]  
+**Founded:** Shortly after the [[Events/Goblinblood Wars|Goblinblood Wars]] (early 4700s AR)  
+**Purpose:** Ostensibly civilizing orphans; actually systematic abuse disguised as education  
 **Status:** Active and operating
 
 ## Description

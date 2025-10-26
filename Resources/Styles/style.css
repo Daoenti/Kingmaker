@@ -131,6 +131,10 @@ nav .nav-list {
     transition: all 0.3s ease;
 }
 
+nav .timeline-list {
+    padding-left: 15px;
+}
+
 nav .toggle-icon {
     display: inline-block;
     width: 16px;

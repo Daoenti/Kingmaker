@@ -132,11 +132,16 @@ def generate_nav():
             nav_html += f'<li class="subsection">\n'
             nav_html += f'<h3 class="collapsible" onclick="toggleSection(\'{subfolder_id}\')">'
             nav_html += f'<span class="toggle-icon">▼</span> {subfolder}</h3>\n'
-            nav_html += f'<ul id="{subfolder_id}" class="nav-list">\n'
+            nav_html += f'<ul id="{subfolder_id}" class="nav-list timeline-list">\n'
             for file in sorted(nav_structure[folder]['subfolders'][subfolder]):
                 url = BASE_URL + '/' + str(file).replace('\\', '/').replace('.md', '.html')
-                title = file.stem.replace('-', ' ').replace('_', ' ')
-                nav_html += f'<li><a href="{url}" onclick="loadContent(\'{url}\', \'{title}\'); return false;">{title}</a></li>\n'
+                title = file.stem.replace('_', ' ')
+
+                # Remove number prefix from title (e.g., "00 - README" becomes "README")
+                import re
+                clean_title = re.sub(r'^\d+\s*-\s*', '', title)
+
+                nav_html += f'<li><a href="{url}" onclick="loadContent(\'{url}\', \'{clean_title}\'); return false;">{clean_title}</a></li>\n'
             nav_html += '</ul>\n'
             nav_html += '</li>\n'
 
