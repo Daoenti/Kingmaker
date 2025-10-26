@@ -2,4 +2,16 @@
 
 {% block title %}{{ page_title }} - Kingmaker Campaign{% endblock %}
 
-{% block content %}{{ content|safe }}{% endblock %}
+{% block content %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    {% for crumb in breadcrumbs %}
+        {% if not loop.last %}
+            <span class="breadcrumb-item">{{ crumb.name }}</span>
+            <span class="breadcrumb-separator">/</span>
+        {% else %}
+            <span class="breadcrumb-item breadcrumb-current">{{ crumb.name }}</span>
+        {% endif %}
+    {% endfor %}
+</nav>
+{{ content|safe }}
+{% endblock %}

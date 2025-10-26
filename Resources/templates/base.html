@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Kingmaker Campaign{% endblock %}</title>
     <link rel="stylesheet" href="{{ base_url }}/base.css">
-    <link rel="stylesheet" href="{{ base_url }}/theme-dark.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="{{ base_url }}/theme-gruvbox-dark.css" id="theme-stylesheet">
     <script>
         // Theme management
         function changeTheme(theme) {
@@ -16,7 +16,7 @@
 
         // Load saved theme on page load
         window.addEventListener('DOMContentLoaded', function() {
-            const savedTheme = localStorage.getItem('selectedTheme') || 'theme-dark.css';
+            const savedTheme = localStorage.getItem('selectedTheme') || 'theme-gruvbox-dark.css';
             const stylesheet = document.getElementById('theme-stylesheet');
             stylesheet.href = '{{ base_url }}/' + savedTheme;
 
@@ -65,6 +65,9 @@
 
                     // Intercept links in the newly loaded content
                     interceptContentLinks();
+
+                    // Make content sections collapsible
+                    makeContentCollapsible();
                 })
                 .catch(error => {
                     console.error('Error loading content:', error);
@@ -90,6 +93,84 @@
             });
         }
 
+        function makeContentCollapsible() {
+            const main = document.querySelector('main');
+            if (!main) return;
+
+            // Find all h2 headers in main content
+            const headers = main.querySelectorAll('h2');
+
+            headers.forEach(header => {
+                // Skip if already collapsible
+                if (header.classList.contains('collapsible-content')) return;
+
+                // Make header collapsible
+                header.classList.add('collapsible-content');
+                header.style.cursor = 'pointer';
+                header.style.userSelect = 'none';
+
+                // Add toggle icon
+                const icon = document.createElement('span');
+                icon.className = 'content-toggle-icon';
+                icon.textContent = '▼';
+                header.insertBefore(icon, header.firstChild);
+                header.insertBefore(document.createTextNode(' '), header.childNodes[1]);
+
+                // Create wrapper for content after this header
+                const wrapper = document.createElement('div');
+                wrapper.className = 'collapsible-section';
+
+                // Collect all elements until next h2 or h1
+                let sibling = header.nextElementSibling;
+                while (sibling && sibling.tagName !== 'H2' && sibling.tagName !== 'H1') {
+                    const next = sibling.nextElementSibling;
+                    wrapper.appendChild(sibling);
+                    sibling = next;
+                }
+
+                // Insert wrapper after header
+                header.parentNode.insertBefore(wrapper, header.nextSibling);
+
+                // Add click handler
+                header.addEventListener('click', function() {
+                    const section = this.nextElementSibling;
+                    const toggleIcon = this.querySelector('.content-toggle-icon');
+
+                    if (section.style.display === 'none') {
+                        section.style.display = 'block';
+                        toggleIcon.textContent = '▼';
+                    } else {
+                        section.style.display = 'none';
+                        toggleIcon.textContent = '▶';
+                    }
+                });
+            });
+        }
+
+        function expandAll() {
+            const main = document.querySelector('main');
+            if (!main) return;
+
+            main.querySelectorAll('.collapsible-section').forEach(section => {
+                section.style.display = 'block';
+            });
+            main.querySelectorAll('.content-toggle-icon').forEach(icon => {
+                icon.textContent = '▼';
+            });
+        }
+
+        function collapseAll() {
+            const main = document.querySelector('main');
+            if (!main) return;
+
+            main.querySelectorAll('.collapsible-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            main.querySelectorAll('.content-toggle-icon').forEach(icon => {
+                icon.textContent = '▶';
+            });
+        }
+
         // Handle browser back/forward buttons
         window.addEventListener('popstate', function() {
             location.reload();
@@ -105,6 +186,9 @@
 
             // Intercept links in initial content
             interceptContentLinks();
+
+            // Make initial content collapsible
+            makeContentCollapsible();
         });
     </script>
 </head>
@@ -112,6 +196,10 @@
     <div class="container">
         {{ navigation|safe }}
         <main>
+            <div class="content-controls">
+                <button onclick="expandAll()" class="control-btn">Expand All</button>
+                <button onclick="collapseAll()" class="control-btn">Collapse All</button>
+            </div>
             {% block content %}{% endblock %}
         </main>
     </div>

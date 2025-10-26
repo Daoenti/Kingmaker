@@ -1,0 +1,34 @@
+/* Cycle Dark Color Palette */
+:root {
+    /* Base colors from Cycle */
+    --cycle-yellow: #feda6a;
+    --cycle-silver: #d4d4dc;
+    --cycle-grey: #393f4d;
+    --cycle-slate: #1d1e22;
+
+    /* Backgrounds */
+    --bg0-hard: #0d0e10;
+    --bg0: #1d1e22;
+    --bg1: #393f4d;
+    --bg2: #4a5060;
+    --bg3: #5a6070;
+
+    /* Foregrounds (text) */
+    --fg0: #ffffff;
+    --fg1: #d4d4dc;
+    --fg2: #c0c0c8;
+    --fg3: #a0a0a8;
+    --fg4: #808088;
+
+    /* Accent colors - complementary to the base palette */
+    --red: #ff6b6b;
+    --green: #51cf66;
+    --yellow: #feda6a;
+    --blue: #4dabf7;
+    --purple: #cc5de8;
+    --aqua: #22b8cf;
+    --orange: #ff922b;
+
+    /* Theme accent (using the Cycle yellow) */
+    --accent: #feda6a;
+}

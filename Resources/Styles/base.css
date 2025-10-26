@@ -176,6 +176,80 @@ main {
     background: var(--bg0);
 }
 
+/* Content controls */
+.content-controls {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: var(--bg1);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.control-btn {
+    padding: 8px 16px;
+    background: var(--bg2);
+    color: var(--fg1);
+    border: 1px solid var(--bg3);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.control-btn:hover {
+    background: var(--bg3);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.control-btn:active {
+    transform: translateY(1px);
+}
+
+/* Collapsible content sections */
+.collapsible-content {
+    transition: color 0.2s;
+}
+
+.collapsible-content:hover {
+    color: var(--accent);
+}
+
+.content-toggle-icon {
+    display: inline-block;
+    width: 16px;
+    font-size: 12px;
+    color: var(--accent);
+    transition: transform 0.2s;
+}
+
+.collapsible-section {
+    transition: all 0.3s ease;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: var(--fg3);
+}
+
+.breadcrumb-item {
+    color: var(--fg3);
+}
+
+.breadcrumb-separator {
+    margin: 0 8px;
+    color: var(--fg4);
+}
+
+.breadcrumb-current {
+    color: var(--fg1);
+    font-weight: 600;
+}
+
 main h1 {
     color: var(--fg0);
     border-bottom: 3px solid var(--yellow);

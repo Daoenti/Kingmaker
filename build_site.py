@@ -117,13 +117,28 @@ def generate_nav():
     nav_html = '<nav>\n'
     nav_html += f'<div class="logo"><a href="{BASE_URL}/" onclick="loadContent(\'{BASE_URL}/index.html\', \'Kingmaker Campaign\'); return false;"><img src="{BASE_URL}/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>\n'
 
-    # Add theme switcher
+    # Add theme switcher - dynamically build from available theme files
     nav_html += '<div class="theme-switcher">\n'
     nav_html += '<label for="theme-select">Theme:</label>\n'
     nav_html += '<select id="theme-select" onchange="changeTheme(this.value)">\n'
-    nav_html += '<option value="theme-dark.css">Gruvbox Dark</option>\n'
-    nav_html += '<option value="theme-light.css">Gruvbox Light</option>\n'
-    nav_html += '<option value="theme-aon-dark.css">AoN Dark</option>\n'
+
+    # Find all theme CSS files
+    css_dir = Path('Resources/Styles')
+    if css_dir.exists():
+        theme_files = sorted(css_dir.glob('theme-*.css'))
+        for theme_file in theme_files:
+            filename = theme_file.name
+            # Create display name from filename
+            # theme-gruvbox-dark.css -> Gruvbox Dark
+            # theme-aon-dark.css -> Aon Dark
+            # theme-cycle-dark.css -> Cycle Dark
+            theme_name = filename.replace('theme-', '').replace('.css', '')
+
+            # Convert hyphen-separated to Title Case
+            display_name = ' '.join(word.capitalize() for word in theme_name.split('-'))
+
+            nav_html += f'<option value="{filename}">{display_name}</option>\n'
+
     nav_html += '</select>\n'
     nav_html += '</div>\n'
 
@@ -174,12 +189,14 @@ def fix_internal_links_pre(content, current_file):
     
     def replace_wikilink(match):
         link_text = match.group(1)
+        # Remove any backslash escaping (Obsidian escapes pipes in tables)
+        link_text = link_text.replace('\\|', '|')
         # Check if it has a pipe for custom text [[link|text]]
         if '|' in link_text:
             target, display = link_text.split('|', 1)
         else:
             target = display = link_text
-        
+
         # Try to find the target file
         target_clean = target.strip()
         
@@ -262,6 +279,37 @@ for md_file in valid_files:
 
     page_title = md_file.stem.replace('-', ' ').replace('_', ' ')
 
+    # Generate breadcrumbs
+    breadcrumbs = []
+    parts = list(md_file.parts)
+
+    # Build breadcrumb trail
+    for i, part in enumerate(parts[:-1]):  # Exclude the file itself
+        # Create display name
+        display_name = part.replace('-', ' ').replace('_', ' ')
+
+        # Create URL if this is a folder with an index
+        if i == 0:
+            breadcrumbs.append({
+                'name': display_name,
+                'url': None  # Top level folder, no link
+            })
+        else:
+            breadcrumbs.append({
+                'name': display_name,
+                'url': None  # Subfolder, no direct link
+            })
+
+    # Add current page (no link)
+    clean_title = page_title
+    # Remove number prefix from timeline entries
+    clean_title = re.sub(r'^\d+\s*-\s*', '', clean_title)
+
+    breadcrumbs.append({
+        'name': clean_title,
+        'url': None
+    })
+
     # Save content-only version for AJAX loading
     content_file = output_dir / str(md_file).replace('.md', '-content.html')
     content_file.parent.mkdir(parents=True, exist_ok=True)
@@ -273,7 +321,8 @@ for md_file in valid_files:
         page_title=page_title,
         content=html_content,
         navigation=nav_html,
-        base_url=BASE_URL
+        base_url=BASE_URL,
+        breadcrumbs=breadcrumbs
     )
 
     out_file.write_text(full_html, encoding='utf-8')

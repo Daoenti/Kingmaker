@@ -7,43 +7,56 @@ tags:
   - rust
 ---
 
-# Rust's Timeline - Story Collection
+# Rust's Timeline - Table of Contents
 
 This directory contains Rust's complete timeline from birth through age 13 (campaign start), with each period told as a narrative story rather than bullet points.
 
-## Reading Order
+## Timeline Chapters
 
-- **[[Characters/Rust Timeline/01 - Unknown Origins|01 - Unknown Origins]]** - Birth to Age 2: The lost years before the monastery
-- **[[Characters/Rust Timeline/02 - Arrival and Conditioning|02 - Arrival and Conditioning]]** - Ages 2-5: Arrival and early conditioning
-- **[[Characters/Rust Timeline/03 - The Gift and the Curse|03 - The Gift and the Curse]]** - Age 5: The literacy test that changed everything
-- **[[Characters/Rust Timeline/04 - Velennes Observation|04 - Velennes Observation]]** - Ages 6-8: Sister Velenne's systematic testing
-- **[[Characters/Rust Timeline/05 - Learning Languages|05 - Learning Languages]]** - Age 7: Infernal, Goblin, and the weight of words
-- **[[Characters/Rust Timeline/06 - Survival Strategies|06 - Survival Strategies]]** - Ages 8-9: Coping mechanisms and mental mapping
-- **[[Characters/Rust Timeline/07 - Mika Arrives|07 - Mika Arrives]]** - Age 10: First real friendship
-- **[[Characters/Rust Timeline/08 - Escalation|08 - Escalation]]** - Age 11: The punishments intensify
-- **[[Characters/Rust Timeline/09 - The Final Year|09 - The Final Year]]** - Age 12: Leading up to the awakening
-- **[[Characters/Rust Timeline/10 - The Awakening|10 - The Awakening]]** - Age 12: The night everything changed
-- **[[Characters/Rust Timeline/11 - First Months Free|11 - First Months Free]]** - Age 12: Immediate aftermath and survival
-- **[[Characters/Rust Timeline/12 - Sevenarches|12 - Sevenarches]]** - Age 12 (6-8 months later): The forest that remembers
-- **[[Characters/Rust Timeline/13 - Approaching Adulthood|13 - Approaching Adulthood]]** - Ages 12-13: The wandering year
-- **[[Characters/Rust Timeline/14 - Campaign Start|14 - Campaign Start]]** - Age 13: Present day, ready to begin
+| Chapter | Age | Title | Summary |
+|---------|-----|-------|---------|
+| **[[01 - Unknown Origins\|01]]** | Birth to 2 | Unknown Origins | The lost years before the monastery |
+| **[[02 - Arrival and Conditioning\|02]]** | 2-5 | Arrival and Conditioning | Early years at the monastery |
+| **[[03 - The Gift and the Curse\|03]]** | 5 | The Gift and the Curse | The literacy test that changed everything |
+| **[[04 - Velennes Observation\|04]]** | 6-8 | Velenne's Observation | Sister Velenne's systematic testing |
+| **[[05 - Learning Languages\|05]]** | 7 | Learning Languages | Infernal, Goblin, and the weight of words |
+| **[[06 - Survival Strategies\|06]]** | 8-9 | Survival Strategies | Coping mechanisms and mental mapping |
+| **[[07 - Mika Arrives\|07]]** | 10 | Mika Arrives | First real friendship |
+| **[[08 - Escalation\|08]]** | 11 | Escalation | The punishments intensify |
+| **[[09 - The Final Year\|09]]** | 12 | The Final Year | Leading up to the awakening |
+| **[[10 - The Awakening\|10]]** | 12 | The Awakening | The night everything changed |
+| **[[11 - First Months Free\|11]]** | 12 | First Months Free | Immediate aftermath and survival |
+| **[[12 - Sevenarches\|12]]** | 12 | Sevenarches | The forest that remembers |
+| **[[13 - Approaching Adulthood\|13]]** | 12-13 | Approaching Adulthood | The wandering year |
+| **[[14 - Campaign Start\|14]]** | 13 | Campaign Start | Present day, ready to begin |
 
-## Notes
+## Related Pages
+
+### Key Characters
+- **[[Characters/Rust|Rust]]** - Main character page
+- **[[NPCs/Sister Velenne|Sister Velenne]]** - Primary antagonist during monastery years
+- **[[NPCs/Sister Malhana|Sister Malhana]]** - Administrator at the monastery
+- **[[NPCs/Mika|Mika]]** - Fellow orphan and first friend
+
+### Important Locations
+- **[[Locations/Monastery of the Golden Erinyes|The Monastery]]** - Where Rust spent ages 2-12
+- **[[Locations/Sevenarches|Sevenarches]]** - The forest that showed him truth
+- **[[Locations/Isger|Isger]]** - The war-torn region of his childhood
+
+### Major Events
+- **[[Events/Rust's Awakening|The Awakening]]** - The night his oracle powers manifested
+- **[[Events/Sevenarches Encounter|Sevenarches Encounter]]** - Confrontation with primordial truth
+- **[[Events/Goblinblood Wars|Goblinblood Wars]]** - The war that created orphans
+
+### Organizations
+- **[[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]]** - The order that ran the monastery
+
+## Reading Notes
 
 - Each file is a standalone narrative that can be read independently
-- Files are interconnected through wiki-style links: `[[Characters/Rust|Rust]]`
+- Files are interconnected through wiki-style links
 - All events are canon through age 13; no speculation about future levels
-- Content warnings apply throughout for themes of child abuse, trauma, and systematic cruelty
-
-## File Structure
-
-Characters/ - Character information files  
-├── Rust.md - Main character file  
-├── Rust Timeline/ - This directory  
-│   ├── Detailed story files for each period  
-Events/ - Major event files (Awakening, Sevenarches, etc.)  
-NPCs/ - Sister Velenne, Sister Malhana, Mika  
-Locations/ - Monastery, Sevenarches, Isger
+- **Content warnings apply throughout** for themes of child abuse, trauma, and systematic cruelty
 
 ---
 
