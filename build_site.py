@@ -124,7 +124,7 @@ def generate_nav():
         for file in sorted(nav_structure[folder]['files']):
             url = BASE_URL + '/' + str(file).replace('\\', '/').replace('.md', '.html')
             title = file.stem.replace('-', ' ').replace('_', ' ')
-            nav_html += f'<li><a href="{url}">{title}</a></li>\n'
+            nav_html += f'<li><a href="{url}" onclick="loadContent(\'{url}\', \'{title}\'); return false;">{title}</a></li>\n'
 
         # Add subfolders
         for subfolder in sorted(nav_structure[folder]['subfolders'].keys()):
@@ -136,7 +136,7 @@ def generate_nav():
             for file in sorted(nav_structure[folder]['subfolders'][subfolder]):
                 url = BASE_URL + '/' + str(file).replace('\\', '/').replace('.md', '.html')
                 title = file.stem.replace('-', ' ').replace('_', ' ')
-                nav_html += f'<li><a href="{url}">{title}</a></li>\n'
+                nav_html += f'<li><a href="{url}" onclick="loadContent(\'{url}\', \'{title}\'); return false;">{title}</a></li>\n'
             nav_html += '</ul>\n'
             nav_html += '</li>\n'
 
@@ -239,9 +239,14 @@ for md_file in valid_files:
     
     out_file = output_dir / str(md_file).replace('.md', '.html')
     out_file.parent.mkdir(parents=True, exist_ok=True)
-    
+
     page_title = md_file.stem.replace('-', ' ').replace('_', ' ')
-    
+
+    # Save content-only version for AJAX loading
+    content_file = output_dir / str(md_file).replace('.md', '-content.html')
+    content_file.parent.mkdir(parents=True, exist_ok=True)
+    content_file.write_text(html_content, encoding='utf-8')
+
     # Use absolute path to CSS for all pages
     full_html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -262,6 +267,73 @@ for md_file in valid_files:
                 icon.textContent = '▶';
             }}
         }}
+
+        function loadContent(url, title) {{
+            // Save sidebar scroll position
+            const nav = document.querySelector('nav');
+            if (nav) {{
+                sessionStorage.setItem('sidebarScroll', nav.scrollTop);
+            }}
+
+            // Convert regular URL to content URL
+            const contentUrl = url.replace('.html', '-content.html');
+
+            fetch(contentUrl)
+                .then(response => response.text())
+                .then(html => {{
+                    document.querySelector('main').innerHTML = html;
+                    document.title = title + ' - Kingmaker Campaign';
+                    window.history.pushState({{}}, '', url);
+
+                    // Restore sidebar scroll position
+                    const scrollPos = sessionStorage.getItem('sidebarScroll');
+                    if (nav && scrollPos) {{
+                        nav.scrollTop = parseInt(scrollPos);
+                    }}
+
+                    // Intercept links in the newly loaded content
+                    interceptContentLinks();
+                }})
+                .catch(error => {{
+                    console.error('Error loading content:', error);
+                    window.location.href = url;
+                }});
+        }}
+
+        function interceptContentLinks() {{
+            const main = document.querySelector('main');
+            if (!main) return;
+
+            main.querySelectorAll('a[href]').forEach(link => {{
+                const href = link.getAttribute('href');
+                // Only intercept internal links to .html files
+                if (href && href.includes('.html') && !href.startsWith('http')) {{
+                    link.addEventListener('click', function(e) {{
+                        e.preventDefault();
+                        const url = this.getAttribute('href');
+                        const title = this.textContent;
+                        loadContent(url, title);
+                    }});
+                }}
+            }});
+        }}
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', function() {{
+            location.reload();
+        }});
+
+        // Restore sidebar scroll position on page load
+        window.addEventListener('DOMContentLoaded', function() {{
+            const nav = document.querySelector('nav');
+            const scrollPos = sessionStorage.getItem('sidebarScroll');
+            if (nav && scrollPos) {{
+                nav.scrollTop = parseInt(scrollPos);
+            }}
+
+            // Intercept links in initial content
+            interceptContentLinks();
+        }});
     </script>
 </head>
 <body>
@@ -273,10 +345,19 @@ for md_file in valid_files:
     </div>
 </body>
 </html>"""
-    
+
     out_file.write_text(full_html, encoding='utf-8')
 
-# Create index.html
+# Create index.html with home content
+home_content = """<div class="home-content">
+                <h1>⚔️ Kingmaker Campaign</h1>
+                <p>Pathfinder Campaign Notes</p>
+                <p>Use the navigation on the left to explore the campaign world.</p>
+            </div>"""
+
+# Save home content separately for AJAX
+(output_dir / 'index-content.html').write_text(home_content, encoding='utf-8')
+
 index_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -296,17 +377,80 @@ index_html = f"""<!DOCTYPE html>
                 icon.textContent = '▶';
             }}
         }}
+
+        function loadContent(url, title) {{
+            // Save sidebar scroll position
+            const nav = document.querySelector('nav');
+            if (nav) {{
+                sessionStorage.setItem('sidebarScroll', nav.scrollTop);
+            }}
+
+            // Convert regular URL to content URL
+            const contentUrl = url.replace('.html', '-content.html');
+
+            fetch(contentUrl)
+                .then(response => response.text())
+                .then(html => {{
+                    document.querySelector('main').innerHTML = html;
+                    document.title = title + ' - Kingmaker Campaign';
+                    window.history.pushState({{}}, '', url);
+
+                    // Restore sidebar scroll position
+                    const scrollPos = sessionStorage.getItem('sidebarScroll');
+                    if (nav && scrollPos) {{
+                        nav.scrollTop = parseInt(scrollPos);
+                    }}
+
+                    // Intercept links in the newly loaded content
+                    interceptContentLinks();
+                }})
+                .catch(error => {{
+                    console.error('Error loading content:', error);
+                    window.location.href = url;
+                }});
+        }}
+
+        function interceptContentLinks() {{
+            const main = document.querySelector('main');
+            if (!main) return;
+
+            main.querySelectorAll('a[href]').forEach(link => {{
+                const href = link.getAttribute('href');
+                // Only intercept internal links to .html files
+                if (href && href.includes('.html') && !href.startsWith('http')) {{
+                    link.addEventListener('click', function(e) {{
+                        e.preventDefault();
+                        const url = this.getAttribute('href');
+                        const title = this.textContent;
+                        loadContent(url, title);
+                    }});
+                }}
+            }});
+        }}
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', function() {{
+            location.reload();
+        }});
+
+        // Restore sidebar scroll position on page load
+        window.addEventListener('DOMContentLoaded', function() {{
+            const nav = document.querySelector('nav');
+            const scrollPos = sessionStorage.getItem('sidebarScroll');
+            if (nav && scrollPos) {{
+                nav.scrollTop = parseInt(scrollPos);
+            }}
+
+            // Intercept links in initial content
+            interceptContentLinks();
+        }});
     </script>
 </head>
 <body>
     <div class="container">
         {nav_html}
         <main>
-            <div class="home-content">
-                <h1>⚔️ Kingmaker Campaign</h1>
-                <p>Pathfinder Campaign Notes</p>
-                <p>Use the navigation on the left to explore the campaign world.</p>
-            </div>
+            {home_content}
         </main>
     </div>
 </body>
