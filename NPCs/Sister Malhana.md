@@ -15,9 +15,9 @@ tags:
 # Sister Malhana
 
 ## Overview
-**Role:** Senior Administrator at the [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]]
-**Organization:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]]
-**Status:** Active
+**Role:** Senior Administrator at the [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]]  
+**Organization:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]]  
+**Status:** Active  
 **Location:** [[Locations/Monastery of the Golden Erinyes|Monastery]], western [[Locations/Isger|Isger]]
 
 ## Description

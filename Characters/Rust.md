@@ -31,16 +31,16 @@ sticker: lucide//user
 # Rust Freelox
 
 ## Overview
-**Full Name:** Rust Freelox
-**Race:** Goblin (Small)
-**Class:** Life Oracle (Level 1)
-**Ancestry:** [[Game Mechanics/Unbreakable Ancestry|Unbreakable Goblin]]
-**Heritage:** Unbreakable Goblin
-**Background:** [[Game Mechanics/Animal Whisperer Background|Animal Whisperer]]
-**Age:** 13 years old (goblin age of maturity - just reached adulthood)
-**Gender:** Male
-**Alignment:** Neutral
-**Deity:** Lamashtu (nominal - complicated relationship)
+**Full Name:** Rust Freelox  
+**Race:** Goblin (Small)  
+**Class:** Life Oracle (Level 1)  
+**Ancestry:** [[Game Mechanics/Unbreakable Ancestry|Unbreakable Goblin]]  
+**Heritage:** Unbreakable Goblin  
+**Background:** [[Game Mechanics/Animal Whisperer Background|Animal Whisperer]]  
+**Age:** 13 years old (goblin age of maturity - just reached adulthood)  
+**Gender:** Male  
+**Alignment:** Neutral  
+**Deity:** Lamashtu (nominal - complicated relationship)  
 **Origin:** [[Locations/Isger|Isger]], found in the aftermath of the [[Events/Goblinblood Wars|Goblinblood Wars]]
 
 ## Ability Scores (Level 1)
@@ -59,7 +59,7 @@ He moves with practiced wariness, always aware of exits and potential threats. H
 ## Combat Statistics (Level 1)
 **Hit Points:** 18 (8 class + 6 ancestry + 4 bonus)  
 **Armor Class:** 15 (10 + 3 proficiency + 2 Dex)  
-**Speed:** 25 feet  
+**Speed:** 25 feet
 
 **Saves:**
 - Fortitude: +4 (Trained, +2 Prof + 2 Con)

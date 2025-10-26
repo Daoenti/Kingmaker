@@ -18,13 +18,13 @@ tags:
 # Kyonin
 
 ## Overview
-**Type:** Nation/Kingdom
-**Region:** Inner Sea, eastern Avistan
-**Government:** Elven Monarchy
-**Alignment:** Predominantly Chaotic Good
-**Capital:** Iadara
-**Ruler:** Queen Tlandira Edasseril
-**Predominant Race:** Elves (>95% of population)
+**Type:** Nation/Kingdom  
+**Region:** Inner Sea, eastern Avistan  
+**Government:** Elven Monarchy  
+**Alignment:** Predominantly Chaotic Good  
+**Capital:** Iadara  
+**Ruler:** Queen Tlandira Edasseril  
+**Predominant Race:** Elves (>95% of population)  
 **Notable Features:** Ancient forests, [[Locations/Sevenarches|Sevenarches]], extreme isolationism
 
 ## Description

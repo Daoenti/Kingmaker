@@ -17,9 +17,9 @@ tags:
 # Sister Velenne
 
 ## Overview
-**Role:** Discipline Mistress at the [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]]
-**Organization:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]]
-**Status:** Active (as far as [[Characters/Rust|Rust]] knows)
+**Role:** Discipline Mistress at the [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]]  
+**Organization:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]]  
+**Status:** Active (as far as [[Characters/Rust|Rust]] knows)  
 **Location:** [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]], western [[Locations/Isger|Isger]]
 
 ## Description
