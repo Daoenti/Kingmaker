@@ -15,10 +15,10 @@ tags:
 # Sister Malhana
 
 ## Overview
-**Role:** Senior Administrator at the [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]]  
-**Organization:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]]  
-**Status:** Active  
-**Location:** [[Locations/Monastery of the Golden Erinyes|Monastery]], western [[Locations/Isger|Isger]]
+- **Role:** Senior Administrator at the [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]]
+- **Organization:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]]
+- **Status:** Active
+- **Location:** [[Locations/Monastery of the Golden Erinyes|Monastery]], western [[Locations/Isger|Isger]]
 
 ## Description
 Sister Malhana is an older woman, thin and angular, with a scholar's stoop and ink-stained fingers. Unlike [[NPCs/Sister Velenne|Sister Velenne]], she doesn't personally administer punishments. Her violence is bureaucratic, administrative, expressed through records and assignments rather than rods and switches.

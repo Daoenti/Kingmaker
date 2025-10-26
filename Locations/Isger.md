@@ -16,11 +16,11 @@ tags:
 # Isger
 
 ## Overview
-**Region:** Inner Sea, southern Avistan  
-**Government:** Vassal state of Cheliax  
-**Capital:** Elidir  
-**Status:** Recovering from [[Events/Goblinblood Wars|Goblinblood Wars]]  
-**Population:** Mixed, war-depleted
+- **Region:** Inner Sea, southern Avistan
+- **Government:** Vassal state of Cheliax
+- **Capital:** Elidir
+- **Status:** Recovering from [[Events/Goblinblood Wars|Goblinblood Wars]]
+- **Population:** Mixed, war-depleted
 
 ## Relevance to Rust
 [[Characters/Rust|Rust]]'s earliest memories are of burning goblin settlements in Isger during the tail end of the Goblinblood Wars. He was found as a toddler in the wreckage of a razed encampment, one of countless goblinoid orphans created by the conflict.

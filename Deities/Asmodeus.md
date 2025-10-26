@@ -18,13 +18,13 @@ tags:
 # Asmodeus
 
 ## Overview
-**Alignment:** Lawful Evil  
-**Titles:** Prince of Darkness, King of Hell, Lord of Contracts  
-**Portfolio:** Tyranny, Slavery, Pride, Contracts, Punishment  
-**Domains:** Fire, Law, Magic, Trickery  
-**Favored Weapon:** Heavy mace  
-**Symbol:** Red pentagram  
-**Worshippers:** Devils, tyrants, slavers, [[Organizations/Hellknights|Hellknights]], corrupt nobility, contract-makers
+- **Alignment:** Lawful Evil
+- **Titles:** Prince of Darkness, King of Hell, Lord of Contracts
+- **Portfolio:** Tyranny, Slavery, Pride, Contracts, Punishment
+- **Domains:** Fire, Law, Magic, Trickery
+- **Favored Weapon:** Heavy mace
+- **Symbol:** Red pentagram
+- **Worshippers:** Devils, tyrants, slavers, [[Organizations/Hellknights|Hellknights]], corrupt nobility, contract-makers
 
 ## Description
 Asmodeus is the god of tyranny and domination, the archfiend who rules Hell with absolute authority. He represents the principle that law and order, stripped of mercy and compassion, become instruments of oppression. His doctrine teaches that hierarchy is divine, that the strong naturally rule the weak, and that suffering is both instructive and inevitable.

@@ -19,10 +19,10 @@ tags:
 # Sevenarches Encounter
 
 ## Overview
-**Date:** A few months ago, approximately 6-8 months into Rust's wandering (still age 12)  
-**Location:** [[Locations/Sevenarches|Sevenarches]]  
-**Duration:** Subjective hours, objective unknown  
-**Significance:** Rust learned the nature of his curse and chose ignorance over understanding
+- **Date:** A few months ago, approximately 6-8 months into Rust's wandering (still age 12)
+- **Location:** [[Locations/Sevenarches|Sevenarches]]
+- **Duration:** Subjective hours, objective unknown
+- **Significance:** Rust learned the nature of his curse and chose ignorance over understanding
 
 ## Background
 

@@ -17,12 +17,12 @@ tags:
 # River Kingdoms
 
 ## Overview
-**Type:** Region of independent kingdoms  
-**Location:** Central Avistan, east of [[Locations/Druma|Druma]]  
-**Government:** None unified; dozens of small kingdoms, republics, and city-states  
-**Alignment:** Mixed, predominantly Chaotic  
-**Notable Features:** Constant border changes, freedom, lawlessness, opportunity  
-**Primary Geography:** River valleys and plains
+- **Type:** Region of independent kingdoms
+- **Location:** Central Avistan, east of [[Locations/Druma|Druma]]
+- **Government:** None unified; dozens of small kingdoms, republics, and city-states
+- **Alignment:** Mixed, predominantly Chaotic
+- **Notable Features:** Constant border changes, freedom, lawlessness, opportunity
+- **Primary Geography:** River valleys and plains
 
 ## Description
 The River Kingdoms isn't a nation—it's a region of dozens (the number changes monthly) of independent polities along the Sellen River and its tributaries. Borders shift constantly, rulers rise and fall, and the only constant is change itself.

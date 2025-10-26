@@ -17,11 +17,11 @@ tags:
 # Sisters of the Golden Erinyes
 
 ## Overview
-**Alignment:** Lawful Evil  
-**Headquarters:** [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]], western [[Locations/Isger|Isger]]  
-**Deity:** [[Deities/Asmodeus|Asmodeus]]  
-**Founded:** Shortly after the [[Events/Goblinblood Wars|Goblinblood Wars]]  
-**Current Status:** Active and operating
+- **Alignment:** Lawful Evil
+- **Headquarters:** [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]], western [[Locations/Isger|Isger]]
+- **Deity:** [[Deities/Asmodeus|Asmodeus]]
+- **Founded:** Shortly after the [[Events/Goblinblood Wars|Goblinblood Wars]]
+- **Current Status:** Active and operating
 
 ## Purpose and Philosophy
 The Sisters ostensibly run a charitable institution dedicated to civilizing goblinoid orphans and other undesirable children in post-war [[Locations/Isger|Isger]]. In practice, they operate a systematic abuse mill disguised as theological education.

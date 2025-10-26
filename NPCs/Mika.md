@@ -15,10 +15,10 @@ tags:
 # Mika
 
 ## Overview
-**Role:** Fellow orphan at the [[Locations/Monastery of the Golden Erinyes|Monastery]]  
-**Organization:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]] (unwillingly)  
-**Status:** Unknown  
-**Age:** Younger than [[Characters/Rust|Rust]] (was a young girl when he escaped)
+- **Role:** Fellow orphan at the [[Locations/Monastery of the Golden Erinyes|Monastery]]
+- **Organization:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]] (unwillingly)
+- **Status:** Unknown
+- **Age:** Younger than [[Characters/Rust|Rust]] (was a young girl when he escaped)
 
 ## Description
 A small human girl with dark hair and too-thin features. Mika was one of the human orphans at the monastery, the child of a destitute family who couldn't afford to keep her. She cried during prayers, which earned her frequent punishments including being denied meals.

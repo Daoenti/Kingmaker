@@ -19,13 +19,13 @@ tags:
 # Cheliax
 
 ## Overview
-**Type:** Nation/Empire  
-**Region:** Inner Sea, western Avistan  
-**Government:** Diabolical Empire ruled by House Thrune  
-**Alignment:** Lawful Evil  
-**Capital:** Egorian  
-**State Religion:** [[Deities/Asmodeus|Asmodeus]] (mandatory worship)  
-**Notable Features:** [[Organizations/Hellknights|Hellknight]] orders, contract law, state-sanctioned devil binding
+- **Type:** Nation/Empire
+- **Region:** Inner Sea, western Avistan
+- **Government:** Diabolical Empire ruled by House Thrune
+- **Alignment:** Lawful Evil
+- **Capital:** Egorian
+- **State Religion:** [[Deities/Asmodeus|Asmodeus]] (mandatory worship)
+- **Notable Features:** [[Organizations/Hellknights|Hellknight]] orders, contract law, state-sanctioned devil binding
 
 ## Description
 Cheliax is a once-great empire now ruled by diabolists who worship [[Deities/Asmodeus|Asmodeus]] as the state deity. After a civil war, House Thrune seized power through pacts with Hell itself, establishing a totalitarian regime where law and order are maintained through fear, contracts, and infernal magic.

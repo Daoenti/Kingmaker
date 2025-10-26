@@ -16,12 +16,12 @@ tags:
 # Marta Greenhill
 
 ## Overview
-**Role:** Shopkeeper and tavern keeper  
-**Species:** Human  
-**Age:** Middle-aged (around 40 when Rust met her)  
-**Status:** Unknown (presumably still running her shop)  
-**Location:** Small settlement in southern Kyonin, near the Sevenarches border  
-**Relationship to [[Characters/Rust|Rust]]:** First person to show him casual kindness after his escape
+- **Role:** Shopkeeper and tavern keeper
+- **Species:** Human
+- **Age:** Middle-aged (around 40 when Rust met her)
+- **Status:** Unknown (presumably still running her shop)
+- **Location:** Small settlement in southern Kyonin, near the Sevenarches border
+- **Relationship to [[Characters/Rust|Rust]]:** First person to show him casual kindness after his escape
 
 ## Description
 A middle-aged human woman with flour perpetually dusted in her hair and on her apron. She runs a general store that also serves as tavern and trading post in a settlement of maybe twenty buildings. Practical, no-nonsense, with the worn hands of someone who's worked hard all her life.

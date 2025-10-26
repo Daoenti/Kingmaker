@@ -16,10 +16,10 @@ tags:
 # Kresh
 
 ## Overview
-**Role:** Mercenary and caravan guard  
-**Species:** Half-orc  
-**Status:** Unknown (last seen in northern Andoran)  
-**Relationship to [[Characters/Rust|Rust]]:** Brief mentor figure during caravan journey
+- **Role:** Mercenary and caravan guard
+- **Species:** Half-orc
+- **Status:** Unknown (last seen in northern Andoran)
+- **Relationship to [[Characters/Rust|Rust]]:** Brief mentor figure during caravan journey
 
 ## Description
 A grizzled half-orc mercenary with the scars and bearing of someone who's made a career of violence. Professional, competent, and surprisingly observant. Kresh carries himself with the confidence of someone who's survived dozens of fights through skill rather than luck.

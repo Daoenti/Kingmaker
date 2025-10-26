@@ -19,11 +19,11 @@ tags:
 # Sevenarches
 
 ## Overview
-**Region:** [[Locations/River Kingdoms]], border with [[Locations/Kyonin]]  
-**Type:** Ancient forest settlement/eldritch location  
-**Danger Level:** Extreme - Reality unstable  
-**Accessibility:** Theoretically passable, practically inadvisable  
-**Status:** Perpetually active, perpetually strange
+- **Region:** [[Locations/River Kingdoms]], border with [[Locations/Kyonin]]
+- **Type:** Ancient forest settlement/eldritch location
+- **Danger Level:** Extreme - Reality unstable
+- **Accessibility:** Theoretically passable, practically inadvisable
+- **Status:** Perpetually active, perpetually strange
 
 ## Description
 Sevenarches appears on maps as a simple forest settlement, a straight path through from Kyonin to the River Kingdoms proper. This is catastrophically inaccurate.

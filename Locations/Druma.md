@@ -19,14 +19,14 @@ tags:
 # Druma
 
 ## Overview
-**Type:** Nation/Plutocracy  
-**Region:** Inner Sea, central Avistan  
-**Government:** Merchant plutocracy ruled by the Resplendent Bureaucracy  
-**Alignment:** Lawful Neutral  
-**Capital:** Kerse  
-**Ruler:** High Prophet of Abadar and Resplendent Bureaucracy  
-**State Religion:** Abadar (god of cities, wealth, law)  
-**Notable Features:** Wealth-based citizenship, mercenary armies, religious capitalism
+- **Type:** Nation/Plutocracy
+- **Region:** Inner Sea, central Avistan
+- **Government:** Merchant plutocracy ruled by the Resplendent Bureaucracy
+- **Alignment:** Lawful Neutral
+- **Capital:** Kerse
+- **Ruler:** High Prophet of Abadar and Resplendent Bureaucracy
+- **State Religion:** Abadar (god of cities, wealth, law)
+- **Notable Features:** Wealth-based citizenship, mercenary armies, religious capitalism
 
 ## Description
 Druma is a nation where wealth equals power, law is sacred, and commerce is religion. Ruled by the Resplendent Bureaucracy—a council of the wealthiest merchants and bankers—Druma exemplifies a society where gold determines citizenship, rights, and social standing.

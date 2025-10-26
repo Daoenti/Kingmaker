@@ -18,14 +18,14 @@ tags:
 # Kyonin
 
 ## Overview
-**Type:** Nation/Kingdom  
-**Region:** Inner Sea, eastern Avistan  
-**Government:** Elven Monarchy  
-**Alignment:** Predominantly Chaotic Good  
-**Capital:** Iadara  
-**Ruler:** Queen Tlandira Edasseril  
-**Predominant Race:** Elves (>95% of population)  
-**Notable Features:** Ancient forests, [[Locations/Sevenarches|Sevenarches]], extreme isolationism
+- **Type:** Nation/Kingdom
+- **Region:** Inner Sea, eastern Avistan
+- **Government:** Elven Monarchy
+- **Alignment:** Predominantly Chaotic Good
+- **Capital:** Iadara
+- **Ruler:** Queen Tlandira Edasseril
+- **Predominant Race:** Elves (>95% of population)
+- **Notable Features:** Ancient forests, [[Locations/Sevenarches|Sevenarches]], extreme isolationism
 
 ## Description
 Kyonin is the elven homeland in Avistan, a realm of ancient forests and older magic. After millennia of absence during which elves retreated to Sovyrian, the elves returned to find their ancestral lands changed but still theirs. The kingdom is beautiful, isolated, and decidedly unwelcoming to non-elves.

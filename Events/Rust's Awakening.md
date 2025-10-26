@@ -18,10 +18,10 @@ tags:
 # Rust's Awakening
 
 ## Overview
-**Date:** One year before present day (Rust was 12 years old)  
-**Location:** Discipline Chamber, [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]]  
-**Primary Participants:** [[Characters/Rust|Rust]] (age 12), [[NPCs/Sister Velenne|Sister Velenne]]  
-**Significance:** First manifestation of Rust's oracle powers and Unbreakable heritage, catalyst for his escape
+- **Date:** One year before present day (Rust was 12 years old)
+- **Location:** Discipline Chamber, [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]]
+- **Primary Participants:** [[Characters/Rust|Rust]] (age 12), [[NPCs/Sister Velenne|Sister Velenne]]
+- **Significance:** First manifestation of Rust's oracle powers and Unbreakable heritage, catalyst for his escape
 
 ## The Events Leading Up
 
