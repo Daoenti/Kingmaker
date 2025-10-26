@@ -230,31 +230,6 @@ main {
     transition: all 0.3s ease;
 }
 
-/* Breadcrumbs */
-.breadcrumbs {
-    margin-bottom: 15px;
-    padding: 12px 16px;
-    font-size: 14px;
-    background: var(--bg1);
-    border-left: 3px solid var(--accent);
-    border-radius: 3px;
-}
-
-.breadcrumb-item {
-    color: var(--fg2);
-    transition: color 0.2s;
-}
-
-.breadcrumb-separator {
-    margin: 0 10px;
-    color: var(--fg3);
-}
-
-.breadcrumb-current {
-    color: var(--accent);
-    font-weight: 600;
-}
-
 main h1 {
     color: var(--fg0);
     border-bottom: 3px solid var(--yellow);

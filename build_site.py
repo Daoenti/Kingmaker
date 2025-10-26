@@ -279,42 +279,10 @@ for md_file in valid_files:
 
     page_title = md_file.stem.replace('-', ' ').replace('_', ' ')
 
-    # Generate breadcrumbs
-    breadcrumbs = []
-    parts = list(md_file.parts)
-
-    # Build breadcrumb trail
-    for i, part in enumerate(parts[:-1]):  # Exclude the file itself
-        # Create display name
-        display_name = part.replace('-', ' ').replace('_', ' ')
-
-        # Create URL if this is a folder with an index
-        if i == 0:
-            breadcrumbs.append({
-                'name': display_name,
-                'url': None  # Top level folder, no link
-            })
-        else:
-            breadcrumbs.append({
-                'name': display_name,
-                'url': None  # Subfolder, no direct link
-            })
-
-    # Add current page (no link)
-    clean_title = page_title
-    # Remove number prefix from timeline entries
-    clean_title = re.sub(r'^\d+\s*-\s*', '', clean_title)
-
-    breadcrumbs.append({
-        'name': clean_title,
-        'url': None
-    })
-
-    # Save content-only version for AJAX loading (includes breadcrumbs and controls)
+    # Save content-only version for AJAX loading (includes controls)
     content_template = template_env.get_template('page-content.html')
     content_only = content_template.render(
-        content=html_content,
-        breadcrumbs=breadcrumbs
+        content=html_content
     )
     content_file = output_dir / str(md_file).replace('.md', '-content.html')
     content_file.parent.mkdir(parents=True, exist_ok=True)
@@ -326,8 +294,7 @@ for md_file in valid_files:
         page_title=page_title,
         content=html_content,
         navigation=nav_html,
-        base_url=BASE_URL,
-        breadcrumbs=breadcrumbs
+        base_url=BASE_URL
     )
 
     out_file.write_text(full_html, encoding='utf-8')
