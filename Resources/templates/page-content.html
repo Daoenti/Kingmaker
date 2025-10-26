@@ -1,8 +1,3 @@
-<div class="content-controls">
-    <button onclick="expandAll()" class="control-btn">Expand All</button>
-    <button onclick="collapseAll()" class="control-btn">Collapse All</button>
-</div>
-
 <nav class="breadcrumbs" aria-label="Breadcrumb">
     {% for crumb in breadcrumbs %}
         {% if not loop.last %}
@@ -13,4 +8,10 @@
         {% endif %}
     {% endfor %}
 </nav>
+
+<div class="content-controls">
+    <button onclick="expandAll()" class="control-btn" title="Expand all sections">▼</button>
+    <button onclick="collapseAll()" class="control-btn" title="Collapse all sections">▲</button>
+</div>
+
 {{ content|safe }}

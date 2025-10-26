@@ -196,10 +196,6 @@
     <div class="container">
         {{ navigation|safe }}
         <main>
-            <div class="content-controls">
-                <button onclick="expandAll()" class="control-btn">Expand All</button>
-                <button onclick="collapseAll()" class="control-btn">Collapse All</button>
-            </div>
             {% block content %}{% endblock %}
         </main>
     </div>

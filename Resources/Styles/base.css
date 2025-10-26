@@ -178,23 +178,25 @@ main {
 
 /* Content controls */
 .content-controls {
-    margin-bottom: 20px;
-    padding: 10px;
-    background: var(--bg1);
-    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 0;
     display: flex;
-    gap: 10px;
+    gap: 8px;
+    justify-content: flex-end;
 }
 
 .control-btn {
-    padding: 8px 16px;
+    padding: 4px 8px;
     background: var(--bg2);
     color: var(--fg1);
     border: 1px solid var(--bg3);
-    border-radius: 4px;
+    border-radius: 3px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1;
     transition: all 0.2s;
+    min-width: 32px;
+    height: 28px;
 }
 
 .control-btn:hover {
@@ -230,23 +232,26 @@ main {
 
 /* Breadcrumbs */
 .breadcrumbs {
-    margin-bottom: 20px;
-    padding: 10px 0;
+    margin-bottom: 15px;
+    padding: 12px 16px;
     font-size: 14px;
-    color: var(--fg3);
+    background: var(--bg1);
+    border-left: 3px solid var(--accent);
+    border-radius: 3px;
 }
 
 .breadcrumb-item {
-    color: var(--fg3);
+    color: var(--fg2);
+    transition: color 0.2s;
 }
 
 .breadcrumb-separator {
-    margin: 0 8px;
-    color: var(--fg4);
+    margin: 0 10px;
+    color: var(--fg3);
 }
 
 .breadcrumb-current {
-    color: var(--fg1);
+    color: var(--accent);
     font-weight: 600;
 }
 
