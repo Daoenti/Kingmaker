@@ -310,10 +310,15 @@ for md_file in valid_files:
         'url': None
     })
 
-    # Save content-only version for AJAX loading
+    # Save content-only version for AJAX loading (includes breadcrumbs and controls)
+    content_template = template_env.get_template('page-content.html')
+    content_only = content_template.render(
+        content=html_content,
+        breadcrumbs=breadcrumbs
+    )
     content_file = output_dir / str(md_file).replace('.md', '-content.html')
     content_file.parent.mkdir(parents=True, exist_ok=True)
-    content_file.write_text(html_content, encoding='utf-8')
+    content_file.write_text(content_only, encoding='utf-8')
 
     # Render page using Jinja2 template
     template = template_env.get_template('page.html')
