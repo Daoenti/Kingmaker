@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Kingmaker Campaign{% endblock %}</title>
-    <link rel="stylesheet" href="{{ base_url }}/style.css">
+    <link rel="stylesheet" href="{{ base_url }}/base.css">
+    <link rel="stylesheet" href="{{ base_url }}/theme-dark.css" id="theme-stylesheet">
+    <script>
+        // Theme management
+        function changeTheme(theme) {
+            const stylesheet = document.getElementById('theme-stylesheet');
+            stylesheet.href = '{{ base_url }}/' + theme;
+            localStorage.setItem('selectedTheme', theme);
+        }
+
+        // Load saved theme on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('selectedTheme') || 'theme-dark.css';
+            const stylesheet = document.getElementById('theme-stylesheet');
+            stylesheet.href = '{{ base_url }}/' + savedTheme;
+
+            // Update select element
+            const themeSelect = document.getElementById('theme-select');
+            if (themeSelect) {
+                themeSelect.value = savedTheme;
+            }
+        });
+    </script>
     <script>
         function toggleSection(sectionId) {
             const section = document.getElementById(sectionId);

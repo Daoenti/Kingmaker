@@ -31,16 +31,17 @@ if logo_src.exists():
     shutil.copy(logo_src, output_dir / 'kingmaker-logo.png')
     print("Logo copied to output directory")
 
-# Copy CSS file to output directory
-css_src = Path('Resources/Styles/style.css')
-if css_src.exists():
-    shutil.copy(css_src, output_dir / 'style.css')
-    print("CSS file copied to output directory")
+# Copy all CSS files to output directory
+css_dir = Path('Resources/Styles')
+if css_dir.exists():
+    for css_file in css_dir.glob('*.css'):
+        shutil.copy(css_file, output_dir / css_file.name)
+        print(f"CSS file copied: {css_file.name}")
 else:
-    print("Warning: style.css not found in project directory")
+    print("Warning: Styles directory not found")
 
 # Collect all markdown files
-exclude_dirs = {'.git', '.github', '.obsidian', '.trash', '.makemd', '.space', 'Tags'}
+exclude_dirs = {'.git', '.github', '.obsidian', '.trash', '.makemd', '.space', '.venv', 'Tags'}
 md_files = []
 
 for f in Path('.').rglob('*.md'):
@@ -115,6 +116,16 @@ for f in valid_files:
 def generate_nav():
     nav_html = '<nav>\n'
     nav_html += f'<div class="logo"><a href="{BASE_URL}/" onclick="loadContent(\'{BASE_URL}/index.html\', \'Kingmaker Campaign\'); return false;"><img src="{BASE_URL}/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>\n'
+
+    # Add theme switcher
+    nav_html += '<div class="theme-switcher">\n'
+    nav_html += '<label for="theme-select">Theme:</label>\n'
+    nav_html += '<select id="theme-select" onchange="changeTheme(this.value)">\n'
+    nav_html += '<option value="theme-dark.css">Gruvbox Dark</option>\n'
+    nav_html += '<option value="theme-light.css">Gruvbox Light</option>\n'
+    nav_html += '<option value="theme-aon-dark.css">AoN Dark</option>\n'
+    nav_html += '</select>\n'
+    nav_html += '</div>\n'
 
     for folder in sorted(nav_structure.keys()):
         # Make the folder header clickable to collapse/expand

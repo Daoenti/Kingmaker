@@ -215,14 +215,14 @@ This creates rich roleplaying potential around his relationship with the divine.
 
 ## History
 
-**For detailed narrative timeline, see:** [[Characters/Rust Timeline|Rust's Complete Timeline]]
+**For detailed narrative timeline, see:** [[Characters/Rust Timeline/00 - README|Rust's Complete Timeline]]
 
 ### Early Life: The Monastery (Ages ~2-12)
-Found as a toddler in the burned wreckage of a goblin encampment during post-[[Events/Goblinblood Wars|Goblinblood Wars]] cleanup operations, Rust was taken to [[Locations/Monastery of the Golden Erinyes|the Monastery of the Golden Erinyes]], an austere Asmodean institution in western [[Locations/Isger|Isger]]. 
+Found as a toddler in the burned wreckage of a goblin encampment during post-[[Events/Goblinblood Wars|Goblinblood Wars]] cleanup operations, Rust was taken to [[Locations/Monastery of the Golden Erinyes|the Monastery of the Golden Erinyes]], an austere Asmodean institution in western [[Locations/Isger|Isger]].
 
 The [[Organizations/Sisters of the Golden Erinyes|Sisters]] ran a brutal program of "civilization" that was systematic abuse disguised as theology. [[NPCs/Sister Velenne|Sister Velenne]] took particular interest in his "education," which involved frequent, methodical beatings.
 
-**See detailed timeline entries for this period in [[Characters/Rust Timeline|Rust's Complete Timeline]]**
+**See detailed timeline entries for this period in [[Characters/Rust Timeline/00 - README|Rust's Complete Timeline]]**
 
 ### The Awakening (Age 12, One Year Ago)
 After a particularly brutal beating for helping [[NPCs/Mika|another orphan]], Rust was left locked in the discipline chamber, broken and dying. That night, something **noticed** him. His power manifested for the first time, healing injuries that should have been fatal. He fled at dawn.
