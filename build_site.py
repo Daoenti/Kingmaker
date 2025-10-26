@@ -2,6 +2,7 @@ import markdown
 import re
 from pathlib import Path
 import shutil
+from jinja2 import Environment, FileSystemLoader
 
 # Markdown extensions for better rendering
 md = markdown.Markdown(extensions=[
@@ -13,6 +14,9 @@ md = markdown.Markdown(extensions=[
     'attr_list',
     'def_list',
 ])
+
+# Setup Jinja2 environment
+template_env = Environment(loader=FileSystemLoader('Resources/templates'))
 
 # Create output directory
 output_dir = Path('_site')
@@ -252,214 +256,33 @@ for md_file in valid_files:
     content_file.parent.mkdir(parents=True, exist_ok=True)
     content_file.write_text(html_content, encoding='utf-8')
 
-    # Use absolute path to CSS for all pages
-    full_html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{page_title} - Kingmaker Campaign</title>
-    <link rel="stylesheet" href="{BASE_URL}/style.css">
-    <script>
-        function toggleSection(sectionId) {{
-            const section = document.getElementById(sectionId);
-            const icon = event.currentTarget.querySelector('.toggle-icon');
-            if (section.style.display === 'none') {{
-                section.style.display = 'block';
-                icon.textContent = '▼';
-            }} else {{
-                section.style.display = 'none';
-                icon.textContent = '▶';
-            }}
-        }}
-
-        function loadContent(url, title) {{
-            // Save sidebar scroll position
-            const nav = document.querySelector('nav');
-            if (nav) {{
-                sessionStorage.setItem('sidebarScroll', nav.scrollTop);
-            }}
-
-            // Convert regular URL to content URL
-            const contentUrl = url.replace('.html', '-content.html');
-
-            fetch(contentUrl)
-                .then(response => response.text())
-                .then(html => {{
-                    document.querySelector('main').innerHTML = html;
-                    document.title = title + ' - Kingmaker Campaign';
-                    window.history.pushState({{}}, '', url);
-
-                    // Restore sidebar scroll position
-                    const scrollPos = sessionStorage.getItem('sidebarScroll');
-                    if (nav && scrollPos) {{
-                        nav.scrollTop = parseInt(scrollPos);
-                    }}
-
-                    // Intercept links in the newly loaded content
-                    interceptContentLinks();
-                }})
-                .catch(error => {{
-                    console.error('Error loading content:', error);
-                    window.location.href = url;
-                }});
-        }}
-
-        function interceptContentLinks() {{
-            const main = document.querySelector('main');
-            if (!main) return;
-
-            main.querySelectorAll('a[href]').forEach(link => {{
-                const href = link.getAttribute('href');
-                // Only intercept internal links to .html files
-                if (href && href.includes('.html') && !href.startsWith('http')) {{
-                    link.addEventListener('click', function(e) {{
-                        e.preventDefault();
-                        const url = this.getAttribute('href');
-                        const title = this.textContent;
-                        loadContent(url, title);
-                    }});
-                }}
-            }});
-        }}
-
-        // Handle browser back/forward buttons
-        window.addEventListener('popstate', function() {{
-            location.reload();
-        }});
-
-        // Restore sidebar scroll position on page load
-        window.addEventListener('DOMContentLoaded', function() {{
-            const nav = document.querySelector('nav');
-            const scrollPos = sessionStorage.getItem('sidebarScroll');
-            if (nav && scrollPos) {{
-                nav.scrollTop = parseInt(scrollPos);
-            }}
-
-            // Intercept links in initial content
-            interceptContentLinks();
-        }});
-    </script>
-</head>
-<body>
-    <div class="container">
-        {nav_html}
-        <main>
-            {html_content}
-        </main>
-    </div>
-</body>
-</html>"""
+    # Render page using Jinja2 template
+    template = template_env.get_template('page.html')
+    full_html = template.render(
+        page_title=page_title,
+        content=html_content,
+        navigation=nav_html,
+        base_url=BASE_URL
+    )
 
     out_file.write_text(full_html, encoding='utf-8')
 
 # Create index.html with home content
 home_content = """<div class="home-content">
-                <h1>⚔️ Kingmaker Campaign</h1>
-                <p>Pathfinder Campaign Notes</p>
-                <p>Use the navigation on the left to explore the campaign world.</p>
-            </div>"""
+    <h1>⚔️ Kingmaker Campaign</h1>
+    <p>Pathfinder Campaign Notes</p>
+    <p>Use the navigation on the left to explore the campaign world.</p>
+</div>"""
 
 # Save home content separately for AJAX
 (output_dir / 'index-content.html').write_text(home_content, encoding='utf-8')
 
-index_html = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingmaker Campaign</title>
-    <link rel="stylesheet" href="{BASE_URL}/style.css">
-    <script>
-        function toggleSection(sectionId) {{
-            const section = document.getElementById(sectionId);
-            const icon = event.currentTarget.querySelector('.toggle-icon');
-            if (section.style.display === 'none') {{
-                section.style.display = 'block';
-                icon.textContent = '▼';
-            }} else {{
-                section.style.display = 'none';
-                icon.textContent = '▶';
-            }}
-        }}
-
-        function loadContent(url, title) {{
-            // Save sidebar scroll position
-            const nav = document.querySelector('nav');
-            if (nav) {{
-                sessionStorage.setItem('sidebarScroll', nav.scrollTop);
-            }}
-
-            // Convert regular URL to content URL
-            const contentUrl = url.replace('.html', '-content.html');
-
-            fetch(contentUrl)
-                .then(response => response.text())
-                .then(html => {{
-                    document.querySelector('main').innerHTML = html;
-                    document.title = title + ' - Kingmaker Campaign';
-                    window.history.pushState({{}}, '', url);
-
-                    // Restore sidebar scroll position
-                    const scrollPos = sessionStorage.getItem('sidebarScroll');
-                    if (nav && scrollPos) {{
-                        nav.scrollTop = parseInt(scrollPos);
-                    }}
-
-                    // Intercept links in the newly loaded content
-                    interceptContentLinks();
-                }})
-                .catch(error => {{
-                    console.error('Error loading content:', error);
-                    window.location.href = url;
-                }});
-        }}
-
-        function interceptContentLinks() {{
-            const main = document.querySelector('main');
-            if (!main) return;
-
-            main.querySelectorAll('a[href]').forEach(link => {{
-                const href = link.getAttribute('href');
-                // Only intercept internal links to .html files
-                if (href && href.includes('.html') && !href.startsWith('http')) {{
-                    link.addEventListener('click', function(e) {{
-                        e.preventDefault();
-                        const url = this.getAttribute('href');
-                        const title = this.textContent;
-                        loadContent(url, title);
-                    }});
-                }}
-            }});
-        }}
-
-        // Handle browser back/forward buttons
-        window.addEventListener('popstate', function() {{
-            location.reload();
-        }});
-
-        // Restore sidebar scroll position on page load
-        window.addEventListener('DOMContentLoaded', function() {{
-            const nav = document.querySelector('nav');
-            const scrollPos = sessionStorage.getItem('sidebarScroll');
-            if (nav && scrollPos) {{
-                nav.scrollTop = parseInt(scrollPos);
-            }}
-
-            // Intercept links in initial content
-            interceptContentLinks();
-        }});
-    </script>
-</head>
-<body>
-    <div class="container">
-        {nav_html}
-        <main>
-            {home_content}
-        </main>
-    </div>
-</body>
-</html>"""
+# Render index page using Jinja2 template
+index_template = template_env.get_template('index.html')
+index_html = index_template.render(
+    navigation=nav_html,
+    base_url=BASE_URL
+)
 
 (output_dir / 'index.html').write_text(index_html, encoding='utf-8')
 

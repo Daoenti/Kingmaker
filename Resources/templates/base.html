@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Kingmaker Campaign{% endblock %}</title>
+    <link rel="stylesheet" href="{{ base_url }}/style.css">
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const icon = event.currentTarget.querySelector('.toggle-icon');
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                icon.textContent = '▼';
+            } else {
+                section.style.display = 'none';
+                icon.textContent = '▶';
+            }
+        }
+
+        function loadContent(url, title) {
+            // Save sidebar scroll position
+            const nav = document.querySelector('nav');
+            if (nav) {
+                sessionStorage.setItem('sidebarScroll', nav.scrollTop);
+            }
+
+            // Convert regular URL to content URL
+            const contentUrl = url.replace('.html', '-content.html');
+
+            fetch(contentUrl)
+                .then(response => response.text())
+                .then(html => {
+                    document.querySelector('main').innerHTML = html;
+                    document.title = title + ' - Kingmaker Campaign';
+                    window.history.pushState({}, '', url);
+
+                    // Restore sidebar scroll position
+                    const scrollPos = sessionStorage.getItem('sidebarScroll');
+                    if (nav && scrollPos) {
+                        nav.scrollTop = parseInt(scrollPos);
+                    }
+
+                    // Intercept links in the newly loaded content
+                    interceptContentLinks();
+                })
+                .catch(error => {
+                    console.error('Error loading content:', error);
+                    window.location.href = url;
+                });
+        }
+
+        function interceptContentLinks() {
+            const main = document.querySelector('main');
+            if (!main) return;
+
+            main.querySelectorAll('a[href]').forEach(link => {
+                const href = link.getAttribute('href');
+                // Only intercept internal links to .html files
+                if (href && href.includes('.html') && !href.startsWith('http')) {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const url = this.getAttribute('href');
+                        const title = this.textContent;
+                        loadContent(url, title);
+                    });
+                }
+            });
+        }
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', function() {
+            location.reload();
+        });
+
+        // Restore sidebar scroll position on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('nav');
+            const scrollPos = sessionStorage.getItem('sidebarScroll');
+            if (nav && scrollPos) {
+                nav.scrollTop = parseInt(scrollPos);
+            }
+
+            // Intercept links in initial content
+            interceptContentLinks();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        {{ navigation|safe }}
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+</body>
+</html>
