@@ -110,7 +110,7 @@ for f in valid_files:
 # Generate navigation HTML with collapsible sections
 def generate_nav():
     nav_html = '<nav>\n'
-    nav_html += f'<div class="logo"><a href="{BASE_URL}/"><img src="{BASE_URL}/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>\n'
+    nav_html += f'<div class="logo"><a href="{BASE_URL}/" onclick="loadContent(\'{BASE_URL}/index.html\', \'Kingmaker Campaign\'); return false;"><img src="{BASE_URL}/kingmaker-logo.png" alt="Kingmaker Campaign"></a></div>\n'
 
     for folder in sorted(nav_structure.keys()):
         # Make the folder header clickable to collapse/expand

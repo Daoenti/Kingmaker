@@ -1,4 +1,61 @@
- Awakening|Rust's awakening]] occurred. A windowless stone room in the monastery's basement, equipped with restraints, various implements of punishment, and a single locked door. The walls are bare stone, stained with old blood that's never quite scrubbed away. A small drain in the floor's center tells its own story.
+---
+type: location
+name: Monastery of the Golden Erinyes
+region: Isger
+type_detail: Asmodean Monastery/Orphanage
+alignment: Lawful Evil
+organization: Sisters of the Golden Erinyes
+status: active
+threat_level: regional
+tags:
+  - location
+  - monastery
+  - asmodean
+  - antagonist
+  - isger
+  - orphanage
+---
+
+# Monastery of the Golden Erinyes
+
+## Overview
+**Type:** Asmodean monastery and "orphanage"
+**Location:** Western [[Locations/Isger|Isger]], remote countryside
+**Operated By:** [[Organizations/Sisters of the Golden Erinyes|Sisters of the Golden Erinyes]]
+**Founded:** Shortly after the [[Events/Goblinblood Wars|Goblinblood Wars]] (early 4700s AR)
+**Purpose:** Ostensibly civilizing orphans; actually systematic abuse disguised as education
+**Status:** Active and operating
+
+## Description
+The Monastery of the Golden Erinyes sits in the remote western hills of [[Locations/Isger|Isger]], isolated from major settlements by design. It's a fortress-like structure of dark stone, built in the austere Asmodean architectural style—all sharp angles, minimal ornamentation, and an oppressive sense of order.
+
+The monastery presents itself as a charitable institution saving orphaned children from the chaos of post-war [[Locations/Isger|Isger]]. In reality, it's a systematic operation for breaking children's wills and reforming them into obedient servants through theological justification of abuse.
+
+This is where [[Characters/Rust|Rust]] spent ages 2-12, where his earliest conscious memories were formed, and where [[Events/Rust's Awakening|his awakening]] occurred.
+
+## Architecture and Layout
+
+### Exterior
+- High stone walls (15 feet) surrounding the compound
+- Single main gate, iron-bound and heavily reinforced
+- Watchtowers at corners manned by guards
+- Minimal windows, all narrow and barred
+- The whole structure designed to keep people in, not out
+
+### Main Hall
+Large central chamber for communal prayers, meals, and indoctrination. Decorated with Asmodean iconography and quotes from scripture emphasizing obedience, hierarchy, and the virtue of suffering. Children spend hours here daily in enforced silence.
+
+### Dormitories
+Separate wings for different age groups and species. Spartan accommodations: stone floors, thin pallets, minimal heat. Locked from outside at night. Designed for efficient supervision and minimal comfort.
+
+### Classroom Chambers
+Where theological "education" occurs. Lessons focus on Asmodean doctrine, the divine nature of hierarchy, the virtue of obedience, and the wickedness of the children's natures. Physically uncomfortable by design—hard benches, poor lighting, cold rooms.
+
+### Sister Velenne's Office
+Where [[NPCs/Sister Velenne|Sister Velenne]] conducts private "counseling sessions." Contains scripture books, discipline implements displayed on the walls like tools of a trade, and detailed records of each child's corrections. The room smells of old leather and fear.
+
+### The Discipline Chamber
+The room where [[Events/Rust's Awakening|Rust's awakening]] occurred. A windowless stone room in the monastery's basement, equipped with restraints, various implements of punishment, and a single locked door. The walls are bare stone, stained with old blood that's never quite scrubbed away. A small drain in the floor's center tells its own story.
 
 The room is soundproofed by design and thick stone. No one hears what happens there except the Sister administering correction and the child being corrected.
 
@@ -56,7 +113,7 @@ Fully legitimate religious institution. They have:
 Investigating them legally is nearly impossible. They're protected by layers of bureaucracy, religious law, and powerful patrons who benefit from their existence.
 
 ## Current Status
-Operating normally as far as [[Characters/Rust|Rust]] knows. He's been gone for years, and the monastery continues its work, processing new children, breaking them, and sending them out into the world as obedient servants.
+Operating normally as far as [[Characters/Rust|Rust]] knows. He's been gone a year, and the monastery continues its work, processing new children, breaking them, and sending them out into the world as obedient servants.
 
 Whether [[NPCs/Sister Velenne|Sister Velenne]] still seeks him specifically or has moved on to new projects is unknown. Whether [[NPCs/Mika|Mika]] still suffers there is unknown. The monastery simply continues, grinding children into useful shapes.
 
@@ -87,9 +144,9 @@ Whether [[NPCs/Sister Velenne|Sister Velenne]] still seeks him specifically or h
 - [[Characters/Rust|Rust]] decides he's done running
 
 ## Dangers
-**Social:** Legally protected, attacking them has consequences  
-**Psychological:** Confronting this place will traumatize [[Characters/Rust|Rust]] and potentially other party members  
-**Physical:** Well-defended, guards are competent, Sisters have divine magic  
+**Social:** Legally protected, attacking them has consequences
+**Psychological:** Confronting this place will traumatize [[Characters/Rust|Rust]] and potentially other party members
+**Physical:** Well-defended, guards are competent, Sisters have divine magic
 **Magical:** Wards, protective spells, potential Hellknight backup
 
 ## Potential Allies
