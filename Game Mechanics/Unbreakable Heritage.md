@@ -15,10 +15,10 @@ tags:
 # Unbreakable Heritage
 
 ## Game Mechanical Definition
-**System:** Pathfinder 2nd Edition
-**Type:** Goblin Heritage
-**Ancestry:** Goblin
-**Level Requirement:** 1st (selected at character creation)
+- **System:** Pathfinder 2nd Edition
+- **Type:** Goblin Heritage
+- **Ancestry:** Goblin
+- **Level Requirement:** 1st (selected at character creation)
 
 ## Mechanical Benefits (Level 1)
 The Unbreakable goblin heritage provides the following at 1st level:

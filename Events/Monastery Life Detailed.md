@@ -403,7 +403,7 @@ Similar to morning but shorter:
 - Wanted to "drive out corruption"
 - Beatings intensified
 - Psychological pressure increased
-- Planned to bring in Hellknight observers
+- Planned to bring in [[Organizations/Hellknights|Hellknight]] observers
 - This urgency led to final beating
 
 ### Specific Punishment Incidents
@@ -530,7 +530,7 @@ Similar to morning but shorter:
 - Stronger, more aggressive than Rust
 - Survived by intimidating human children
 - Avoided Rust entirely
-- Transferred to Hellknight training (age 12)
+- Transferred to [[Organizations/Hellknights|Hellknight]] training (age 12)
 - Rust wondered if that was better or worse
 
 **Other Children:**

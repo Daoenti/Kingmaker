@@ -59,7 +59,7 @@ He was **home**.
 
 Then the Chelaxians came.
 
-Perhaps it was a military operation. Perhaps it was a civilian militia looking to make names for themselves by killing goblins. Perhaps it was Hellknights conducting a "purification sweep." The exact force doesn't matter—the result was the same.
+Perhaps it was a military operation. Perhaps it was a civilian militia looking to make names for themselves by killing goblins. Perhaps it was [[Organizations/Hellknights|Hellknights]] conducting a "purification sweep." The exact force doesn't matter—the result was the same.
 
 They came with fire and steel. Goblin communities, even defensive ones, rarely survived such encounters. The adults would have fought or fled. The children would have been hidden or carried. The community would have scattered, tried to escape, tried to survive.
 

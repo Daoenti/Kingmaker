@@ -18,13 +18,13 @@ tags:
 # Lamashtu
 
 ## Overview
-**Alignment:** Chaotic Evil
-**Titles:** Mother of Monsters, Demon Queen, The Demon Mother, Grandmother Nightmare
-**Portfolio:** Monsters, Madness, Nightmares, Birth Defects, Aberrations
-**Domains:** Chaos, Evil, Madness, Strength, Trickery
-**Favored Weapon:** Falchion
-**Symbol:** Three-eyed jackal head
-**Worshippers:** Goblins, gnolls, medusas, harpies, minotaurs, morlocks, outcasts, the insane, those seeking transformation
+- **Alignment:** Chaotic Evil
+- **Titles:** Mother of Monsters, Demon Queen, The Demon Mother, Grandmother Nightmare
+- **Portfolio:** Monsters, Madness, Nightmares, Birth Defects, Aberrations
+- **Domains:** Chaos, Evil, Madness, Strength, Trickery
+- **Favored Weapon:** Falchion
+- **Symbol:** Three-eyed jackal head
+- **Worshippers:** Goblins, gnolls, medusas, harpies, minotaurs, morlocks, outcasts, the insane, those seeking transformation
 
 ## Description
 Lamashtu is the Mother of Monsters, the mad goddess of monstrous births, aberrations, and nightmares. She is the patron deity of many monstrous races and those who feel cast out or rejected by civilized society. Unlike [[Deities/Asmodeus|Asmodeus]]'s calculated tyranny, Lamashtu represents primal chaos, the horror of the unnatural, and the terrifying randomness of mutation and madness.

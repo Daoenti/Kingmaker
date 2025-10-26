@@ -24,7 +24,7 @@ tags:
 **Domains:** Fire, Law, Magic, Trickery  
 **Favored Weapon:** Heavy mace  
 **Symbol:** Red pentagram  
-**Worshippers:** Devils, tyrants, slavers, Hellknights, corrupt nobility, contract-makers
+**Worshippers:** Devils, tyrants, slavers, [[Organizations/Hellknights|Hellknights]], corrupt nobility, contract-makers
 
 ## Description
 Asmodeus is the god of tyranny and domination, the archfiend who rules Hell with absolute authority. He represents the principle that law and order, stripped of mercy and compassion, become instruments of oppression. His doctrine teaches that hierarchy is divine, that the strong naturally rule the weak, and that suffering is both instructive and inevitable.
@@ -66,7 +66,7 @@ Asmodeus gave mortals the Infernal tongue—a language said to make rebellion "g
 ### Clergy and Organizations
 Asmodean worship manifests in various forms:
 
-**Hellknights:**
+**[[Organizations/Hellknights|Hellknights]]:**
 - Military orders enforcing law through intimidation
 - Value order above all other concerns
 - Often serve as judges, enforcers, peacekeepers
@@ -132,13 +132,13 @@ He doesn't hate Asmodeus theologically—he doesn't think about the god much at 
 Asmodeus is the state religion of Cheliax, where:
 - His worship is legally mandated
 - Dissent is treason against both state and god
-- Hellknights enforce order
+- [[Organizations/Hellknights|Hellknights]] enforce order
 - Contract law supersedes morality
 - The nobility rules by divine right
 
 ### Beyond Cheliax
 Even outside Cheliax, Asmodean influence spreads through:
-- Hellknight orders operating in multiple nations
+- [[Organizations/Hellknights|Hellknight]] orders operating in multiple nations
 - Monasteries and religious institutions
 - Contract magic and devil-binding
 - Legal philosophy emphasizing order over justice
@@ -212,7 +212,7 @@ Asmodean elements in the campaign represent:
 
 ### Character Interactions
 Party members might encounter:
-- Hellknights enforcing unjust laws
+- [[Organizations/Hellknights|Hellknights]] enforcing unjust laws
 - Contract-bound NPCs in impossible situations
 - Victims of Asmodean institutions
 - True believers who cannot be reasoned with
@@ -220,7 +220,7 @@ Party members might encounter:
 
 ### Moral Complexity
 Not everyone who follows Asmodeus is evil:
-- Some Hellknights genuinely keep order and protect people
+- Some [[Organizations/Hellknights|Hellknights]] genuinely keep order and protect people
 - Some believers value law's stability over chaos
 - Some contracts are fair and honored
 - Some structure prevents greater harm
@@ -231,7 +231,7 @@ But the system itself—tyranny as divine mandate—is fundamentally wrong, and 
 
 *"Through law, order. Through order, peace. Through peace, prosperity. Through prosperity, power. Through power, perfection."* - Asmodean maxim
 
-*"The contract is sacred because it makes chaos impossible. Your word binds you, and binding is salvation."* - Hellknight teaching
+*"The contract is sacred because it makes chaos impossible. Your word binds you, and binding is salvation."* - [[Organizations/Hellknights|Hellknight]] teaching
 
 *"They told me I should be grateful. That my suffering was Asmodeus's gift, teaching me to be better. But better at what? Enduring? I'm good at that now. Is that what gods want? People who endure? Because if so, their god failed—I didn't learn to endure. I learned to escape."* - [[Characters/Rust|Rust]], age 13
 

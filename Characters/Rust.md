@@ -217,69 +217,6 @@ This creates rich roleplaying potential around his relationship with the divine.
 
 **For detailed narrative timeline, see:** [[Characters/Rust Timeline|Rust's Complete Timeline]]
 
-### Timeline Visualization
-
-<div style="position: relative; padding: 40px 20px; margin: 30px 0;">
-  <!-- Timeline Arrow -->
-  <div style="position: relative; height: 4px; background: linear-gradient(to right, #c92a2a, #862e9c, #e03131, #2f9e44, #1971c2); margin: 80px 0; border-radius: 2px;"></div>
-
-  <!-- Age ~2: Found after Goblinblood Wars -->
-  <div style="position: absolute; left: 5%; top: 0; width: 140px; text-align: center;">
-    <div style="background: #ffc9c9; border: 2px solid #c92a2a; border-radius: 8px; padding: 12px; margin-bottom: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-      <strong style="color: #c92a2a;">Age ~2</strong><br>
-      <span style="font-size: 14px;">Found after<br>Goblinblood Wars</span>
-    </div>
-    <div style="width: 2px; height: 20px; background: #c92a2a; margin: 0 auto;"></div>
-  </div>
-
-  <!-- Ages 2-12: Monastery -->
-  <div style="position: absolute; left: 20%; top: -20px; width: 160px; text-align: center;">
-    <div style="background: #e5dbff; border: 2px solid #862e9c; border-radius: 8px; padding: 12px; margin-bottom: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-      <strong style="color: #862e9c;">Ages 2-12</strong><br>
-      <span style="font-size: 13px;">Monastery of the<br>Golden Erinyes</span><br>
-      <span style="font-size: 12px; font-style: italic;">(10 years of abuse)</span>
-    </div>
-    <div style="width: 2px; height: 40px; background: #862e9c; margin: 0 auto;"></div>
-  </div>
-
-  <!-- Age 12: The Awakening -->
-  <div style="position: absolute; left: 40%; top: 0; width: 150px; text-align: center;">
-    <div style="background: #ffe3e3; border: 2px solid #e03131; border-radius: 8px; padding: 12px; margin-bottom: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-      <strong style="color: #e03131;">Age 12</strong><br>
-      <span style="font-size: 14px;"><strong>The Awakening</strong></span><br>
-      <span style="font-size: 13px;">Power manifests<br>Escapes monastery</span>
-    </div>
-    <div style="width: 2px; height: 30px; background: #e03131; margin: 0 auto;"></div>
-  </div>
-
-  <!-- Age 12-13: Wandering Year -->
-  <div style="position: absolute; left: 60%; top: -10px; width: 160px; text-align: center;">
-    <div style="background: #d3f9d8; border: 2px solid #2f9e44; border-radius: 8px; padding: 12px; margin-bottom: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-      <strong style="color: #2f9e44;">Age 12-13</strong><br>
-      <span style="font-size: 13px;">The Wandering Year</span><br>
-      <span style="font-size: 12px;">Odd jobs, healing<br>Animal whispering</span>
-    </div>
-    <div style="width: 2px; height: 40px; background: #2f9e44; margin: 0 auto;"></div>
-    <!-- Sevenarches sub-event -->
-    <div style="background: #ffe8cc; border: 2px dashed #f08c00; border-radius: 8px; padding: 8px; margin-top: 50px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-      <span style="font-size: 12px; color: #f08c00;"><strong>Sevenarches</strong><br>Encounter</span><br>
-      <span style="font-size: 11px; font-style: italic;">(few months ago)</span>
-    </div>
-  </div>
-
-  <!-- Age 13: Present Day -->
-  <div style="position: absolute; left: 82%; top: 5px; width: 150px; text-align: center;">
-    <div style="background: #d0ebff; border: 2px solid #1971c2; border-radius: 8px; padding: 12px; margin-bottom: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-      <strong style="color: #1971c2;">Age 13</strong><br>
-      <span style="font-size: 13px;">Reaches Goblin<br>Adulthood</span><br>
-      <span style="font-size: 12px; font-weight: bold;">(Present Day)</span>
-    </div>
-    <div style="width: 2px; height: 20px; background: #1971c2; margin: 0 auto;"></div>
-  </div>
-</div>
-
-**Interactive Excalidraw version:** [[Rust Timeline.excalidraw]]
-
 ### Early Life: The Monastery (Ages ~2-12)
 Found as a toddler in the burned wreckage of a goblin encampment during post-[[Events/Goblinblood Wars|Goblinblood Wars]] cleanup operations, Rust was taken to [[Locations/Monastery of the Golden Erinyes|the Monastery of the Golden Erinyes]], an austere Asmodean institution in western [[Locations/Isger|Isger]]. 
 

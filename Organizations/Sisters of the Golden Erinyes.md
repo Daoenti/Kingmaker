@@ -38,7 +38,7 @@ They see goblinoid children as perfect test cases - beings so low in the cosmic 
 - Forced labor as character building
 - Theological indoctrination through pain association
 
-The Sisters maintain meticulous records of their successes - children who have been broken sufficiently to become obedient servants, some of whom even join the order or affiliated Hellknight organizations.
+The Sisters maintain meticulous records of their successes - children who have been broken sufficiently to become obedient servants, some of whom even join the order or affiliated [[Organizations/Hellknights|Hellknight]] organizations.
 
 ## Structure
 
@@ -49,7 +49,7 @@ The Sisters maintain meticulous records of their successes - children who have b
 - **Correction Branch:** Led by figures like [[NPCs/Sister Velenne|Sister Velenne]], handles active education
 
 ### Resources
-- Backing from certain Hellknight orders who appreciate their results
+- Backing from certain [[Organizations/Hellknights|Hellknight]] orders who appreciate their results
 - Donations from Asmodean churches
 - Funding from wealthy families disposing of unwanted children
 - Labor from the orphans themselves
@@ -75,10 +75,10 @@ Their reputation varies:
 ## Public Perception
 The Sisters maintain a veneer of respectability. They are officially sanctioned, pay their taxes, and produce useful servants. Most people in [[Locations/Isger|Isger]] know the monastery is harsh but assume it is necessary harshness - the region is still recovering from the wars, and someone has to deal with the goblin orphans.
 
-Those who know the truth either lack the power to stop them or benefit from their existence. The Hellknights appreciate institutions that produce obedient underlings. Wealthy families appreciate somewhere to dispose of embarrassing children. The Asmodean church appreciates the demonstration of their doctrine's effectiveness.
+Those who know the truth either lack the power to stop them or benefit from their existence. The [[Organizations/Hellknights|Hellknights]] appreciate institutions that produce obedient underlings. Wealthy families appreciate somewhere to dispose of embarrassing children. The Asmodean church appreciates the demonstration of their doctrine's effectiveness.
 
 ## Threat Assessment
-**Direct Combat:** Moderate. The Sisters are not warriors, but they have guards and Hellknight connections.  
+**Direct Combat:** Moderate. The Sisters are not warriors, but they have guards and [[Organizations/Hellknights|Hellknight]] connections.  
 **Political:** High. They are legally sanctioned and connected to powerful organizations.  
 **Psychological:** Extreme. They are experts at breaking people.  
 **Information:** High. They keep detailed records on all graduates.
@@ -88,7 +88,7 @@ Those who know the truth either lack the power to stop them or benefit from thei
 - Investigation into their methods by reformist authorities
 - [[Characters/Rust|Rust]] being tracked by Sisters who see his escape as unfinished business
 - Party members with connections to families who have donated children
-- Hellknight NPCs who were shaped by similar institutions
+- [[Organizations/Hellknights|Hellknight]] NPCs who were shaped by similar institutions
 - Current orphans in need of rescue
 - Records containing information about character backgrounds
 

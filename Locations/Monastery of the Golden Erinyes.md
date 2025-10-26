@@ -72,7 +72,7 @@ One of the few areas with sunlight and growing things. Ironically, this is where
 - Single main gate, always guarded
 - Windows are narrow slits, barred
 - Children's quarters locked from outside at night
-- Guards are Hellknight-trained, efficient and cruel
+- Guards are [[Organizations/Hellknights|Hellknight]]-trained, efficient and cruel
 - Magical wards against scrying (protecting "privacy" of their methods)
 
 ## Inhabitants
@@ -81,7 +81,7 @@ One of the few areas with sunlight and growing things. Ironically, this is where
 Approximately 20-30 sisters of varying ranks, all committed to the institution's doctrine. They rotate through roles: some handle administration, some education, some discipline. All are complicit.
 
 ### The Guards
-6-8 professional guards, mostly former Hellknights or similar military background. Paid well to ask no questions and prevent escapes.
+6-8 professional guards, mostly former [[Organizations/Hellknights|Hellknights]] or similar military background. Paid well to ask no questions and prevent escapes.
 
 ### The Orphans
 Population varies between 40-60 at any given time. Mix of goblinoid war orphans and human children from destitute or abusive families. Ages range from toddlers to teenagers.
@@ -122,7 +122,7 @@ Whether [[NPCs/Sister Velenne|Sister Velenne]] still seeks him specifically or h
 ### Investigation
 - Party hired to investigate rumors of abuse
 - Former victim seeking evidence for legal case
-- Hellknight reformist wants to expose corrupt affiliates
+- [[Organizations/Hellknights|Hellknight]] reformist wants to expose corrupt affiliates
 - Missing persons case leads here
 
 ### Rescue
@@ -147,11 +147,11 @@ Whether [[NPCs/Sister Velenne|Sister Velenne]] still seeks him specifically or h
 **Social:** Legally protected, attacking them has consequences
 **Psychological:** Confronting this place will traumatize [[Characters/Rust|Rust]] and potentially other party members
 **Physical:** Well-defended, guards are competent, Sisters have divine magic
-**Magical:** Wards, protective spells, potential Hellknight backup
+**Magical:** Wards, protective spells, potential [[Organizations/Hellknights|Hellknight]] backup
 
 ## Potential Allies
 - Other escaped victims
-- Reformist Hellknights disgusted by affiliation
+- Reformist [[Organizations/Hellknights|Hellknights]] disgusted by affiliation
 - Local clergy of non-Asmodean faiths
 - Isger officials who've wanted evidence for years
 - [[NPCs/Mika|Mika]], if she survived and escaped

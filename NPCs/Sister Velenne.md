@@ -52,7 +52,7 @@ If she learned he escaped and developed unusual healing abilities, she might see
 
 ## Threat Assessment
 **Direct Threat:** High if [[Characters/Rust|Rust]] is found  
-**Resources:** The full backing of the [[Organizations/Sisters of the Golden Erinyes|Sisters]] and tangential Hellknight connections  
+**Resources:** The full backing of the [[Organizations/Sisters of the Golden Erinyes|Sisters]] and tangential [[Organizations/Hellknights|Hellknight]] connections  
 **Danger:** Her certainty makes her unpredictable; she'd pursue Rust as a matter of principle, not just practicality
 
 ## Potential Plot Hooks

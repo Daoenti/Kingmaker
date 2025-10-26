@@ -326,7 +326,7 @@ Rust embodies these questions. He shouldn't exist—protocol said so. But he doe
 
 ### Chelaxian Elements
 - Professional army units
-- Hellknight observers (not direct participants)
+- [[Organizations/Hellknights|Hellknight]] observers (not direct participants)
 - Military contractors and mercenaries
 - Logistics and supply chains from Cheliax
 

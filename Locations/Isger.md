@@ -32,7 +32,7 @@ Isger is still recovering from the devastation of the Goblinblood Wars. The conf
 - Destroyed settlements
 - Orphaned children (both goblin and human)
 - Economic hardship
-- Increased Hellknight and Asmodean influence
+- Increased [[Organizations/Hellknights|Hellknight]] and Asmodean influence
 - Social tension between species
 
 This environment allowed institutions like the [[Locations/Monastery of the Golden Erinyes|monastery]] to flourish under the guise of bringing order to chaos.

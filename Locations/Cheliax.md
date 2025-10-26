@@ -25,12 +25,12 @@ tags:
 **Alignment:** Lawful Evil  
 **Capital:** Egorian  
 **State Religion:** [[Deities/Asmodeus|Asmodeus]] (mandatory worship)  
-**Notable Features:** Hellknight orders, contract law, state-sanctioned devil binding
+**Notable Features:** [[Organizations/Hellknights|Hellknight]] orders, contract law, state-sanctioned devil binding
 
 ## Description
 Cheliax is a once-great empire now ruled by diabolists who worship [[Deities/Asmodeus|Asmodeus]] as the state deity. After a civil war, House Thrune seized power through pacts with Hell itself, establishing a totalitarian regime where law and order are maintained through fear, contracts, and infernal magic.
 
-The nation exemplifies Asmodean philosophy in practice: absolute hierarchy, tyranny disguised as order, and the belief that slavery and subjugation serve divine purpose. Citizens are bound by countless laws and contracts, with Hellknights enforcing order brutally and efficiently.
+The nation exemplifies Asmodean philosophy in practice: absolute hierarchy, tyranny disguised as order, and the belief that slavery and subjugation serve divine purpose. Citizens are bound by countless laws and contracts, with [[Organizations/Hellknights|Hellknights]] enforcing order brutally and efficiently.
 
 ## Government and Society
 
@@ -38,7 +38,7 @@ The nation exemplifies Asmodean philosophy in practice: absolute hierarchy, tyra
 The ruling house maintains power through:
 - Pacts with archdevils
 - Mastery of contract law
-- Control of Hellknight orders
+- Control of [[Organizations/Hellknights|Hellknight]] orders
 - Mandatory worship of Asmodeus
 - Network of informants and secret police
 
@@ -52,7 +52,7 @@ Chelaxian society is rigidly hierarchical:
 ### Law and Order
 Chelaxian law is absolute:
 - Contract law supersedes morality
-- Hellknights enforce order ruthlessly
+- [[Organizations/Hellknights|Hellknights]] enforce order ruthlessly
 - Dissent equals treason
 - Devil binding is legal and practiced
 - Slavery is institutionalized
@@ -75,7 +75,7 @@ Chelaxian culture embodies Asmodean principles:
 - Power justifies itself
 - Mercy is weakness
 
-### Hellknights
+### [[Organizations/Hellknights|Hellknights]]
 Multiple orders operate throughout empire:
 - Enforce law without mercy
 - Technically separate from church
@@ -99,7 +99,7 @@ Cheliax shapes Isgeri culture:
 - Legal system imposed
 - Educational institutions follow Chelaxian model
 - [[Organizations/Sisters of the Golden Erinyes|Sisters]] and similar orders operate freely
-- Resistance movements face Hellknight repression
+- Resistance movements face [[Organizations/Hellknights|Hellknight]] repression
 
 ### Economic Exploitation
 Cheliax extracts wealth from Isger:
@@ -161,7 +161,7 @@ Rust represents everything Cheliax claims impossible:
 - Training ground for future rulers
 - Surprisingly cosmopolitan
 
-## Hellknight Orders
+## [[Organizations/Hellknights|Hellknight]] Orders
 
 Several orders originate from or serve Cheliax:
 - **Order of the Rack:** Torture and interrogation specialists
@@ -194,7 +194,7 @@ Modern Cheliax is:
 - Internally stable through oppression
 - Externally viewed with fear and distrust
 - Economically powerful through contracts and trade
-- Militarily formidable with Hellknight support
+- Militarily formidable with [[Organizations/Hellknights|Hellknight]] support
 
 ## Opposition and Resistance
 
@@ -275,7 +275,7 @@ Chelaxian military includes:
 - Conscripts from subject populations
 - Slave soldiers in some units
 
-### Hellknights
+### [[Organizations/Hellknights|Hellknights]]
 Supplement regular forces:
 - Elite shock troops
 - Terror tactics
@@ -303,7 +303,7 @@ Cheliax casts long shadow over campaign:
 ### Potential Encounters
 Party might face:
 - Chelaxian merchants and diplomats
-- Hellknights on various missions
+- [[Organizations/Hellknights|Hellknights]] on various missions
 - Escaped slaves seeking help
 - Contract-bound NPCs
 - Asmodean missionaries
@@ -313,7 +313,7 @@ Not all Chelaxians are evil:
 - Many born into system, know nothing else
 - Some serve order genuinely believing it helps
 - Citizens often just trying to survive
-- Even Hellknights sometimes protect innocents
+- Even [[Organizations/Hellknights|Hellknights]] sometimes protect innocents
 - System is evil even if individuals aren't always
 
 ### Rust's Relationship
