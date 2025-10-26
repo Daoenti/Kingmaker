@@ -16,6 +16,8 @@ tags:
 
 # Hellknights
 
+![Hellknights symbol](../Resources/Images/hellknights-symbol.svg)
+
 ## Overview
 - **Type:** Paramilitary law enforcement organizations
 - **Alignment:** Lawful Neutral (officially, though individual orders vary)

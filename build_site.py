@@ -40,6 +40,18 @@ if css_dir.exists():
 else:
     print("Warning: Styles directory not found")
 
+# Copy all image files to output directory
+images_dir = Path('Resources/Images')
+if images_dir.exists():
+    images_output = output_dir / 'images'
+    images_output.mkdir(parents=True, exist_ok=True)
+    for image_file in images_dir.glob('*'):
+        if image_file.is_file():
+            shutil.copy(image_file, images_output / image_file.name)
+            print(f"Image file copied: {image_file.name}")
+else:
+    print("Warning: Images directory not found")
+
 # Collect all markdown files
 exclude_dirs = {'.git', '.github', '.obsidian', '.trash', '.makemd', '.space', '.venv', 'Tags'}
 md_files = []
@@ -257,6 +269,14 @@ def fix_md_links(content):
     content = re.sub(r'\[([^\]]+)\]\(([^\)]+)\)', replace_mdlink, content)
     return content
 
+# Function to fix image paths
+def fix_image_paths(html_content):
+    """Fix image paths from Resources/Images to /Kingmaker/images"""
+    # Replace ../Resources/Images/ with /Kingmaker/images/
+    html_content = html_content.replace('../Resources/Images/', BASE_URL + '/images/')
+    html_content = html_content.replace('Resources/Images/', BASE_URL + '/images/')
+    return html_content
+
 # Convert each markdown file to HTML (only valid files)
 for md_file in valid_files:
     print(f"Converting: {md_file}")
@@ -273,6 +293,9 @@ for md_file in valid_files:
     # Now convert to HTML
     html_content = md.convert(content)
     md.reset()
+
+    # Fix image paths after HTML conversion
+    html_content = fix_image_paths(html_content)
     
     out_file = output_dir / str(md_file).replace('.md', '.html')
     out_file.parent.mkdir(parents=True, exist_ok=True)

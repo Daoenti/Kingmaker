@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#1a1a1a" stroke="#8b0000" stroke-width="3"/>
+
+  <!-- Outer decorative ring -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#cd5c5c" stroke-width="1" opacity="0.6"/>
+
+  <!-- Inner shield shape -->
+  <path d="M 100 30 L 140 50 L 140 110 C 140 130, 120 150, 100 160 C 80 150, 60 130, 60 110 L 60 50 Z"
+        fill="#2a2a2a" stroke="#8b0000" stroke-width="2"/>
+
+  <!-- Helm/visor design -->
+  <rect x="80" y="60" width="40" height="35" fill="#cd5c5c" rx="3"/>
+  <rect x="85" y="70" width="10" height="20" fill="#1a1a1a"/>
+  <rect x="105" y="70" width="10" height="20" fill="#1a1a1a"/>
+
+  <!-- Horns -->
+  <path d="M 75 60 Q 65 50, 60 45" fill="none" stroke="#8b0000" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 125 60 Q 135 50, 140 45" fill="none" stroke="#8b0000" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Pentagram in center of breastplate -->
+  <g transform="translate(100, 115) scale(0.3)">
+    <path d="M 0,-30 L 8,10 L -25,-10 L 25,-10 L -8,10 Z"
+          fill="#8b0000" stroke="#ff0000" stroke-width="1.5"/>
+  </g>
+
+  <!-- Decorative chains -->
+  <circle cx="70" cy="95" r="3" fill="#696969"/>
+  <circle cx="130" cy="95" r="3" fill="#696969"/>
+  <line x1="70" y1="95" x2="80" y2="95" stroke="#696969" stroke-width="2"/>
+  <line x1="120" y1="95" x2="130" y2="95" stroke="#696969" stroke-width="2"/>
+
+  <!-- Bottom banner -->
+  <rect x="60" y="165" width="80" height="15" fill="#8b0000" opacity="0.8"/>
+  <text x="100" y="176" font-family="serif" font-size="10" font-weight="bold"
+        fill="#ffd700" text-anchor="middle">ORDER</text>
+</svg>

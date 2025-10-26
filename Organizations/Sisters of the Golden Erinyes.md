@@ -16,6 +16,8 @@ tags:
 
 # Sisters of the Golden Erinyes
 
+![Sisters of the Golden Erinyes symbol](../Resources/Images/sisters-golden-erinyes-symbol.svg)
+
 ## Overview
 - **Alignment:** Lawful Evil
 - **Headquarters:** [[Locations/Monastery of the Golden Erinyes|Monastery of the Golden Erinyes]], western [[Locations/Isger|Isger]]
