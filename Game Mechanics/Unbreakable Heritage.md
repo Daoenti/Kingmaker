@@ -1,10 +1,10 @@
 ---
 type: concept
-name: Unbreakable Ancestry
+name: Unbreakable Heritage
 category: Character Trait
 game_system: Pathfinder 2E
 tags:
-  - ancestry
+  - heritage
   - mechanical
   - goblin
   - resilience
@@ -12,12 +12,12 @@ tags:
   - level-1
 ---
 
-# Unbreakable Ancestry
+# Unbreakable Heritage
 
 ## Game Mechanical Definition
-**System:** Pathfinder 2nd Edition  
-**Type:** Goblin Heritage  
-**Associated Ancestry:** Goblin  
+**System:** Pathfinder 2nd Edition
+**Type:** Goblin Heritage
+**Ancestry:** Goblin
 **Level Requirement:** 1st (selected at character creation)
 
 ## Mechanical Benefits (Level 1)
@@ -57,7 +57,7 @@ It wasn't instant full recovery - it was hours of slow, painful healing that kep
 ## Narrative Implementation for Level 1 Rust
 
 ### Physical Manifestation
-At level 1, Rust's Unbreakable nature manifests subtly:
+At level 1, Rust's Unbreakable heritage manifests subtly:
 - He's fallen unconscious in dangerous situations and woken up when he shouldn't have
 - Minor cuts and bruises fade faster than expected (but not instantly)
 - He's survived a few "should have died" moments through sheer resilience
@@ -73,7 +73,7 @@ Even at low level, the healing isn't comfortable:
 - He can't control it - it happens whether he wants it or not
 
 ### Growing Power
-The implication is that Rust's Unbreakable nature will **grow stronger** as he levels:
+The implication is that Rust's Unbreakable heritage will **grow stronger** as he levels:
 - Currently: Reliable recovery from dying, minor fast healing
 - Future: Faster healing, resistance to damage, harder to kill
 - Late game: Potentially dramatic regeneration, near-immortality
@@ -117,7 +117,7 @@ The [[Organizations/Sisters of the Golden Erinyes|Sisters]] tried to break Rust 
 
 ### Why Sevenarches Noticed Him
 [[Locations/Sevenarches|Sevenarches]] recognized something primordial in Rust:
-- His Unbreakable nature operates outside normal rules
+- His Unbreakable heritage operates outside normal rules
 - The forest exists in impossible states
 - Both represent forces predating divine law
 - The forest saw potential for what he could become
@@ -159,7 +159,7 @@ Both should scale together as Rust levels:
 ## Mechanical Scaling Suggestions
 
 ### Level Progression
-As Rust levels up, his Unbreakable nature could manifest as:
+As Rust levels up, his Unbreakable heritage could manifest as:
 - **Level 5:** Fast healing improves, minor damage resistance
 - **Level 10:** Harder to keep unconscious, better recovery checks
 - **Level 15:** Significant regeneration, resistance to death effects

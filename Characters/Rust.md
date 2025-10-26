@@ -5,7 +5,8 @@ race: Goblin
 class: Oracle
 subclass: Life Oracle
 level: 1
-ancestry: Unbreakable Goblin
+ancestry: Goblin
+heritage: Unbreakable
 background: Animal Whisperer
 status: active
 origin: Isger
@@ -23,7 +24,7 @@ tags:
   - survivor
   - wanderer
 aliases:
-  - The Unbreakable Goblin
+  - The Unbreakable
   - Rust
 sticker: lucide//user
 ---
@@ -31,16 +32,16 @@ sticker: lucide//user
 # Rust Freelox
 
 ## Overview
-**Full Name:** Rust Freelox  
-**Race:** Goblin (Small)  
-**Class:** Life Oracle (Level 1)  
-**Ancestry:** [[Game Mechanics/Unbreakable Ancestry|Unbreakable Goblin]]  
-**Heritage:** Unbreakable Goblin  
+**Full Name:** Rust Freelox
+**Race:** Goblin (Small)
+**Class:** Life Oracle (Level 1)
+**Ancestry:** Goblin
+**Heritage:** [[Game Mechanics/Unbreakable Heritage|Unbreakable]]
 **Background:** [[Game Mechanics/Animal Whisperer Background|Animal Whisperer]]  
 **Age:** 13 years old (goblin age of maturity - just reached adulthood)  
 **Gender:** Male  
 **Alignment:** Neutral  
-**Deity:** Lamashtu (nominal - complicated relationship)  
+**Deity:** [[Deities/Lamashtu|Lamashtu]] (nominal - complicated relationship)  
 **Origin:** [[Locations/Isger|Isger]], found in the aftermath of the [[Events/Goblinblood Wars|Goblinblood Wars]]
 
 ## Ability Scores (Level 1)
@@ -97,10 +98,10 @@ He moves with practiced wariness, always aware of exits and potential threats. H
 ## Feats & Special Abilities
 
 ### Heritage & Ancestry
-- **Unbreakable Goblin Heritage:** Enhanced resilience and recovery
-- **Darkvision:** Can see in darkness
+- **Goblin Ancestry:** Small size, darkvision
+- **[[Game Mechanics/Unbreakable Heritage|Unbreakable Heritage]]:** Enhanced resilience and recovery
 - **Goblin Lore (Ancestry Feat):** Trained in Goblin Lore
-- **Goblin Weapon Familiarity (Ancestry Paragon):** Proficiency with goblin weapons
+- **Goblin Weapon Familiarity (Ancestry Feat):** Proficiency with goblin weapons
 
 ### Background Feats
 - **Train Animal:** Can teach animals
@@ -148,7 +149,7 @@ He moves with practiced wariness, always aware of exits and potential threats. H
 - Mask (Ordinary) (worn)
 - Dogslicer (wielded - simple weapon, 1d6 slashing)
 - Healer's Toolkit (carried)
-- Religious Symbol, Wooden (Lamashtu) (carried)
+- Religious Symbol, Wooden ([[Deities/Lamashtu|Lamashtu]]) (carried)
 - Signal Whistle (carried)
 - Earplugs (carried)
 
@@ -171,7 +172,7 @@ He moves with practiced wariness, always aware of exits and potential threats. H
 - 4 gp, 6 sp, 6 cp
 
 ## Personality
-Rust is deeply distrustful of authority and organized religion, despite his nominal connection to Lamashtu. He speaks little about his past and deflects personal questions with practiced ease. Despite his traumatic upbringing, he possesses a stubborn compassion for the vulnerable and downtrodden—perhaps because he knows intimately what it means to be powerless.
+Rust is deeply distrustful of authority and organized religion, despite his nominal connection to [[Deities/Lamashtu|Lamashtu]]. He speaks little about his past and deflects personal questions with practiced ease. Despite his traumatic upbringing, he possesses a stubborn compassion for the vulnerable and downtrodden—perhaps because he knows intimately what it means to be powerless.
 
 He's pragmatic beyond his years, displaying cynicism that seems wrong on someone only 13 years old. Yet he occasionally reveals flashes of unexpected kindness, especially toward animals and younger children. He has a particular soft spot for creatures that others deem worthless or disposable.
 
@@ -202,12 +203,12 @@ As a Life Oracle with the Curse of Outpouring Life, Rust bears the curse of his 
 - Unwanted Persistence: He struggles to stay unconscious even when it would be merciful
 
 ### Divine Connection (Complex)
-Rust's character sheet lists Lamashtu as his deity, which creates an interesting tension. Lamashtu is the goddess of monsters, madness, and nightmares—often associated with goblin worship. However, Rust's relationship with divinity is complicated:
+Rust's character sheet lists [[Deities/Lamashtu|Lamashtu]] as his deity, which creates an interesting tension. [[Deities/Lamashtu|Lamashtu]] is the goddess of monsters, madness, and nightmares—often associated with goblin worship. However, Rust's relationship with divinity is complicated:
 
 - He was raised in an Asmodean monastery that taught him to distrust divine authority
 - His oracle powers don't feel like traditional divine blessing
-- The connection to Lamashtu may be ancestral/cultural rather than devotional
-- He likely doesn't actively worship Lamashtu, but acknowledges her existence
+- The connection to [[Deities/Lamashtu|Lamashtu]] may be ancestral/cultural rather than devotional
+- He likely doesn't actively worship [[Deities/Lamashtu|Lamashtu]], but acknowledges her existence
 - His powers feel primordial, predating the gods
 
 This creates rich roleplaying potential around his relationship with the divine.
@@ -268,7 +269,7 @@ His most reliable companions. He forms quick bonds with animals and they with hi
 ### The Vulnerable
 Rust feels an instinctive protectiveness toward those who remind him of his younger self—the abused, the discarded, the ones deemed worthless.
 
-### Lamashtu (Complicated)
+### [[Deities/Lamashtu|Lamashtu]] (Complicated)
 Listed as his deity, but their relationship is complex. He may acknowledge her culturally as the goblin goddess, but doesn't actively worship or submit to any divine power.
 
 ### Sevenarches
