@@ -58,8 +58,8 @@ Rust stands at typical goblin height (just over 3 feet) with rust-colored skin t
 He moves with practiced wariness, always aware of exits and potential threats. His clothing is practical and worn, typically explorer's clothing with basic corrective lenses and a simple mask. Despite his young age, he carries himself with the caution of someone much older.
 
 ## Combat Statistics (Level 1)
-**Hit Points:** 18 (8 class + 6 ancestry + 4 bonus)  
-**Armor Class:** 15 (10 + 3 proficiency + 2 Dex)  
+**Hit Points:** 20 (8 class + 10 Unbreakable ancestry + 2 Con modifier)
+**Armor Class:** 15 (10 + 3 proficiency + 2 Dex)
 **Speed:** 25 feet
 
 **Saves:**
@@ -78,22 +78,21 @@ He moves with practiced wariness, always aware of exits and potential threats. H
 
 ### Skills (Level 1)
 - **Trained:**
-  - Acrobatics (+4)
-  - Deception (+6)
-  - Diplomacy (+6)
-  - Medicine (+3)
-  - Nature (+3)
-  - Religion (+3)
-  - Stealth (+4)
-  - Survival (+3)
+  - Acrobatics (+4) - from Oracle (3 chosen skills)
+  - Deception (+6) - from Oracle (3 chosen skills)
+  - Diplomacy (+6) - from Oracle (3 chosen skills)
+  - Medicine (+3) - from Life Mystery
+  - Nature (+3) - from Animal Whisperer background
+  - Religion (+3) - from Oracle class
+  - Stealth (+4) - from Goblin Lore feat
+  - Survival (+3) - from Goblin Lore feat (additional skill, already had Nature)
 - **Lores:**
-  - Goblin Lore (Trained, +2)
-  - One Terrain Lore (Trained, +2)
+  - Goblin Lore (Trained, +2) - from Goblin Lore feat
+  - Plains Lore (Trained, +2) - from Animal Whisperer background
 
 ### Languages
 - Common
 - Goblin
-- (Infernal likely learned at the monastery, though not on character sheet)
 
 ## Feats & Special Abilities
 
@@ -125,18 +124,19 @@ He moves with practiced wariness, always aware of exits and potential threats. H
 **Tradition:** Divine  
 **Focus Points:** 1
 
-### Cantrips (At Will)
+### Cantrips (At Will, 5 + 1 from mystery)
 - Detect Magic
-- Guidance  
+- Guidance
 - Needle Darts
 - Rousing Splash
 - Shield
-- Vitality Lash
+- **Vitality Lash** (granted by Life Mystery)
 
-### 1st Level Spells (3 per day)
-- **Heal** (Signature spell from Life Mystery)
+### 1st Level Spells (Spell Slots: 3 per day)
+**Spell Repertoire (2 chosen + 1 from mystery):**
+- Heal
 - Bless
-- Soothe
+- **Soothe** (granted by Life Mystery)
 
 ### Focus Spells
 - **Life Link:** Can link life force with an ally

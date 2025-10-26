@@ -57,8 +57,7 @@ At thirteen, Rust has accumulated practical knowledge and hard-won wisdom:
 **Languages:**
 - Common (fluent)
 - Goblin (native, most comfortable)
-- Infernal (fluent, learned young)
-- Can read and write all three
+- Can read and write both
 
 **Social Skills:**
 - Can work odd jobs and negotiate payment

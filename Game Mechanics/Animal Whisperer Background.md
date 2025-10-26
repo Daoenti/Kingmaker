@@ -15,14 +15,22 @@ tags:
 # Animal Whisperer Background
 
 ## Game Mechanical Definition
-**System:** Pathfinder 2nd Edition  
-**Type:** Character Background (selected at 1st level)  
-**Trained Skill:** Nature  
-**Lore Skill:** Stabling Lore (or similar animal-related Lore)  
-**Background Feat:** Train Animal (or similar animal-related skill feat)
+**System:** Pathfinder 2nd Edition
+**Type:** Character Background (selected at 1st level)
+**Source:** [Player Core pg. 84](https://2e.aonprd.com/Backgrounds.aspx?ID=408)
 
-## Standard Background Description
-Animal Whisperers have developed an intuitive understanding of animal behavior through direct experience working with creatures. They might have been stable hands, shepherds, animal trainers, or wilderness guides. Some found companionship with beasts when people failed them.
+**Official Description:** "You have always felt a connection to animals, and it was only a small leap to learn to train them. As you travel, you continuously encounter different creatures, befriending them along the way."
+
+**Ability Boosts:**
+- Choose one: Wisdom or Charisma
+- Choose one: Free ability boost
+
+**Skill Training:**
+- Nature (trained)
+- One terrain Lore skill inhabited by animals (trained) - such as Plains Lore or Swamp Lore
+
+**Skill Feat:**
+- Train Animal
 
 ## What This Grants at Level 1
 
@@ -36,8 +44,8 @@ At 1st level, the Animal Whisperer background provides:
 - Understanding animal tracks and signs
 - Surviving in wilderness by reading natural patterns
 
-**Trained in Lore:** One specific Lore skill related to animals:
-- For Rust: **Stabling Lore** (reflects his brief work as stable hand)
+**Trained in Terrain Lore:** One terrain Lore skill inhabited by animals:
+- For Rust: **Plains Lore** (reflects the regions he's traveled through and worked in)
 
 **Background Feat - Train Animal:** 
 - Can attempt to teach animals simple tricks or tasks
