@@ -6,6 +6,10 @@ on:
     paths:
       - '**.md'
       - 'build_site.py'
+      - 'requirements.txt'
+      - 'Resources/templates/**'
+      - 'Resources/Styles/**'
+      - 'Resources/Images/**'
       - '.github/workflows/publish-pages.yml'
   workflow_dispatch:
 
@@ -33,7 +37,7 @@ jobs:
         
     - name: Install dependencies
       run: |
-        pip install markdown pymdown-extensions
+        pip install -r requirements.txt
         
     - name: Build site
       run: |
